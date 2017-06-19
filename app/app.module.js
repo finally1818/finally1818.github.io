@@ -8,7 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
+var crisis_list_component_1 = require("./crisis-list.component");
+var hero_list_component_1 = require("./hero-list.component");
+var appRoutes = [
+    { path: 'crisis-center', component: crisis_list_component_1.CrisisListComponent },
+    { path: 'heroes', component: hero_list_component_1.HeroListComponent },
+    { path: '', redirectTo: '/heroes', pathMatch: 'full' }
+];
 var AppModule = (function () {
     function AppModule() {
     }
@@ -16,8 +24,15 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent],
+        imports: [
+            platform_browser_1.BrowserModule,
+            router_1.RouterModule.forRoot(appRoutes)
+        ],
+        declarations: [
+            app_component_1.AppComponent,
+            crisis_list_component_1.CrisisListComponent,
+            hero_list_component_1.HeroListComponent
+        ],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
