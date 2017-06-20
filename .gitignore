@@ -1,4 +1,4 @@
 node_modules
-*.js.map
-**/*.js.map
-**/*/*.js.map
+*.map
+*/*.map
+*/*/*.map
