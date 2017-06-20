@@ -7,15 +7,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var CrisisListComponent = (function () {
-    function CrisisListComponent() {
+var platform_browser_1 = require("@angular/platform-browser");
+var dog_header_component_1 = require("./dog-header.component");
+var hero_service_1 = require("./hero.service");
+var DogHeaderModule = (function () {
+    function DogHeaderModule() {
     }
-    return CrisisListComponent;
+    return DogHeaderModule;
 }());
-CrisisListComponent = __decorate([
-    core_1.Component({
-        template: "\n    <h2>CRISIS CENTER</h2>\n    <p>Get your crisis here</p>"
+DogHeaderModule = __decorate([
+    core_1.NgModule({
+        imports: [platform_browser_1.BrowserModule],
+        exports: [dog_header_component_1.DogHeaderComponent],
+        declarations: [dog_header_component_1.DogHeaderComponent],
+        providers: [hero_service_1.HeroService],
     })
-], CrisisListComponent);
-exports.CrisisListComponent = CrisisListComponent;
-//# sourceMappingURL=crisis-list.component.js.map
+], DogHeaderModule);
+exports.DogHeaderModule = DogHeaderModule;
+//# sourceMappingURL=dog-header.module.js.map

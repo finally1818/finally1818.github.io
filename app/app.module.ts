@@ -1,24 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+// Imports for loading & configuring the in-memory web api
+import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+
 import { AppComponent } from './app.component';
-import { CrisisListComponent } from './crisis-list.component';
-import { HeroListComponent } from './hero-list.component';
-const appRoutes: Routes = [
-  { path: 'crisis-center', component: CrisisListComponent },
-  { path: 'heroes', component: HeroListComponent },
-  { path: '', redirectTo: '/heroes', pathMatch: 'full' }
-];
+import { DogHeaderModule } from "./header/dog-header.module";
+
 @NgModule({
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(appRoutes)
-  ],
-  declarations: [
-    AppComponent,
-    CrisisListComponent,
-    HeroListComponent
-  ],
-  bootstrap: [AppComponent]
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        InMemoryWebApiModule.forRoot(InMemoryDataService),
+        DogHeaderModule
+    ],
+    declarations: [
+        AppComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
+
 export class AppModule { }

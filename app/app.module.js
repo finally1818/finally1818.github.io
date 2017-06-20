@@ -8,15 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var router_1 = require("@angular/router");
+var forms_1 = require("@angular/forms");
+var http_1 = require("@angular/http");
+// Imports for loading & configuring the in-memory web api
+var angular2_in_memory_web_api_1 = require("angular2-in-memory-web-api");
+var in_memory_data_service_1 = require("./in-memory-data.service");
 var app_component_1 = require("./app.component");
-var crisis_list_component_1 = require("./crisis-list.component");
-var hero_list_component_1 = require("./hero-list.component");
-var appRoutes = [
-    { path: 'crisis-center', component: crisis_list_component_1.CrisisListComponent },
-    { path: 'heroes', component: hero_list_component_1.HeroListComponent },
-    { path: '', redirectTo: '/heroes', pathMatch: 'full' }
-];
+var dog_header_module_1 = require("./header/dog-header.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,13 +24,15 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
-            router_1.RouterModule.forRoot(appRoutes)
+            forms_1.FormsModule,
+            http_1.HttpModule,
+            angular2_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService),
+            dog_header_module_1.DogHeaderModule
         ],
         declarations: [
-            app_component_1.AppComponent,
-            crisis_list_component_1.CrisisListComponent,
-            hero_list_component_1.HeroListComponent
+            app_component_1.AppComponent
         ],
+        providers: [],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
