@@ -6,7 +6,7 @@
     "files.exclude": {
         "node_modules": true,
         "typings": true,
-        "**/*.js": { "when": "$(basename).ts" },
+        "**/*.js": true,
         "**/*.js.map": true
     }
 

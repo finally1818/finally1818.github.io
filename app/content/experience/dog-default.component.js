@@ -10,28 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var dog_header_service_1 = require("./dog-header.service");
-var DogHeaderComponent = (function () {
-    function DogHeaderComponent(dogHeaderService) {
-        this.dogHeaderService = dogHeaderService;
+var DogDefaultComponent = (function () {
+    function DogDefaultComponent() {
     }
-    DogHeaderComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.dogHeaderService.getDogHeader()
-            .then(function (data) {
-            _this.titleList = data;
-        });
-    };
-    return DogHeaderComponent;
+    DogDefaultComponent.prototype.ngOnInit = function () { };
+    return DogDefaultComponent;
 }());
-DogHeaderComponent = __decorate([
+DogDefaultComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'dog-header',
-        templateUrl: './dog-header.component.html',
-        styleUrls: ['./dog-header.component.css']
+        selector: 'dog-default',
+        templateUrl: 'dog-default.component.html',
+        styleUrls: ['dog-default.component.css']
     }),
-    __metadata("design:paramtypes", [dog_header_service_1.DogHeaderService])
-], DogHeaderComponent);
-exports.DogHeaderComponent = DogHeaderComponent;
-//# sourceMappingURL=dog-header.component.js.map
+    __metadata("design:paramtypes", [])
+], DogDefaultComponent);
+exports.DogDefaultComponent = DogDefaultComponent;
+//# sourceMappingURL=dog-default.component.js.map

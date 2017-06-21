@@ -8,27 +8,27 @@ var InMemoryDataService = (function () {
             "header": {
                 "titleList": [
                     {
-                        "svg": "img/d_home.svg",
+                        "svg": "app/img/d_home.svg",
                         "title": "首页"
                     },
                     {
-                        "svg": "img/d_info.svg",
+                        "svg": "app/img/d_info.svg",
                         "title": "关于我"
                     },
                     {
-                        "svg": "img/d_skills.svg",
+                        "svg": "app/img/d_skills.svg",
                         "title": "技能栈"
                     },
                     {
-                        "svg": "img/d_exp.svg",
+                        "svg": "app/img/d_exp.svg",
                         "title": "经历"
                     },
                     {
-                        "svg": "img/d_works.svg",
+                        "svg": "app/img/d_works.svg",
                         "title": "作品集"
                     },
                     {
-                        "svg": "img/d_contact.svg",
+                        "svg": "app/img/d_contact.svg",
                         "title": "联系我"
                     }
                 ]
@@ -37,37 +37,37 @@ var InMemoryDataService = (function () {
             "default": {
                 "quote": "生活是一种绵延不绝的渴望，渴望不断上升，变得更伟大而高贵。",
                 "desList": [
-                    "我叫赵柯宇",
+                    "我叫林晨",
                     "一名前端研发工程师",
-                    "zhaoky2016@163.com"
+                    "finally174483345@vip.qq.com"
                 ]
             },
             "info": {
                 "title": "关于我",
                 "infoList": [
                     {
-                        "icon": "img/i_age.svg",
+                        "icon": "app/img/i_age.svg",
                         "key": "年龄",
-                        "value": "26岁"
+                        "value": "29岁"
                     },
                     {
-                        "icon": "img/i_edu.svg",
+                        "icon": "app/img/i_edu.svg",
                         "key": "学历",
-                        "value": "本科"
+                        "value": "专科"
                     },
                     {
-                        "icon": "img/i_site.svg",
+                        "icon": "app/img/i_site.svg",
                         "key": "坐标",
-                        "value": "成都"
+                        "value": "杭州"
                     },
                     {
-                        "icon": "img/i_status.svg",
+                        "icon": "app/img/i_status.svg",
                         "key": "状态",
                         "value": "在职"
                     }
                 ],
                 "desList": [
-                    "三年互联网经验,两年半全职前端开发经验",
+                    "一年的前端开发经验",
                     "熟悉MV*开发,深谙自动化,模块化开发之道",
                     "高效的自学能力,具备独立分析解决问题能力",
                     "强烈的自我驱动力,代码强迫症患者"
@@ -128,8 +128,8 @@ var InMemoryDataService = (function () {
                     }
                 ],
                 "desList": [
-                    "熟练使用angularJs1.x及各种类库的指令封装",
-                    "常驻PC/APP/微信三平台前端研发",
+                    "熟练使用angular2",
+                    "常驻PC平台前端研发",
                     "擅长组件/插件开发，能脱离库书写JS代码",
                     "编码常思其健壮性，扩展性，维护性"
                 ]
@@ -167,7 +167,7 @@ var InMemoryDataService = (function () {
                         "title": "兰途网络科技有限公司",
                         "time": "2015年6月~至今",
                         "post": "web前端研发工程师",
-                        "imgUrl": "img/e_js.svg",
+                        "imgUrl": "app/img/e_js.svg",
                         "tech": "less gulp angular1.x cordova 原生js及若干类库",
                         "contentList": [
                             "负责快速构建高质量移动APP/PC/微信页面",
@@ -180,7 +180,7 @@ var InMemoryDataService = (function () {
                         "title": "卓煌企业管理有限公司",
                         "time": "2014年8月~2015年6月",
                         "post": "网页开发兼SEO优化",
-                        "imgUrl": "img/e_html.svg",
+                        "imgUrl": "app/img/e_html.svg",
                         "tech": "html5,css3,javascript,jquery,bootstrap等",
                         "contentList": [
                             "负责企业站静态页开发",
@@ -193,7 +193,7 @@ var InMemoryDataService = (function () {
                         "title": "壹零陆文化传播有限责任公司",
                         "time": "2014年3月~2014年8月",
                         "post": "SEO",
-                        "imgUrl": "img/e_seo.svg",
+                        "imgUrl": "app/img/e_seo.svg",
                         "tech": "SEO,SEM,百度（360，搜狗）竞价、推广等",
                         "contentList": [
                             "负责网站后台维护，微博、微信等新媒体营销和推广",
@@ -203,7 +203,7 @@ var InMemoryDataService = (function () {
                         ]
                     }
                 ],
-                "des": "2014年初，放弃网络工程师职位，开始前端自学生涯。"
+                "des": "2016年初，放弃网络管理员职位，开始前端自学生涯。"
             },
             "contact": {
                 "title": "联系我",
@@ -233,23 +233,23 @@ var InMemoryDataService = (function () {
                 ],
                 "typeList": [
                     {
-                        "icon": "img/s_github.svg",
+                        "icon": "app/img/s_github.svg",
                         "url": "https://github.com/zhaoky"
                     },
                     {
-                        "icon": "img/s_sf.svg",
+                        "icon": "app/img/s_sf.svg",
                         "url": "https://segmentfault.com/u/keyu2016"
                     },
                     {
-                        "icon": "img/s_blog.svg",
+                        "icon": "app/img/s_blog.svg",
                         "url": ""
                     },
                     {
-                        "icon": "img/s_zh.svg",
+                        "icon": "app/img/s_zh.svg",
                         "url": "https://www.zhihu.com/people/fezky"
                     },
                     {
-                        "icon": "img/s_wb.svg",
+                        "icon": "app/img/s_wb.svg",
                         "url": "http://weibo.com/zky2013"
                     }
                 ]

@@ -8,20 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var dog_header_component_1 = require("./dog-header.component");
-var dog_header_service_1 = require("./dog-header.service");
-var DogHeaderModule = (function () {
-    function DogHeaderModule() {
+var dog_experience_component_1 = require("./dog-experience.component");
+var dog_experience_service_1 = require("./dog-experience.service");
+var DogExperienceModule = (function () {
+    function DogExperienceModule() {
     }
-    return DogHeaderModule;
+    return DogExperienceModule;
 }());
-DogHeaderModule = __decorate([
+DogExperienceModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
-        exports: [dog_header_component_1.DogHeaderComponent],
-        declarations: [dog_header_component_1.DogHeaderComponent],
-        providers: [dog_header_service_1.DogHeaderService],
+        exports: [dog_experience_component_1.DogExperienceComponent],
+        declarations: [dog_experience_component_1.DogExperienceComponent],
+        providers: [dog_experience_service_1.DogExperienceService],
     })
-], DogHeaderModule);
-exports.DogHeaderModule = DogHeaderModule;
-//# sourceMappingURL=dog-header.module.js.map
+], DogExperienceModule);
+exports.DogExperienceModule = DogExperienceModule;
+//# sourceMappingURL=dog-experience.module.js.map

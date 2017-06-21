@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { HeroService } from './hero.service';
+import { DogHeaderService } from './dog-header.service';
 
 @Component({
     moduleId: module.id,
@@ -11,11 +11,11 @@ import { HeroService } from './hero.service';
 
 export class DogHeaderComponent implements OnInit {
     titleList: object;
-
-    constructor(private heroService: HeroService) { }
+    pageIndex: number;
+    constructor(private dogHeaderService: DogHeaderService) { }
 
     ngOnInit(): void {
-        this.heroService.getHeroes()
+        this.dogHeaderService.getDogHeader()
             .then(data => {
                 this.titleList = data;
             });

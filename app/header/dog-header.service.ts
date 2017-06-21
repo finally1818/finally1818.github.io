@@ -1,18 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Headers, Http } from '@angular/http';
+import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { Dog } from '../dog';
 @Injectable()
-export class HeroService {
+export class DogHeaderService {
     private dataUrl = 'api/data';  // URL to web api
 
     constructor(private http: Http) { }
-    getHeroes(): Promise<Dog> {
+    getDogHeader(): Promise<Dog> {
         return this.http.get(this.dataUrl)
             .toPromise()
-            .then(response => {
-                return response.json().data.header.titleList as Dog
-            })
+            .then(response => response.json().data.header.titleList as Dog)
             .catch(this.handleError);
     }
     private handleError(error: any): Promise<any> {

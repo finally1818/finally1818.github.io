@@ -15,6 +15,8 @@ var angular2_in_memory_web_api_1 = require("angular2-in-memory-web-api");
 var in_memory_data_service_1 = require("./in-memory-data.service");
 var app_component_1 = require("./app.component");
 var dog_header_module_1 = require("./header/dog-header.module");
+var dog_default_module_1 = require("./content/default/dog-default.module");
+var dog_experience_module_1 = require("./content/experience/dog-experience.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +29,9 @@ AppModule = __decorate([
             forms_1.FormsModule,
             http_1.HttpModule,
             angular2_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService),
-            dog_header_module_1.DogHeaderModule
+            dog_header_module_1.DogHeaderModule,
+            dog_experience_module_1.DogExperienceModule,
+            dog_default_module_1.DogDefaultModule
         ],
         declarations: [
             app_component_1.AppComponent

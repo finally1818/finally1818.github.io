@@ -8,6 +8,8 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { DogHeaderModule } from "./header/dog-header.module";
+import { DogDefaultModule } from './content/default/dog-default.module';
+import { DogExperienceModule } from './content/experience/dog-experience.module';
 
 @NgModule({
     imports: [
@@ -15,7 +17,9 @@ import { DogHeaderModule } from "./header/dog-header.module";
         FormsModule,
         HttpModule,
         InMemoryWebApiModule.forRoot(InMemoryDataService),
-        DogHeaderModule
+        DogHeaderModule,
+        DogExperienceModule,
+        DogDefaultModule
     ],
     declarations: [
         AppComponent

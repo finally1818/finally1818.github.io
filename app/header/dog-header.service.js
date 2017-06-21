@@ -12,28 +12,26 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/toPromise");
-var HeroService = (function () {
-    function HeroService(http) {
+var DogHeaderService = (function () {
+    function DogHeaderService(http) {
         this.http = http;
         this.dataUrl = 'api/data'; // URL to web api
     }
-    HeroService.prototype.getHeroes = function () {
+    DogHeaderService.prototype.getDogHeader = function () {
         return this.http.get(this.dataUrl)
             .toPromise()
-            .then(function (response) {
-            return response.json().data.header.titleList;
-        })
+            .then(function (response) { return response.json().data.header.titleList; })
             .catch(this.handleError);
     };
-    HeroService.prototype.handleError = function (error) {
+    DogHeaderService.prototype.handleError = function (error) {
         console.error('An error occurred', error); // for demo purposes only
         return Promise.reject(error.message || error);
     };
-    return HeroService;
+    return DogHeaderService;
 }());
-HeroService = __decorate([
+DogHeaderService = __decorate([
     core_1.Injectable(),
     __metadata("design:paramtypes", [http_1.Http])
-], HeroService);
-exports.HeroService = HeroService;
-//# sourceMappingURL=hero.service.js.map
+], DogHeaderService);
+exports.DogHeaderService = DogHeaderService;
+//# sourceMappingURL=dog-header.service.js.map
