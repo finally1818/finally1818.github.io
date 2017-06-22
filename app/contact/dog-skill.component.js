@@ -10,20 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var DogDefaultComponent = (function () {
-    function DogDefaultComponent() {
+var DogContactComponent = (function () {
+    function DogContactComponent() {
     }
-    DogDefaultComponent.prototype.ngOnInit = function () { };
-    return DogDefaultComponent;
+    DogContactComponent.prototype.ngOnInit = function () { };
+    return DogContactComponent;
 }());
-DogDefaultComponent = __decorate([
+DogContactComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'dog-default',
-        templateUrl: 'dog-default.component.html',
-        styleUrls: ['dog-default.component.css']
+        selector: 'dog-contact',
+        templateUrl: 'dog-contact.component.html',
+        styleUrls: ['dog-contact.component.css']
     }),
     __metadata("design:paramtypes", [])
-], DogDefaultComponent);
-exports.DogDefaultComponent = DogDefaultComponent;
-//# sourceMappingURL=dog-default.component.js.map
+], DogContactComponent);
+exports.DogContactComponent = DogContactComponent;
+//# sourceMappingURL=dog-skill.component.js.map

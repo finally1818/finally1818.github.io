@@ -1,13 +1,13 @@
-body{
+body {
 	  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
-ul,li{
+ul,li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-a{
+a {
     color: #000;
     text-decoration: none;
 }
@@ -17,3 +17,35 @@ a{
     a:link{
         color: #000;
     }
+
+/*.-default, .-info, .-skill, .-experience, .-work, .-contact{
+    height: 100%;
+}*/
+/*.-content{
+	position: absolute;
+	top: 250px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.-title{
+	position: absolute;
+	top: 150px;
+	left: 20%;
+	right: 20%;
+	text-align: center;
+	font-size: 24px;
+	color: #FFF;
+}*/
+
+/*@media screen and (max-width: 1366px){
+	.-title{
+		top: 70px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.-title{
+		display: none;
+	}
+}*/
