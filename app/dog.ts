@@ -8,11 +8,12 @@ export class Dog {
     // footer
     footer: object;
     // default
-    default: object;
+    default: any;
     quote: string;
-    desList: any;
+    desList: object;
     // info
     info: object;
+    title: string;
     infoList: object;
     icon: string;
     key: string;

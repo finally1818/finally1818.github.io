@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var dog_info_component_1 = require("./dog-info.component");
+var dog_info_service_1 = require("./dog-info.service");
 var DogInfoModule = (function () {
     function DogInfoModule() {
     }
@@ -19,7 +20,7 @@ DogInfoModule = __decorate([
         imports: [platform_browser_1.BrowserModule],
         exports: [dog_info_component_1.DogInfoComponent],
         declarations: [dog_info_component_1.DogInfoComponent],
-        providers: [],
+        providers: [dog_info_service_1.DogInfoService],
     })
 ], DogInfoModule);
 exports.DogInfoModule = DogInfoModule;

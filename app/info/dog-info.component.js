@@ -10,10 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var dog_info_service_1 = require("./dog-info.service");
 var DogInfoComponent = (function () {
-    function DogInfoComponent() {
+    function DogInfoComponent(dogInfoservice) {
+        this.dogInfoservice = dogInfoservice;
     }
-    DogInfoComponent.prototype.ngOnInit = function () { };
+    DogInfoComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.dogInfoservice.getDogInfo()
+            .then(function (info) {
+            _this.infoList = info.infoList;
+            _this.infoTitle = info.title;
+        });
+    };
     return DogInfoComponent;
 }());
 DogInfoComponent = __decorate([
@@ -23,7 +32,7 @@ DogInfoComponent = __decorate([
         templateUrl: 'dog-info.component.html',
         styleUrls: ['dog-info.component.css']
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [dog_info_service_1.DogInfoService])
 ], DogInfoComponent);
 exports.DogInfoComponent = DogInfoComponent;
 //# sourceMappingURL=dog-info.component.js.map

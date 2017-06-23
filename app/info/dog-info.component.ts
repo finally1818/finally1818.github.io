@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DogInfoService } from './dog-info.service';
+
 @Component({
     moduleId: module.id,
     selector: 'dog-info',
@@ -8,7 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class DogInfoComponent implements OnInit {
-    constructor() { }
+    constructor(
+        private dogInfoservice: DogInfoService
+    ) { }
 
-    ngOnInit() { }
+    private infoList: object;
+    private infoTitle: string;
+
+    ngOnInit() {
+        this.dogInfoservice.getDogInfo()
+            .then(info => {
+                this.infoList = info.infoList;
+                this.infoTitle = info.title;
+            })
+    }
 }
