@@ -1,5 +1,10 @@
 .-skill{
 	background: rgb(77, 94, 143) url("./app/img/bg.png");
+	position: absolute;
+	top: 200%;
+	right: 0;
+	bottom: -200%;
+	left: 0;
 }
 	.-contain{
 		display: flex;

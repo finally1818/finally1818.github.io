@@ -1,5 +1,10 @@
 .-experience{
 	background: rgb(148, 92, 76) url("./app/img/bg.png");
+	position: absolute;
+	top: 300%;
+	right: 0;
+	bottom: -300%;
+	left: 0;
 }
 	.-content{
 		perspective:3000px;

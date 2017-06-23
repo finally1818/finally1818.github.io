@@ -1,6 +1,10 @@
 .-info{
 	background: rgb(16, 144, 133) url("./app/img/bg.png");
-	
+	position: absolute;
+	top: 100%;
+	right: 0;
+	bottom: -100%;
+	left: 0;
 }
 	.-info-list{
 		max-width: 800px;
