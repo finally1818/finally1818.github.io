@@ -7,7 +7,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
 var dog_default_component_1 = require("./dog-default.component");
+var dog_default_service_1 = require("./dog-default.service");
 var DogDefaultModule = (function () {
     function DogDefaultModule() {
     }
@@ -15,10 +17,10 @@ var DogDefaultModule = (function () {
 }());
 DogDefaultModule = __decorate([
     core_1.NgModule({
-        imports: [],
+        imports: [platform_browser_1.BrowserModule],
         exports: [dog_default_component_1.DogDefaultComponent],
         declarations: [dog_default_component_1.DogDefaultComponent],
-        providers: [],
+        providers: [dog_default_service_1.DogDefaultService],
     })
 ], DogDefaultModule);
 exports.DogDefaultModule = DogDefaultModule;

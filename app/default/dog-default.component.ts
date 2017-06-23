@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DogDefaultService } from './dog-default.service';
 @Component({
     moduleId: module.id,
     selector: 'dog-default',
@@ -8,7 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class DogDefaultComponent implements OnInit {
-    constructor() { }
+    private default: object;
+    private defaultDesList: object;
+    private defaultQuote: string;
 
-    ngOnInit() { }
+    constructor(
+        private dogDefaultService: DogDefaultService
+    ) { }
+
+
+    ngOnInit(): void {
+        this.dogDefaultService.getDogDefault()
+            .then(data => {
+                this.defaultDesList = data.desList;
+                this.defaultQuote = data.quote
+                console.log(this.defaultDesList);
+                console.log(this.defaultQuote)
+            });
+    }
 }

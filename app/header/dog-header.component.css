@@ -193,6 +193,7 @@
             transform: translateY(-50%) scale(3);
             opacity: 1;
         }
-            .-cur-index .-dot img{
+            .-cur-index .-dot img,
+            .-cur-index .-dot-title {
                 opacity: 1;
             }

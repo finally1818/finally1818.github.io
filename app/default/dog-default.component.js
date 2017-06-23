@@ -10,10 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var dog_default_service_1 = require("./dog-default.service");
 var DogDefaultComponent = (function () {
-    function DogDefaultComponent() {
+    function DogDefaultComponent(dogDefaultService) {
+        this.dogDefaultService = dogDefaultService;
     }
-    DogDefaultComponent.prototype.ngOnInit = function () { };
+    DogDefaultComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.dogDefaultService.getDogDefault()
+            .then(function (data) {
+            _this.defaultDesList = data.desList;
+            _this.defaultQuote = data.quote;
+            console.log(_this.defaultDesList);
+            console.log(_this.defaultQuote);
+        });
+    };
     return DogDefaultComponent;
 }());
 DogDefaultComponent = __decorate([
@@ -23,7 +34,7 @@ DogDefaultComponent = __decorate([
         templateUrl: 'dog-default.component.html',
         styleUrls: ['dog-default.component.css']
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [dog_default_service_1.DogDefaultService])
 ], DogDefaultComponent);
 exports.DogDefaultComponent = DogDefaultComponent;
 //# sourceMappingURL=dog-default.component.js.map

@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
 
 import { DogDefaultComponent } from './dog-default.component';
+import { DogDefaultService } from './dog-default.service';
 
 @NgModule({
-    imports: [],
+    imports: [BrowserModule],
     exports: [DogDefaultComponent],
     declarations: [DogDefaultComponent],
-    providers: [],
+    providers: [DogDefaultService],
 })
 export class DogDefaultModule { }

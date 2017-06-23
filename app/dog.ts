@@ -2,15 +2,15 @@ export class Dog {
     data: object;
     // header
     header: object;
-    titleList: object;
+    navList: object;
     svg: string;
-    title: string;
+    nav: string;
     // footer
     footer: object;
     // default
     default: object;
     quote: string;
-    desList: object;
+    desList: any;
     // info
     info: object;
     infoList: object;

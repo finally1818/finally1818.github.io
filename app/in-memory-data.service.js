@@ -6,30 +6,30 @@ var InMemoryDataService = (function () {
     InMemoryDataService.prototype.createDb = function () {
         var data = {
             "header": {
-                "titleList": [
+                "navList": [
                     {
                         "svg": "app/img/d_home.svg",
-                        "title": "首页"
+                        "nav": "首页"
                     },
                     {
                         "svg": "app/img/d_info.svg",
-                        "title": "关于我"
+                        "nav": "关于我"
                     },
                     {
                         "svg": "app/img/d_skills.svg",
-                        "title": "技能栈"
+                        "nav": "技能栈"
                     },
                     {
                         "svg": "app/img/d_exp.svg",
-                        "title": "经历"
+                        "nav": "经历"
                     },
                     {
                         "svg": "app/img/d_works.svg",
-                        "title": "作品集"
+                        "nav": "作品集"
                     },
                     {
                         "svg": "app/img/d_contact.svg",
-                        "title": "联系我"
+                        "nav": "联系我"
                     }
                 ]
             },

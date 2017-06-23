@@ -17,6 +17,20 @@ var DogDefaultService = (function () {
         this.http = http;
         this.dataUrl = 'api/data';
     }
+    // 获取default数据
+    DogDefaultService.prototype.getDogDefault = function () {
+        return this.http.get(this.dataUrl)
+            .toPromise()
+            .then(function (response) {
+            return response.json().data.default;
+        })
+            .catch(this.handleError);
+    };
+    ;
+    DogDefaultService.prototype.handleError = function (error) {
+        console.error('An error occurred', error); // for demo purposes only
+        return Promise.reject(error.message || error);
+    };
     return DogDefaultService;
 }());
 DogDefaultService = __decorate([

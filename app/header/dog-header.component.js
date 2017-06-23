@@ -18,9 +18,18 @@ var DogHeaderComponent = (function () {
     DogHeaderComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.dogHeaderService.getDogHeader()
-            .then(function (data) {
-            _this.titleList = data;
+            .then(function (header) {
+            _this.navList = header.navList;
         });
+    };
+    // 鼠标移入显示
+    DogHeaderComponent.prototype.mouseoverNavShow = function (nav) {
+        this.navShow = nav.nav;
+    };
+    ;
+    // 鼠标移出隐藏
+    DogHeaderComponent.prototype.mouseoutNavHid = function (nav) {
+        this.navShow = '';
     };
     return DogHeaderComponent;
 }());

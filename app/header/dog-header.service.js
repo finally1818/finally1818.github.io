@@ -17,10 +17,11 @@ var DogHeaderService = (function () {
         this.http = http;
         this.dataUrl = 'api/data'; // URL to web api
     }
+    // 获取header数据
     DogHeaderService.prototype.getDogHeader = function () {
         return this.http.get(this.dataUrl)
             .toPromise()
-            .then(function (response) { return response.json().data.header.titleList; })
+            .then(function (response) { return response.json().data.header; })
             .catch(this.handleError);
     };
     DogHeaderService.prototype.handleError = function (error) {
