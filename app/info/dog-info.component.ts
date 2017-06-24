@@ -16,12 +16,14 @@ export class DogInfoComponent implements OnInit {
 
     private infoList: object;
     private infoTitle: string;
+    private infoDesList: object;
 
     ngOnInit() {
         this.dogInfoservice.getDogInfo()
             .then(info => {
                 this.infoList = info.infoList;
                 this.infoTitle = info.title;
+                this.infoDesList = info.desList;
             })
     }
 }

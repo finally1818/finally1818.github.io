@@ -35,7 +35,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 "quote": "生活是一种绵延不绝的渴望，渴望不断上升，变得更伟大而高贵。",
                 "desList": [
                     "我叫林晨",
-                    "一名前端研发工程师",
+                    "一名前端开发工程师",
                     "finally174483345@vip.qq.com"
                 ]
             },
@@ -43,22 +43,22 @@ export class InMemoryDataService implements InMemoryDbService {
                 "title": "关于我",
                 "infoList": [
                     {
-                        "icon": "app/img/i_age.svg",
+                        "icon": "./app/img/i_age.svg",
                         "key": "年龄",
                         "value": "29岁"
                     },
                     {
-                        "icon": "app/img/i_edu.svg",
+                        "icon": "./app/img/i_edu.svg",
                         "key": "学历",
                         "value": "专科"
                     },
                     {
-                        "icon": "app/img/i_site.svg",
+                        "icon": "./app/img/i_site.svg",
                         "key": "坐标",
                         "value": "杭州"
                     },
                     {
-                        "icon": "app/img/i_status.svg",
+                        "icon": "./app/img/i_status.svg",
                         "key": "状态",
                         "value": "在职"
                     }

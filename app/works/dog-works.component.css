@@ -1,5 +1,10 @@
 .-work{
   	background: rgb(75, 133, 160) url("./app/img/bg.png");
+		position: absolute;
+		top: 400%;
+		right: 0;
+		bottom: -400%;
+		left: 0;
 }
 	.-content{
 		color: #FFF;

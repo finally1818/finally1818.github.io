@@ -21,6 +21,7 @@ var DogInfoComponent = (function () {
             .then(function (info) {
             _this.infoList = info.infoList;
             _this.infoTitle = info.title;
+            _this.infoDesList = info.desList;
         });
     };
     return DogInfoComponent;
