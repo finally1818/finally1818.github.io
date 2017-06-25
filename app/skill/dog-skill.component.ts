@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DogSkillService} from './dog-skill.service';
+
 @Component({
     moduleId: module.id,
     selector: 'dog-skill',

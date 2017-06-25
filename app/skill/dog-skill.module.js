@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var dog_skill_component_1 = require("./dog-skill.component");
+var dog_skill_service_1 = require("./dog-skill.service");
 var DogSkillModule = (function () {
     function DogSkillModule() {
     }
@@ -19,7 +20,7 @@ DogSkillModule = __decorate([
         imports: [platform_browser_1.BrowserModule],
         exports: [dog_skill_component_1.DogSkillComponent],
         declarations: [dog_skill_component_1.DogSkillComponent],
-        providers: [],
+        providers: [dog_skill_service_1.DogSkillService],
     })
 ], DogSkillModule);
 exports.DogSkillModule = DogSkillModule;
