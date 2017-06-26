@@ -12,12 +12,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var dog_info_service_1 = require("./dog-info.service");
 var DogInfoComponent = (function () {
-    function DogInfoComponent(dogInfoservice) {
-        this.dogInfoservice = dogInfoservice;
+    function DogInfoComponent(dogInfoService) {
+        this.dogInfoService = dogInfoService;
     }
     DogInfoComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.dogInfoservice.getDogInfo()
+        this.dogInfoService.getDogInfo()
             .then(function (info) {
             _this.infoList = info.infoList;
             _this.infoTitle = info.title;

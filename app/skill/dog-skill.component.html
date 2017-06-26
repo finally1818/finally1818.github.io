@@ -1,20 +1,18 @@
 <div class="-skill">
     <div class="content">
-        <div class="-title" ng-bind="$ctrl.title"></div>
+        <div class="-title">{{skillTitle}}</div>
         <div class="-content">
             <div class="-contain" ng-class="{'-contain-en':$ctrl.isEng}">
                 <div class="-skill-circle">
                     <ul class="-outCircle">
-                        <li class="-out" ng-repeat="item in $ctrl.outCircleList track by $index" ng-bind="item.name">
-                        </li>
+                        <li class="-out" *ngFor="let outCricleList of skillOutCircleList">{{outCricleList.name}}</li>
                     </ul>
                     <ul class="-innerCircle">
-                        <li class="-inner" ng-repeat="item in $ctrl.innerCircleList track by $index" ng-bind="item.name">
-                        </li>
+                        <li class="-inner" *ngFor="let innerCircleList of skillInnerCircleList">{{innerCircleList.name}}</li>
                     </ul>
                 </div>
                 <div class="-des" ng-class="{'-des-en':$ctrl.isEng}">
-                    <p ng-repeat="item in $ctrl.desList track by $index" ng-bind="item"></p>
+                    <p *ngFor="let desList of skillDesList" ng-bind="item">{{desList}}</p>
                 </div>
             </div>
         </div>

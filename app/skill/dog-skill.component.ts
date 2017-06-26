@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DogSkillService} from './dog-skill.service';
+import { DogSkillService } from './dog-skill.service';
 
 @Component({
     moduleId: module.id,
@@ -10,7 +10,26 @@ import { DogSkillService} from './dog-skill.service';
 })
 
 export class DogSkillComponent implements OnInit {
-    constructor() { }
+    constructor(
+        private dogSkillService: DogSkillService
+    ) { }
 
-    ngOnInit() { }
+    private skillTitle: string;
+    private skillOutCircleList: object;
+    private skillInnerCircleList: object;
+    private skillDesList: object;
+    ngOnInit() {
+        this.dogSkillService.getDogSkill()
+            .then(skill => {
+                this.skillTitle = skill.title;
+                this.skillOutCircleList = skill.outCircleList;
+                this.skillInnerCircleList = skill.innerCircleList;
+                this.skillDesList = skill.desList;
+                console.log(this.skillTitle);
+                console.log(this.skillOutCircleList[1].name);
+                console.log(this.skillInnerCircleList);
+                console.log(this.skillDesList);
+                }
+            )
+    }
 }

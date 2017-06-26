@@ -10,10 +10,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var dog_skill_service_1 = require("./dog-skill.service");
 var DogSkillComponent = (function () {
-    function DogSkillComponent() {
+    function DogSkillComponent(dogSkillService) {
+        this.dogSkillService = dogSkillService;
     }
-    DogSkillComponent.prototype.ngOnInit = function () { };
+    DogSkillComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.dogSkillService.getDogSkill()
+            .then(function (skill) {
+            _this.skillTitle = skill.title;
+            _this.skillOutCircleList = skill.outCircleList;
+            _this.skillInnerCircleList = skill.innerCircleList;
+            _this.skillDesList = skill.desList;
+            console.log(_this.skillTitle);
+            console.log(_this.skillOutCircleList[1].name);
+            console.log(_this.skillInnerCircleList);
+            console.log(_this.skillDesList);
+        });
+    };
     return DogSkillComponent;
 }());
 DogSkillComponent = __decorate([
@@ -23,7 +38,7 @@ DogSkillComponent = __decorate([
         templateUrl: 'dog-skill.component.html',
         styleUrls: ['dog-skill.component.css']
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [dog_skill_service_1.DogSkillService])
 ], DogSkillComponent);
 exports.DogSkillComponent = DogSkillComponent;
 //# sourceMappingURL=dog-skill.component.js.map

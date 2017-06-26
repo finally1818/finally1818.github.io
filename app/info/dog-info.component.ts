@@ -11,7 +11,7 @@ import { DogInfoService } from './dog-info.service';
 
 export class DogInfoComponent implements OnInit {
     constructor(
-        private dogInfoservice: DogInfoService
+        private dogInfoService: DogInfoService
     ) { }
 
     private infoList: object;
@@ -19,7 +19,7 @@ export class DogInfoComponent implements OnInit {
     private infoDesList: object;
 
     ngOnInit() {
-        this.dogInfoservice.getDogInfo()
+        this.dogInfoService.getDogInfo()
             .then(info => {
                 this.infoList = info.infoList;
                 this.infoTitle = info.title;
