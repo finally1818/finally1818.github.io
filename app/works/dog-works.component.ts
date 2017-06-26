@@ -13,10 +13,16 @@ export class DogWorksComponent implements OnInit {
         private dogWorksService: DogWorksService
     ) { }
 
+    private worksTitle: string;
+    private worksList: object;
+    private worksViewMore: string;
+
     ngOnInit() {
         this.dogWorksService.getDogWorks()
             .then(works => {
-
+                this.worksTitle = works.title;
+                this.worksList = works.worksList;
+                this.worksViewMore = works.viewMore;
             })
     }
 }

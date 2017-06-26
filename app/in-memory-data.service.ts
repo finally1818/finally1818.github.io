@@ -34,7 +34,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "default": {
                 "quote": "生活是一种绵延不绝的渴望，渴望不断上升，变得更伟大而高贵。",
                 "desList": [
-                    "我叫林晨",
+                    "我叫**",
                     "一名前端开发工程师",
                     "finally174483345@vip.qq.com"
                 ]
@@ -161,7 +161,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 "title": "经历",
                 "expList": [
                     {
-                        "title": "杭州逸曜信息技术有限公司",
+                        "title": "杭州**信息技术有限公司",
                         "time": "2017年1月~至今",
                         "post": "前端开发工程师兼职网络管理员",
                         "imgUrl": "app/img/e_js.svg",
@@ -174,7 +174,7 @@ export class InMemoryDataService implements InMemoryDbService {
                         ]
                     },
                     {
-                        "title": "金华旗达科技有限公司",
+                        "title": "金华**科技有限公司",
                         "time": "2015年1月~2016年12月",
                         "post": "网络管理员兼前端开发工程师",
                         "imgUrl": "app/img/e_html.svg",

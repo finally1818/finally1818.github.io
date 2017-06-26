@@ -16,8 +16,12 @@ var DogWorksComponent = (function () {
         this.dogWorksService = dogWorksService;
     }
     DogWorksComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this.dogWorksService.getDogWorks()
             .then(function (works) {
+            _this.worksTitle = works.title;
+            _this.worksList = works.worksList;
+            _this.worksViewMore = works.viewMore;
         });
     };
     return DogWorksComponent;

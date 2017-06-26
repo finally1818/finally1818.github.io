@@ -1,15 +1,17 @@
 <div class="-work">
-    <div class="-title" ng-bind="$ctrl.title"></div>
     <div class="-content">
+        <div class="-title">{{worksTitle}}</div>
         <ul class="-work-list">
-            <li class="-work-item">
-                <h4 class="-work-title" ng-bind="item.title"></h4>
-                <p class="-work-des" ng-class="{'-work-des-en':$ctrl.isEng}" ng-bind="item.des"></p>
-                <a class="-work-link" ><img src="../app/img/w_link.svg" alt=""></a>
+            <li class="-work-item" *ngFor="let worksList of worksList">
+                <h4 class="-work-title">{{worksList.title}}</h4>
+                <p class="-work-des" ng-class="{'-work-des-en':$ctrl.isEng}">{{worksList.des}}</p>
+                <a class="-work-link" [href]="worksList.url" target="_blank">
+                    <img src="../app/img/w_link.svg" alt="">
+                </a>
             </li>
         </ul>
         <div class="-work-more">
-            <a href="https://github.com/zhaoky/demos" target="_blank" ng-bind="$ctrl.viewMore"></a>
+            <a href="https://github.com/finally1818/learngit" target="_blank">{{worksViewMore}}</a>
         </div>
         <div class="-work-switch" switch-work>
             <i class="-left"></i>
