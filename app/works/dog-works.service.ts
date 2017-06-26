@@ -17,6 +17,7 @@ export class DogWorksService {
         return this.http.get(this.dataUrl)
             .toPromise()
             .then(response => response.json().data.works)
+            .catch(this.handleError)
     }
 
     private handleError(error: any): Promise<any> {

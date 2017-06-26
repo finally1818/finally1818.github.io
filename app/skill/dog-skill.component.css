@@ -6,18 +6,20 @@
 	bottom: -200%;
 	left: 0;
 }
-	.-content{
-		transform: translate(0, 50%);
-		-moz-transform: translate(0, 50%);
-		-ms-transform: translate(0, 50%);
-		-o-transform: translate(0, 50%);
-		-webkit-transform: translate(0, 50%);
+	.-title {
+		margin-top: 150px;
+		text-align: center;
+		font-size: 24px;
+		color: #FFF;
 	}
-		.-title {
-			text-align: center;
-			font-size: 24px;
-			color: #FFF;
-		}
+	.-content{
+		transform: translate(0, 35%);
+		-moz-transform: translate(0, 35%);
+		-ms-transform: translate(0, 35%);
+		-o-transform: translate(0, 35%);
+		-webkit-transform: translate(0, 35%);
+	}
+		
 	.-contain{
 		display: flex;
 		justify-content: space-between;

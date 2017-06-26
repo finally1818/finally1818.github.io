@@ -138,24 +138,24 @@ var InMemoryDataService = (function () {
                 "title": "作品集",
                 "worksList": [
                     {
-                        "title": "web前端工程师简历（2015年版）",
-                        "des": "本简历初版，上线一个月后，百度关键词“web前端工程师简历”排名前三，点击量数百万，深受广大前端初学者的好评及模仿，至今搜该关键词百度前10页都处处能见该简历的仿版。",
-                        "url": "http://www.flqin.com/2015/"
-                    },
-                    {
-                        "title": "移动校园APP",
-                        "des": "一站式、全生命周期的校园官方移动服务平台，涵盖PC、安卓、IOS、微信平台，上线学校包括中央财经大学，北京交通大学，中国戏曲学院，辽宁大学，西南财经大学等等，下载量数十万，深受学生老师喜爱。",
-                        "url": "http://app.cufe.edu.cn/"
-                    },
-                    {
-                        "title": "移动校园管理系统",
-                        "des": "针对校园APP的后台管理系统，包括人员架构，信息统计，权限设置，H5生产机，数据交换平台，各个模块的数据管理，反馈设置等等，为高校提供基于互联网运营的移动校园整体解决方案。",
-                        "url": "http://www.app8848.com/cloud_mgr/#/user/login"
+                        "title": "企业官网",
+                        "des": "普通性的各类企业网站开发，兼容IE8+,适配全移动机型，具有良好的兼容性，扩展性。根据客户群体的习性进行详细分析策划，制定出一套适合企业自身的网站建设的设计风格方案。",
+                        "url": "/"
                     },
                     {
                         "title": "企业官网",
                         "des": "普通性的各类企业网站开发，兼容IE8+,适配全移动机型，具有良好的兼容性，扩展性。根据客户群体的习性进行详细分析策划，制定出一套适合企业自身的网站建设的设计风格方案。",
-                        "url": "http://www.lantunet.com"
+                        "url": "/"
+                    },
+                    {
+                        "title": "企业官网",
+                        "des": "普通性的各类企业网站开发，兼容IE8+,适配全移动机型，具有良好的兼容性，扩展性。根据客户群体的习性进行详细分析策划，制定出一套适合企业自身的网站建设的设计风格方案。",
+                        "url": "/"
+                    },
+                    {
+                        "title": "企业官网",
+                        "des": "普通性的各类企业网站开发，兼容IE8+,适配全移动机型，具有良好的兼容性，扩展性。根据客户群体的习性进行详细分析策划，制定出一套适合企业自身的网站建设的设计风格方案。",
+                        "url": "/"
                     }
                 ],
                 "viewMore": "github上面查看更多"
@@ -220,23 +220,23 @@ var InMemoryDataService = (function () {
                 "typeList": [
                     {
                         "icon": "app/img/s_github.svg",
-                        "url": "https://github.com/zhaoky"
+                        "url": "/"
                     },
                     {
                         "icon": "app/img/s_sf.svg",
-                        "url": "https://segmentfault.com/u/keyu2016"
+                        "url": "/"
                     },
                     {
                         "icon": "app/img/s_blog.svg",
-                        "url": ""
+                        "url": "/"
                     },
                     {
                         "icon": "app/img/s_zh.svg",
-                        "url": "https://www.zhihu.com/people/fezky"
+                        "url": "/"
                     },
                     {
                         "icon": "app/img/s_wb.svg",
-                        "url": "http://weibo.com/zky2013"
+                        "url": "/"
                     }
                 ]
             }

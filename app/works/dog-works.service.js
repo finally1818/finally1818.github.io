@@ -20,7 +20,8 @@ var DogWorksService = (function () {
     DogWorksService.prototype.getDogWorks = function () {
         return this.http.get(this.dataUrl)
             .toPromise()
-            .then(function (response) { return response.json().data.works; });
+            .then(function (response) { return response.json().data.works; })
+            .catch(this.handleError);
     };
     DogWorksService.prototype.handleError = function (error) {
         console.log('An error occurred', error);

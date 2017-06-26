@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var dog_contact_component_1 = require("./dog-contact.component");
+var dog_contact_service_1 = require("./dog-contact.service");
 var DogContactModule = (function () {
     function DogContactModule() {
     }
@@ -19,7 +20,7 @@ DogContactModule = __decorate([
         imports: [platform_browser_1.BrowserModule],
         exports: [dog_contact_component_1.DogContactComponent],
         declarations: [dog_contact_component_1.DogContactComponent],
-        providers: [],
+        providers: [dog_contact_service_1.DogContactService],
     })
 ], DogContactModule);
 exports.DogContactModule = DogContactModule;

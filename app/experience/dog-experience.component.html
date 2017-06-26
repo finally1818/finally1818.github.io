@@ -1,6 +1,6 @@
 <div class="-experience">
+    <div class="-title">{{expTitle}}</div>
     <div class="-content">
-        <div class="-title">{{expTitle}}</div>
         <div class="-banner" touch-three-d>
             <div class="-experience-content" *ngFor="let expList of expList">
                 <div class="-left">
@@ -10,7 +10,8 @@
                     <h4>{{expList.title}}</h4>
                     <p class="-time">{{expList.time}}</p>
                     <p class="-post">
-                        <{{expList.post}}></p>
+                        <{{expList.post}}>
+                    </p>
                     <p class="-tech">"{{expList.tech}}"</p>
                     <ul class="-list">
                         <li class="-item" ng-class="{'-item-en':$ctrl.isEng}" *ngFor="let content of expList.contentList">{{content}}</li>
