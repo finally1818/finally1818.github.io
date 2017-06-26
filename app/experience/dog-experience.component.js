@@ -10,10 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var dog_experience_service_1 = require("./dog-experience.service");
 var DogExperienceComponent = (function () {
-    function DogExperienceComponent() {
+    function DogExperienceComponent(dogExperienceService) {
+        this.dogExperienceService = dogExperienceService;
     }
-    DogExperienceComponent.prototype.ngOnInit = function () { };
+    DogExperienceComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.dogExperienceService.getDogExperience()
+            .then(function (experience) {
+            _this.expTitle = experience.title;
+            _this.expList = experience.expList;
+            _this.expDes = experience.des;
+        });
+    };
     return DogExperienceComponent;
 }());
 DogExperienceComponent = __decorate([
@@ -23,7 +33,7 @@ DogExperienceComponent = __decorate([
         templateUrl: 'dog-experience.component.html',
         styleUrls: ['dog-experience.component.css']
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [dog_experience_service_1.DogExperienceService])
 ], DogExperienceComponent);
 exports.DogExperienceComponent = DogExperienceComponent;
 //# sourceMappingURL=dog-experience.component.js.map

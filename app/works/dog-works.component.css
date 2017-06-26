@@ -1,9 +1,9 @@
 .-work{
   	background: rgb(75, 133, 160) url("./app/img/bg.png");
 		position: absolute;
-		top: 400%;
+		top: 0%;
 		right: 0;
-		bottom: -400%;
+		bottom: 0%;
 		left: 0;
 }
 	.-content{

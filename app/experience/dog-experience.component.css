@@ -7,8 +7,17 @@
 	left: 0;
 }
 	.-content{
-		perspective:3000px;
-    }
+		transform: translate(0, 50%);
+		-moz-transform: translate(0, 50%);
+		-ms-transform: translate(0, 50%);
+		-o-transform: translate(0, 50%);
+		-webkit-transform: translate(0, 50%);
+	}
+		.-title {
+			text-align: center;
+			font-size: 24px;
+			color: #FFF;
+		}
 		.-banner{
 			width: 750px;
 			height: 350px;
@@ -102,7 +111,7 @@
 				align-items: center;
 				z-index: 101;
             }
-				.-item{
+				.-cut-list .-item{
 					width: 10px;
 					height: 10px;
 					border-radius: 50%;
@@ -111,7 +120,7 @@
 					transition: background-color .3s linear;
 					position: relative;
                 }
-					.-item:before{
+					.-cut-list .-item:before{
 						content: '';
 						position: absolute;
 						top: -15px;

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DogExperienceService } from './dog-experience.service';
+
 @Component({
     moduleId: module.id,
     selector: 'dog-experience',
@@ -8,7 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class DogExperienceComponent implements OnInit {
-    constructor() { }
+    constructor(
+        private dogExperienceService: DogExperienceService
+    ) { }
 
-    ngOnInit() { }
+    private expTitle: string;
+    private expList: object;
+    private expDes: string;
+
+    ngOnInit() {
+        this.dogExperienceService.getDogExperience()
+            .then(experience => {
+                this.expTitle = experience.title;
+                this.expList = experience.expList;
+                this.expDes = experience.des;
+            })
+    }
 }

@@ -6,6 +6,18 @@
 	bottom: -200%;
 	left: 0;
 }
+	.-content{
+		transform: translate(0, 50%);
+		-moz-transform: translate(0, 50%);
+		-ms-transform: translate(0, 50%);
+		-o-transform: translate(0, 50%);
+		-webkit-transform: translate(0, 50%);
+	}
+		.-title {
+			text-align: center;
+			font-size: 24px;
+			color: #FFF;
+		}
 	.-contain{
 		display: flex;
 		justify-content: space-between;

@@ -17,6 +17,16 @@ var DogExperienceService = (function () {
         this.http = http;
         this.dataUrl = 'api/data';
     }
+    DogExperienceService.prototype.getDogExperience = function () {
+        return this.http.get(this.dataUrl)
+            .toPromise()
+            .then(function (response) { return response.json().data.experience; })
+            .catch(this.handleError);
+    };
+    DogExperienceService.prototype.handleError = function (error) {
+        console.error('An error occurred', error);
+        return Promise.reject(error.message || error);
+    };
     return DogExperienceService;
 }());
 DogExperienceService = __decorate([

@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var dog_works_component_1 = require("./dog-works.component");
+var dog_works_service_1 = require("./dog-works.service");
 var DogWorksModule = (function () {
     function DogWorksModule() {
     }
@@ -19,7 +20,7 @@ DogWorksModule = __decorate([
         imports: [platform_browser_1.BrowserModule],
         exports: [dog_works_component_1.DogWorksComponent],
         declarations: [dog_works_component_1.DogWorksComponent],
-        providers: [],
+        providers: [dog_works_service_1.DogWorksService],
     })
 ], DogWorksModule);
 exports.DogWorksModule = DogWorksModule;

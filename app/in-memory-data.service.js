@@ -164,42 +164,28 @@ var InMemoryDataService = (function () {
                 "title": "经历",
                 "expList": [
                     {
-                        "title": "兰途网络科技有限公司",
-                        "time": "2015年6月~至今",
-                        "post": "web前端研发工程师",
+                        "title": "杭州逸曜信息技术有限公司",
+                        "time": "2017年1月~至今",
+                        "post": "前端开发工程师兼职网络管理员",
                         "imgUrl": "app/img/e_js.svg",
-                        "tech": "less gulp angular1.x cordova 原生js及若干类库",
+                        "tech": "less、webpack、angular2、jquery、dwz和原生js及若干类库",
                         "contentList": [
-                            "负责快速构建高质量移动APP/PC/微信页面",
+                            "负责快速构建高质量PC端页面",
                             "根据业务需求设计合适的工程项目",
                             "高度组件化、模块化思维，拥有各平台调试能力",
-                            "同期学习ES6及vue,react,ng2,体会函数式编程思想"
+                            "同期学习ES6及angular2，体会函数式编程思想"
                         ]
                     },
                     {
-                        "title": "卓煌企业管理有限公司",
-                        "time": "2014年8月~2015年6月",
-                        "post": "网页开发兼SEO优化",
+                        "title": "金华旗达科技有限公司",
+                        "time": "2015年1月~2016年12月",
+                        "post": "网络管理员兼前端开发工程师",
                         "imgUrl": "app/img/e_html.svg",
-                        "tech": "html5,css3,javascript,jquery,bootstrap等",
+                        "tech": "html5、css3、javascript、jquery、bootstrap等",
                         "contentList": [
                             "负责企业站静态页开发",
                             "负责网站后台维护",
-                            "负责百度竞价操作及seo优化",
                             "同期工作之余提升自己原生JS的编码能力"
-                        ]
-                    },
-                    {
-                        "title": "壹零陆文化传播有限责任公司",
-                        "time": "2014年3月~2014年8月",
-                        "post": "SEO",
-                        "imgUrl": "app/img/e_seo.svg",
-                        "tech": "SEO,SEM,百度（360，搜狗）竞价、推广等",
-                        "contentList": [
-                            "负责网站后台维护，微博、微信等新媒体营销和推广",
-                            "负责百度PPC后台调整",
-                            "获得最佳新人奖",
-                            "同期工作之余开始系统性的自学web前端各项技术"
                         ]
                     }
                 ],

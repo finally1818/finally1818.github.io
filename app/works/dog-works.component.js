@@ -10,10 +10,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var dog_works_service_1 = require("./dog-works.service");
 var DogWorksComponent = (function () {
-    function DogWorksComponent() {
+    function DogWorksComponent(dogWorksService) {
+        this.dogWorksService = dogWorksService;
     }
-    DogWorksComponent.prototype.ngOnInit = function () { };
+    DogWorksComponent.prototype.ngOnInit = function () {
+        this.dogWorksService.getDogWorks()
+            .then(function (works) {
+        });
+    };
     return DogWorksComponent;
 }());
 DogWorksComponent = __decorate([
@@ -23,7 +29,7 @@ DogWorksComponent = __decorate([
         templateUrl: 'dog-works.component.html',
         styleUrls: ['dog-works.component.css']
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [dog_works_service_1.DogWorksService])
 ], DogWorksComponent);
 exports.DogWorksComponent = DogWorksComponent;
 //# sourceMappingURL=dog-works.component.js.map
