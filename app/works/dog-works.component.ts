@@ -10,13 +10,13 @@ import { DogWorksService } from './dog-works.service';
 
 export class DogWorksComponent implements OnInit {
     constructor(
-        private dogWorksService: DogWorksService;
+        private dogWorksService: DogWorksService
     ) { }
 
     ngOnInit() {
         this.dogWorksService.getDogWorks()
             .then(works => {
-                
+
             })
     }
 }
