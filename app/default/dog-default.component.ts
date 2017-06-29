@@ -25,4 +25,8 @@ export class DogDefaultComponent implements OnInit {
                 this.defaultQuote = data.quote;
             });
     }
+
+    startWheelHandler(event: any) {
+        console.log(1);
+    }
 }

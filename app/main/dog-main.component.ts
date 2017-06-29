@@ -11,13 +11,9 @@ export class DogMainComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
-        this.startWheelHandler(event);
     }
 
     
 
-    startWheelHandler(event: any) {
-        event = event || window.event;
-        console.log(1);
-    }
+    
 }

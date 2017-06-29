@@ -23,6 +23,9 @@ var DogDefaultComponent = (function () {
             _this.defaultQuote = data.quote;
         });
     };
+    DogDefaultComponent.prototype.startWheelHandler = function (event) {
+        console.log(1);
+    };
     return DogDefaultComponent;
 }());
 DogDefaultComponent = __decorate([
