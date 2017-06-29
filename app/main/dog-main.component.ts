@@ -10,5 +10,14 @@ import { Component, OnInit } from '@angular/core';
 export class DogMainComponent implements OnInit {
     constructor() { }
 
-    ngOnInit() { }
+    ngOnInit() {
+        this.startWheelHandler(event);
+    }
+
+    
+
+    startWheelHandler(event: any) {
+        event = event || window.event;
+        console.log(1);
+    }
 }

@@ -120,6 +120,10 @@
 	-webkit-animation-delay: -1s
 }
 
-@keyframes s { to { transform: scale(1.5) } }
+@keyframes s { 
+	to { transform: scale(1.5) } 
+}
 
-@keyframes r { to { transform: rotate(1turn) } }
+@keyframes r { 
+	to { transform: rotate(1turn) } 
+}

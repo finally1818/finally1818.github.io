@@ -13,7 +13,13 @@ var core_1 = require("@angular/core");
 var DogMainComponent = (function () {
     function DogMainComponent() {
     }
-    DogMainComponent.prototype.ngOnInit = function () { };
+    DogMainComponent.prototype.ngOnInit = function () {
+        this.startWheelHandler(event);
+    };
+    DogMainComponent.prototype.startWheelHandler = function (event) {
+        event = event || window.event;
+        console.log(1);
+    };
     return DogMainComponent;
 }());
 DogMainComponent = __decorate([

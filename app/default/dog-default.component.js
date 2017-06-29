@@ -21,8 +21,6 @@ var DogDefaultComponent = (function () {
             .then(function (data) {
             _this.defaultDesList = data.desList;
             _this.defaultQuote = data.quote;
-            console.log(_this.defaultDesList);
-            console.log(_this.defaultQuote);
         });
     };
     return DogDefaultComponent;

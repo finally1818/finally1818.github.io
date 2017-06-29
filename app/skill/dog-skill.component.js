@@ -23,10 +23,6 @@ var DogSkillComponent = (function () {
             _this.skillOutCircleList = skill.outCircleList;
             _this.skillInnerCircleList = skill.innerCircleList;
             _this.skillDesList = skill.desList;
-            console.log(_this.skillTitle);
-            console.log(_this.skillOutCircleList[1].name);
-            console.log(_this.skillInnerCircleList);
-            console.log(_this.skillDesList);
         });
     };
     return DogSkillComponent;

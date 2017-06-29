@@ -22,9 +22,7 @@ export class DogDefaultComponent implements OnInit {
         this.dogDefaultService.getDogDefault()
             .then(data => {
                 this.defaultDesList = data.desList;
-                this.defaultQuote = data.quote
-                console.log(this.defaultDesList);
-                console.log(this.defaultQuote)
+                this.defaultQuote = data.quote;
             });
     }
 }

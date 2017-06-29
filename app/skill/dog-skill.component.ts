@@ -25,10 +25,6 @@ export class DogSkillComponent implements OnInit {
                 this.skillOutCircleList = skill.outCircleList;
                 this.skillInnerCircleList = skill.innerCircleList;
                 this.skillDesList = skill.desList;
-                console.log(this.skillTitle);
-                console.log(this.skillOutCircleList[1].name);
-                console.log(this.skillInnerCircleList);
-                console.log(this.skillDesList);
                 }
             )
     }

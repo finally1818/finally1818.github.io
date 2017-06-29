@@ -51,8 +51,6 @@
 					position: absolute;
 					text-align: center;
 					line-height: 50px;
-					/*优化android卡顿*/
-					-webkit-backface-visibility: hidden; 
 				}
 				.-out:nth-child(1){
 					animation: outX 8s cubic-bezier(0.36,0,0.64,1) -4s infinite alternate, outY 8s cubic-bezier(0.36,0,0.64,1) 0s infinite alternate;
@@ -97,8 +95,6 @@
 					position: absolute;
 					text-align: center;
 					line-height: 40px;
-					/*优化android卡顿*/
-					-webkit-backface-visibility: hidden;
 				}
 				.-inner:nth-child(1){
 					animation: innerX 8s cubic-bezier(0.36,0,0.64,1) -4s infinite alternate, innerY 8s cubic-bezier(0.36,0,0.64,1) 0s infinite alternate;

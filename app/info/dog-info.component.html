@@ -1,20 +1,23 @@
 <div class="-info">
     <div class="-title">{{infoTitle}}</div>
     <div class="-content">
-        <ul class="-info-list">
-            <li class="-info-item" *ngFor="let infoList of infoList">
-                <div class="-cont">
-                    <div class="-img">
-                        <img alt="" [src]="infoList.icon">
+        <div>
+            <ul class="-info-list">
+                <li class="-info-item" *ngFor="let infoList of infoList">
+                    <div class="-cont">
+                        <div class="-img">
+                            <img alt="" [src]="infoList.icon">
+                        </div>
+                        <div class="-intro">
+                            <span>{{infoList.key}}</span> /
+                            <span>{{infoList.value}}</span>
+                        </div>
                     </div>
-                    <div class="-intro" ng-class="{'-intro-en':$ctrl.isEng}">
-                        <span ng-bind="item.key">{{infoList.key}}</span>/<span ng-bind="item.value">{{infoList.value}}</span>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="-info-des" ng-class="{'-info-des-en':$ctrl.isEng}">
-            <p *ngFor="let desList of infoDesList" ng-bind="item">{{desList}}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="-info-des">
+            <p *ngFor="let desList of infoDesList">{{desList}}</p>
         </div>
     </div>
 </div>
