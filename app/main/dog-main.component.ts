@@ -11,9 +11,12 @@ export class DogMainComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
+
     }
 
-    
+    mouseWheel(event) {
+        console.log(event);
+    }
 
     
 }

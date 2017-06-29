@@ -15,6 +15,9 @@ var DogMainComponent = (function () {
     }
     DogMainComponent.prototype.ngOnInit = function () {
     };
+    DogMainComponent.prototype.mouseWheel = function (event) {
+        console.log(event);
+    };
     return DogMainComponent;
 }());
 DogMainComponent = __decorate([

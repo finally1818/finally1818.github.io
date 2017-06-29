@@ -11,9 +11,6 @@ var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Heroes';
     }
-    AppComponent.prototype.mouseWheel = function () {
-        alert(1);
-    };
     return AppComponent;
 }());
 AppComponent = __decorate([
