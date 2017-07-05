@@ -1,5 +1,23 @@
 <div>
-    <dog-header page-index="zr.pageIndex"></dog-header>
-    <dog-main page-index="zr.pageIndex" class="dock-fill" ></dog-main>
+    <div class="-header">
+        <div class="-header-head">
+            <div class="-header-c">
+                <div class="-logo">
+                    <a class="-logo-c" href="https://github.com/finally1818" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="-header-nav-dot">
+            <ul>
+                <li class="-item" *ngFor="let nav of navList" [class.-cur-index]="nav.nav === navShow" [class.-cur-index]="navIndex === nav.nav">
+                    <a class="-dot" (mouseover)="mouseoverNavShow(nav)" (mouseout)="mouseoutNavHid(nav)" (click)="isIndex(this)" >
+                        <img alt="" [src]="nav.svg">
+                    </a>
+                    <span class="-dot-title">{{nav.nav}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <dog-main class="dock-fill" [navIndex]="navIndex"></dog-main>
     <!--<resume-footer ng-if="zr.pageIndex==5"></resume-footer>-->
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     moduleId: module.id,
@@ -7,16 +7,22 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['dog-main.component.css']
 })
 
-export class DogMainComponent implements OnInit {
+export class DogMainComponent {
     constructor() { }
+    @Input() navIndex: string;
 
     ngOnInit() {
-
+        
     }
 
     mouseWheel(event) {
-        console.log(event);
+        if (event.wheelDelta < 0) {
+
+        }
+        console.log(event.wheelDelta);
     }
+
+    
 
     
 }

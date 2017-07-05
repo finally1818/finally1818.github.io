@@ -1,8 +1,8 @@
 <div (mousewheel)="mouseWheel($event)">
-     <dog-default class="page-section"></dog-default>
-     <dog-info class="page-section"></dog-info>
-     <dog-skill class="page-section"></dog-skill>
-     <dog-experience class="page-section"></dog-experience>
-     <dog-works class="page-section"></dog-works>
-     <dog-contact class="page-section"></dog-contact>
+     <dog-default class="page-section" [class.cur-page]="navIndex == '首页'"></dog-default>
+     <dog-info class="page-section" [class.cur-page]="navIndex == '关于我'"></dog-info>
+     <dog-skill class="page-section" [class.cur-page]="navIndex == '技能栈'"></dog-skill>
+     <dog-experience class="page-section" [class.cur-page]="navIndex == '经历'"></dog-experience>
+     <dog-works class="page-section" [class.cur-page]="navIndex == '作品集'"></dog-works>
+     <dog-contact class="page-section" [class.cur-page]="navIndex == '联系我'"></dog-contact>
 </div>

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
-import { Dog } from '../dog';
+import { Dog } from './dog';
 
 @Injectable()
 export class DogHeaderService {

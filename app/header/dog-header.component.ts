@@ -1,32 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+// import { Component, OnInit } from '@angular/core';
 
-import { DogHeaderService } from './dog-header.service';
 
-@Component({
-    moduleId: module.id,
-    selector: 'dog-header',
-    templateUrl: './dog-header.component.html',
-    styleUrls: ['./dog-header.component.css']
-})
 
-export class DogHeaderComponent implements OnInit {
-    private navList: object;
-    private navShow: string;
-    constructor(private dogHeaderService: DogHeaderService) { }
+// @Component({
+//     moduleId: module.id,
+//     selector: 'dog-header',
+//     templateUrl: './dog-header.component.html',
+//     styleUrls: ['./dog-header.component.css']
+// })
 
-    ngOnInit(): void {
-        this.dogHeaderService.getDogHeader()
-            .then(header => {
-                this.navList = header.navList;
-            });
-    }
+// export class DogHeaderComponent implements OnInit {
+//     private navList: object;
+//     private navShow: string;
+//     constructor(private dogHeaderService: DogHeaderService) { }
 
-    // 鼠标移入显示
-    mouseoverNavShow(nav) {
-        this.navShow = nav.nav;
-    };
-    // 鼠标移出隐藏
-    mouseoutNavHid(nav) {
-        this.navShow = '';
-    }
-}
+//     ngOnInit(): void {
+//         this.dogHeaderService.getDogHeader()
+//             .then(header => {
+//                 this.navList = header.navList;
+//             });
+//     }
+
+//     // 鼠标移入显示
+//     mouseoverNavShow(nav) {
+//         this.navShow = nav.nav;
+//     };
+//     // 鼠标移出隐藏
+//     mouseoutNavHid(nav) {
+//         this.navShow = '';
+//     }
+// }

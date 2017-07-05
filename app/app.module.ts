@@ -7,8 +7,10 @@ import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
-import { DogHeaderModule } from "./header/dog-header.module";
+// import { DogHeaderModule } from "./dog-header.module";
 import { DogMainModule } from './main/dog-main.module';
+import { DogHeaderService } from './dog-header.service';
+
 
 
 @NgModule({
@@ -17,13 +19,13 @@ import { DogMainModule } from './main/dog-main.module';
         FormsModule,
         HttpModule,
         InMemoryWebApiModule.forRoot(InMemoryDataService),
-        DogHeaderModule,
+        // DogHeaderModule,
         DogMainModule
     ],
     declarations: [
         AppComponent
     ],
-    providers: [],
+    providers: [DogHeaderService],
     bootstrap: [AppComponent]
 })
 

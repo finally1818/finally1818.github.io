@@ -1,10 +1,6 @@
 .-default{
 	background: rgb(135, 176, 165) url("./app/img/bg.png");
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	height: 100%;
 }
 	.-content{
 		transform: translate(0, 35%);

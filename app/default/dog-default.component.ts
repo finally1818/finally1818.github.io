@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { DogDefaultService } from './dog-default.service';
 @Component({
@@ -8,7 +8,7 @@ import { DogDefaultService } from './dog-default.service';
     styleUrls: ['dog-default.component.css']
 })
 
-export class DogDefaultComponent implements OnInit {
+export class DogDefaultComponent {
     private default: object;
     private defaultDesList: object;
     private defaultQuote: string;
@@ -16,7 +16,6 @@ export class DogDefaultComponent implements OnInit {
     constructor(
         private dogDefaultService: DogDefaultService
     ) { }
-
 
     ngOnInit(): void {
         this.dogDefaultService.getDogDefault()
@@ -26,7 +25,5 @@ export class DogDefaultComponent implements OnInit {
             });
     }
 
-    startWheelHandler(event: any) {
-        console.log(1);
-    }
+    
 }
