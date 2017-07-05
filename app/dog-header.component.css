@@ -155,14 +155,14 @@
                     z-index: -1;
                     pointer-events: none;
                 }
-                .-dot img:hover{
-                    transform: translateY(-50%) scale(3);
+            .-dot:hover{
+                transform: translateY(-50%) scale(3);
+                opacity: 1;
+            }
+                .-dot:hover img{
                     opacity: 1;
                 }
-                .-dot img{
-                    opacity: 1;
-                }
-                .-dot img:hover span{
+                .-dot:hover+span {
                     opacity: 1;
                 }
             .-dot-title {
@@ -193,7 +193,6 @@
             transform: translateY(-50%) scale(3);
             opacity: 1;
         }
-            .-cur-index .-dot img,
-            .-cur-index .-dot-title {
-                opacity: 1;
-            }
+        .-cur-index .-dot img {
+            opacity: 1;
+        }

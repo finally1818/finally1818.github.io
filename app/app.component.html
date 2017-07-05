@@ -9,8 +9,8 @@
         </div>
         <div class="-header-nav-dot">
             <ul>
-                <li class="-item" *ngFor="let nav of navList" [class.-cur-index]="nav.nav === navShow" [class.-cur-index]="navIndex === nav.nav">
-                    <a class="-dot" (mouseover)="mouseoverNavShow(nav)" (mouseout)="mouseoutNavHid(nav)" (click)="isIndex(this)" >
+                <li class="-item" *ngFor="let nav of navList; let i = index" [class.-cur-index]="i === navShow || i === navIndex">
+                    <a class="-dot" (mouseover)="mouseoverNavShow(i)" (mouseout)="mouseoutNavHid()" (click)="isIndex(i)" >
                         <img alt="" [src]="nav.svg">
                     </a>
                     <span class="-dot-title">{{nav.nav}}</span>

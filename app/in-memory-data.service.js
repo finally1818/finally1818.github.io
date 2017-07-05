@@ -1,7 +1,10 @@
-import { InMemoryDbService } from 'angular2-in-memory-web-api';
-export class InMemoryDataService implements InMemoryDbService {
-    createDb() {
-        let data = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var InMemoryDataService = (function () {
+    function InMemoryDataService() {
+    }
+    InMemoryDataService.prototype.createDb = function () {
+        var data = {
             "header": {
                 "navList": [
                     {
@@ -243,7 +246,10 @@ export class InMemoryDataService implements InMemoryDbService {
                     }
                 ]
             }
-        }
-        return { data };
-    }
-}
+        };
+        return { data: data };
+    };
+    return InMemoryDataService;
+}());
+exports.InMemoryDataService = InMemoryDataService;
+//# sourceMappingURL=in-memory-data.service.js.map
