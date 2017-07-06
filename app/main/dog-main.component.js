@@ -22,31 +22,31 @@ var DogMainComponent = (function () {
         var _this = this;
         if (this.time === 0) {
             this.time = 1;
+            if (event.wheelDelta < 0) {
+                if (this.inNavIndex >= 5) {
+                    this.outNavIndex.emit(5);
+                }
+                else {
+                    this.inNavIndex++;
+                    this.outNavIndex.emit(this.inNavIndex);
+                }
+            }
+            else if (event.wheelDelta > 0) {
+                if (this.inNavIndex <= 0) {
+                    this.outNavIndex.emit(0);
+                }
+                else {
+                    this.inNavIndex--;
+                    this.outNavIndex.emit(this.inNavIndex);
+                }
+            }
             // 定时器
             var isTime_1 = setInterval(function () {
                 _this.time--;
-                if (event.wheelDelta < 0) {
-                    if (_this.inNavIndex >= 5) {
-                        _this.outNavIndex.emit(5);
-                    }
-                    else {
-                        _this.inNavIndex = _this.inNavIndex + 1;
-                        _this.outNavIndex.emit(_this.inNavIndex);
-                    }
-                }
-                else if (event.wheelDelta > 0) {
-                    if (_this.inNavIndex <= 0) {
-                        _this.outNavIndex.emit(0);
-                    }
-                    else {
-                        _this.inNavIndex = _this.inNavIndex - 1;
-                        _this.outNavIndex.emit(_this.inNavIndex);
-                    }
-                }
                 if (_this.time == 0) {
                     clearInterval(isTime_1);
                 }
-            }, 300);
+            }, 500);
         }
     };
     return DogMainComponent;

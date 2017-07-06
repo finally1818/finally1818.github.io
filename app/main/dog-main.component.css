@@ -18,13 +18,13 @@
 }
 .prev-page{
 	transform: translateY(-100%);
-	transition: transform 0.3s;
+	transition: transform 0.5s;
 	display: block;
 }
 .cur-page{
 	z-index: 10;
 	display: block;
-	transition: transform 0.3s;
+	transition: transform 0.5s;
 }
 .touch-page{
 	z-index: 20;
@@ -32,11 +32,11 @@
 }
 .next-page{
 	transform: translateY(100%);
-	transition: transform 0.3s;
+	transition: transform 0.5s;
 	display: block;
 }
 .active{
-	transition: transform 0.3s;
+	transition: transform 0.5s;
 	transform: translateY(0) !important;
 	z-index: 100;
 	display: block;
