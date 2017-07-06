@@ -46,7 +46,7 @@ var DogMainComponent = (function () {
                 if (_this.time == 0) {
                     clearInterval(isTime_1);
                 }
-            }, 500);
+            }, 200);
         }
     };
     return DogMainComponent;
@@ -57,7 +57,7 @@ __decorate([
 ], DogMainComponent.prototype, "inNavIndex", void 0);
 __decorate([
     core_1.Output(),
-    __metadata("design:type", Object)
+    __metadata("design:type", core_1.EventEmitter)
 ], DogMainComponent.prototype, "outNavIndex", void 0);
 DogMainComponent = __decorate([
     core_1.Component({

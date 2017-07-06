@@ -10,7 +10,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class DogMainComponent {
     constructor() { }
     @Input() inNavIndex: number;
-    @Output() outNavIndex =  new EventEmitter<any>();
+    @Output() outNavIndex:EventEmitter<number> =  new EventEmitter<number>();
     private time: number = 0;
     ngOnInit() {
 
@@ -42,7 +42,7 @@ export class DogMainComponent {
                 if (this.time == 0) {
                     clearInterval(isTime);
                 }
-            }, 500)
+            }, 200)
         }
     }
 
