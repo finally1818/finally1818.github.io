@@ -9,7 +9,7 @@
         </div>
         <div class="-header-nav-dot">
             <ul>
-                <li class="-item" *ngFor="let nav of navList; let i = index" [class.-cur-index]="i === navShow || i === navIndex">
+                <li class="-item" *ngFor="let nav of navList; let i = index" [class.-cur-index]="i === navShow || i === inNavIndex || i === outNavIndex">
                     <a class="-dot" (mouseover)="mouseoverNavShow(i)" (mouseout)="mouseoutNavHid()" (click)="isIndex(i)" >
                         <img alt="" [src]="nav.svg">
                     </a>
@@ -18,6 +18,6 @@
             </ul>
         </div>
     </div>
-    <dog-main class="dock-fill" [navIndex]="navIndex"></dog-main>
+    <dog-main class="dock-fill" [inNavIndex]="inNavIndex" (outNavIndex)="outNavIndex($event)"></dog-main>
     <!--<resume-footer ng-if="zr.pageIndex==5"></resume-footer>-->
 </div>

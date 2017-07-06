@@ -13,7 +13,7 @@ export class AppComponent {
     private title = 'Tour of Heroes';
     private navList: object;
     private navShow: string;
-    private navIndex: number;
+    private inNavIndex: number = 0;
 
     constructor(private dogHeaderService: DogHeaderService) { }
     
@@ -22,7 +22,6 @@ export class AppComponent {
             .then(header => {
                 this.navList = header.navList;
             });
-        this.navIndex = 0;
     }
 
     // 鼠标移入显示
@@ -35,7 +34,11 @@ export class AppComponent {
     }
 
     isIndex(index) {
-        this.navIndex = index;
+        this.inNavIndex = index;
+    }
+
+    outNavIndex(index) {
+        this.inNavIndex = index;
     }
 
 

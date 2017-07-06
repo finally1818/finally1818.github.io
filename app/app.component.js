@@ -15,6 +15,7 @@ var AppComponent = (function () {
     function AppComponent(dogHeaderService) {
         this.dogHeaderService = dogHeaderService;
         this.title = 'Tour of Heroes';
+        this.inNavIndex = 0;
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -22,7 +23,6 @@ var AppComponent = (function () {
             .then(function (header) {
             _this.navList = header.navList;
         });
-        this.navIndex = 0;
     };
     // 鼠标移入显示
     AppComponent.prototype.mouseoverNavShow = function (index) {
@@ -34,7 +34,10 @@ var AppComponent = (function () {
         this.navShow = '';
     };
     AppComponent.prototype.isIndex = function (index) {
-        this.navIndex = index;
+        this.inNavIndex = index;
+    };
+    AppComponent.prototype.outNavIndex = function (index) {
+        this.inNavIndex = index;
     };
     return AppComponent;
 }());
