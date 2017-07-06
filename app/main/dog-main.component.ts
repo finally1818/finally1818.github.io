@@ -42,7 +42,7 @@ export class DogMainComponent {
                 if (this.time == 0) {
                     clearInterval(isTime);
                 }
-            }, 200)
+            }, 300)
         }
     }
 

@@ -46,7 +46,7 @@ var DogMainComponent = (function () {
                 if (_this.time == 0) {
                     clearInterval(isTime_1);
                 }
-            }, 200);
+            }, 300);
         }
     };
     return DogMainComponent;
