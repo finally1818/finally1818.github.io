@@ -3,11 +3,7 @@
 	height: 100%;
 }
 	.-content{
-		transform: translate(0, 35%);
-		-moz-transform: translate(0, 35%);
-		-ms-transform: translate(0, 35%);
-		-o-transform: translate(0, 35%);
-		-webkit-transform: translate(0, 35%);
+		padding-top: 150px;
 	}
 	.-photo{
 		width: 150px;

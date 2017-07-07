@@ -6,7 +6,7 @@ import { DogHeaderService } from './header/dog-header.service';
     moduleId: module.id,
     selector: 'my-app',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css', './header/dog-header.component.css']
+    styleUrls: ['./app.component.css', './header/dog-header.component.css', './footer/dog-footer.component.css']
 })
 
 export class AppComponent {

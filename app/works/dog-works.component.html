@@ -3,11 +3,8 @@
     <div class="-content">
         <ul class="-work-list">
             <li class="-work-item" *ngFor="let worksList of worksList">
-                <h4 class="-work-title">{{worksList.title}}</h4>
-                <p class="-work-des" ng-class="{'-work-des-en':$ctrl.isEng}">{{worksList.des}}</p>
-                <a class="-work-link" [href]="worksList.url" target="_blank">
-                    <img src="../app/img/w_link.svg" alt="">
-                </a>
+                <a class="-work-title" [href]="worksList.url" target="_blank">{{worksList.title}}</a>
+                <p class="-work-des" ng-class="{'-work-des-en':$ctrl.isEng}">{{worksList.des}}</p>               
             </li>
         </ul>
         <div class="-work-more">

@@ -9,37 +9,30 @@ var InMemoryDataService = (function () {
                 "navList": [
                     {
                         "svg": "app/img/d_home.svg",
-                        "nav": "首页",
-                        "index": 0
+                        "nav": "首页"
                     },
                     {
                         "svg": "app/img/d_info.svg",
-                        "nav": "关于我",
-                        "index": 1
+                        "nav": "关于我"
                     },
                     {
                         "svg": "app/img/d_skills.svg",
-                        "nav": "技能栈",
-                        "index": 2
+                        "nav": "技能栈"
                     },
                     {
                         "svg": "app/img/d_exp.svg",
-                        "nav": "经历",
-                        "index": 3
+                        "nav": "经历"
                     },
                     {
                         "svg": "app/img/d_works.svg",
-                        "nav": "作品集",
-                        "index": 4
+                        "nav": "作品集"
                     },
                     {
                         "svg": "app/img/d_contact.svg",
-                        "nav": "联系我",
-                        "index": 5
+                        "nav": "联系我"
                     }
                 ]
             },
-            "footer": {},
             "default": {
                 "quote": "生活是一种绵延不绝的渴望，渴望不断上升，变得更伟大而高贵。",
                 "desList": [
@@ -164,7 +157,7 @@ var InMemoryDataService = (function () {
                         "url": "/"
                     }
                 ],
-                "viewMore": "github上面查看更多"
+                "viewMore": "github上查看更多"
             },
             "experience": {
                 "title": "经历",
@@ -195,7 +188,7 @@ var InMemoryDataService = (function () {
                         ]
                     }
                 ],
-                "des": "2016年初，放弃网络管理员职位，开始前端自学生涯。"
+                "des": "2016年初，放弃原有职位，开始前端自学生涯。"
             },
             "contact": {
                 "title": "联系我",
@@ -245,7 +238,8 @@ var InMemoryDataService = (function () {
                         "url": "/"
                     }
                 ]
-            }
+            },
+            "footer": "© 2017 ** | 生活不止眼前的苟且，还有诗和远方的田野"
         };
         return { data: data };
     };

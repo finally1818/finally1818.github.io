@@ -2,20 +2,15 @@
 	background: rgb(77, 94, 143) url("./app/img/bg.png");
 	height: 100%;
 }
+.-content {
+	margin-top: 50px;
+}
 	.-title {
 		padding-top: 150px;
 		text-align: center;
 		font-size: 24px;
 		color: #FFF;
-	}
-	.-content{
-		transform: translate(0, 35%);
-		-moz-transform: translate(0, 35%);
-		-ms-transform: translate(0, 35%);
-		-o-transform: translate(0, 35%);
-		-webkit-transform: translate(0, 35%);
-	}
-		
+	}	
 	.-contain{
 		display: flex;
 		justify-content: space-between;

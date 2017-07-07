@@ -10,13 +10,8 @@
 	}
 	.-content{
 		color: #FFF;
-		transform: translate(0, 25%);
-		-moz-transform: translate(0, 25%);
-		-ms-transform: translate(0, 25%);
-		-o-transform: translate(0, 25%);
-		-webkit-transform: translate(0, 25%);
-	}
-			
+		margin-top: 50px;
+	}			
 		.-work-list{
 			overflow: hidden;
 			display: flex;
@@ -33,9 +28,9 @@
 				border-radius: 6px;
 				padding: 20px;
 				background: #fff;
-				width: 47%;
+				width: 40%;
 				box-sizing: border-box;
-				margin-bottom: 50px;
+				margin: 0 50px 50px;
 				transition: box-shadow .3s ease;
 			}
 			.-work-item:hover{

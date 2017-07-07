@@ -11,13 +11,9 @@
 	}
 	.-content {
 		text-align: center;
-		margin: 0 auto;
+		margin: 50px auto 0;
 		max-width: 300px;
-		transform: translate(0, 35%);
-		-moz-transform: translate(0, 35%);
-		-ms-transform: translate(0, 35%);
-		-o-transform: translate(0, 35%);
-		-webkit-transform: translate(0, 35%);
+		
 	}
 		.-contact-des1 {
 			font-size: 22px;

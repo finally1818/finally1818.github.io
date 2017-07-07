@@ -2,18 +2,14 @@
 	background: rgb(16, 144, 133) url("./app/img/bg.png");
 	height: 100%;
 }
+	.-content {
+		margin-top: 50px;
+	}
 	.-title {
 		text-align: center;
 		font-size: 24px;
 		color: #FFF;
 		padding-top: 150px;
-	}
-	.-content{
-		transform: translate(0, 35%);
-		-moz-transform: translate(0, 35%);
-		-ms-transform: translate(0, 35%);
-		-o-transform: translate(0, 35%);
-		-webkit-transform: translate(0, 35%);
 	}
 		.-info-list {
 			max-width: 800px;
@@ -28,14 +24,14 @@
 				margin: 0 20px;
 			}
 				.-cont .-img {
-						width: 90px;
-						height: 90px;
-						cursor: pointer;
-						transition: transform ease-out 0.1s, background 0.2s;
-						background: rgba(255,255,255,0.1);
-						border-radius: 50%;
-						position: relative;
-						margin: 0 auto;
+					width: 90px;
+					height: 90px;
+					cursor: pointer;
+					transition: transform ease-out 0.1s, background 0.2s;
+					background: rgba(255,255,255,0.1);
+					border-radius: 50%;
+					position: relative;
+					margin: 0 auto;
 				}
 					.-cont .-img img{
 						width: 50%;
