@@ -16,7 +16,7 @@ var in_memory_data_service_1 = require("./in-memory-data.service");
 var app_component_1 = require("./app.component");
 // import { DogHeaderModule } from "./dog-header.module";
 var dog_main_module_1 = require("./main/dog-main.module");
-var dog_header_service_1 = require("./dog-header.service");
+var dog_header_service_1 = require("./header/dog-header.service");
 var AppModule = (function () {
     function AppModule() {
     }

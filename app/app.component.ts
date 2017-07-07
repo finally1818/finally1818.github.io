@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
-import { DogHeaderService } from './dog-header.service';
+import { DogHeaderService } from './header/dog-header.service';
 
 @Component({
     moduleId: module.id,
     selector: 'my-app',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css', './dog-header.component.css']
+    styleUrls: ['./app.component.css', './header/dog-header.component.css']
 })
 
 export class AppComponent {

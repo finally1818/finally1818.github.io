@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var dog_header_service_1 = require("./dog-header.service");
+var dog_header_service_1 = require("./header/dog-header.service");
 var AppComponent = (function () {
     function AppComponent(dogHeaderService) {
         this.dogHeaderService = dogHeaderService;
@@ -46,7 +46,7 @@ AppComponent = __decorate([
         moduleId: module.id,
         selector: 'my-app',
         templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css', './dog-header.component.css']
+        styleUrls: ['./app.component.css', './header/dog-header.component.css']
     }),
     __metadata("design:paramtypes", [dog_header_service_1.DogHeaderService])
 ], AppComponent);

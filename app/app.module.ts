@@ -9,7 +9,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 // import { DogHeaderModule } from "./dog-header.module";
 import { DogMainModule } from './main/dog-main.module';
-import { DogHeaderService } from './dog-header.service';
+import { DogHeaderService } from './header/dog-header.service';
 
 
 
