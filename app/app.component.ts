@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { DogHeaderService } from './header/dog-header.service';
+import { DogFooterService } from './footer/dog-footer.service';
 
 @Component({
     moduleId: module.id,
@@ -12,16 +13,24 @@ import { DogHeaderService } from './header/dog-header.service';
 export class AppComponent {
     private title = 'Tour of Heroes';
     private navList: object;
+    private footer: object;
     private navShow: string;
     private inNavIndex: number = 0;
 
-    constructor(private dogHeaderService: DogHeaderService) { }
-    
+    constructor(
+        private dogHeaderService: DogHeaderService,
+        private dogFooterService: DogFooterService
+    ) { }
+
     ngOnInit(): void {
         this.dogHeaderService.getDogHeader()
             .then(header => {
                 this.navList = header.navList;
             });
+        this.dogFooterService.getDogFooter()
+            .then(footer => {
+                this.footer = footer;
+            })
     }
 
     // 鼠标移入显示

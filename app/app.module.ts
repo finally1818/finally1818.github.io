@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 // import { DogHeaderModule } from "./dog-header.module";
 import { DogMainModule } from './main/dog-main.module';
 import { DogHeaderService } from './header/dog-header.service';
+import { DogFooterService } from './footer/dog-footer.service';
 
 
 
@@ -25,7 +26,7 @@ import { DogHeaderService } from './header/dog-header.service';
     declarations: [
         AppComponent
     ],
-    providers: [DogHeaderService],
+    providers: [DogHeaderService, DogFooterService],
     bootstrap: [AppComponent]
 })
 

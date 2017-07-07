@@ -17,6 +17,7 @@ var app_component_1 = require("./app.component");
 // import { DogHeaderModule } from "./dog-header.module";
 var dog_main_module_1 = require("./main/dog-main.module");
 var dog_header_service_1 = require("./header/dog-header.service");
+var dog_footer_service_1 = require("./footer/dog-footer.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -35,7 +36,7 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent
         ],
-        providers: [dog_header_service_1.DogHeaderService],
+        providers: [dog_header_service_1.DogHeaderService, dog_footer_service_1.DogFooterService],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

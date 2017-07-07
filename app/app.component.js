@@ -11,9 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var dog_header_service_1 = require("./header/dog-header.service");
+var dog_footer_service_1 = require("./footer/dog-footer.service");
 var AppComponent = (function () {
-    function AppComponent(dogHeaderService) {
+    function AppComponent(dogHeaderService, dogFooterService) {
         this.dogHeaderService = dogHeaderService;
+        this.dogFooterService = dogFooterService;
         this.title = 'Tour of Heroes';
         this.inNavIndex = 0;
     }
@@ -22,6 +24,10 @@ var AppComponent = (function () {
         this.dogHeaderService.getDogHeader()
             .then(function (header) {
             _this.navList = header.navList;
+        });
+        this.dogFooterService.getDogFooter()
+            .then(function (footer) {
+            _this.footer = footer;
         });
     };
     // 鼠标移入显示
@@ -48,7 +54,8 @@ AppComponent = __decorate([
         templateUrl: './app.component.html',
         styleUrls: ['./app.component.css', './header/dog-header.component.css', './footer/dog-footer.component.css']
     }),
-    __metadata("design:paramtypes", [dog_header_service_1.DogHeaderService])
+    __metadata("design:paramtypes", [dog_header_service_1.DogHeaderService,
+        dog_footer_service_1.DogFooterService])
 ], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

@@ -6,7 +6,7 @@ export class Dog {
     svg: string;
     nav: string;
     // footer
-    footer: object;
+    footer: string;
     // default
     default: any;
     quote: string;
