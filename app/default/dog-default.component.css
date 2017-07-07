@@ -83,26 +83,26 @@
 .gossip {
 	display: flex;
 	align-items: center;
-	width: 24vmin;
-	height: 24vmin;
+	width: 12rem;
+	height: 12rem;
 	border-radius: 50%;
 	background: linear-gradient(black 50%, white 0);
 	margin: 0 auto;
-	animation: r 2s linear infinite;
-	-webkit-animation: r 2s linear infinite;
+	/*animation: r 2s linear infinite;
+	-webkit-animation: r 2s linear infinite;*/
 }
 
 .gossip:before, .gossip:after {
 	flex: 1;
-	height: 4vmin;
+	height: 2rem;
 	border-radius: 50%;
 	background: black;
 	content: '';
-	border: solid 4vmin white;
+	border: solid 2rem white;
 	transform-origin: 0 50%;
-	transform: scale(.5);
-	animation: s 1s ease-in-out infinite alternate;
-	-webkit-animation: s 1s ease-in-out infinite alternate;
+	transform: scale(1);
+	/*animation: s 1s ease-in-out infinite alternate;
+	-webkit-animation: s 1s ease-in-out infinite alternate;*/
 }
 .gossip:after {
 	background: white;
