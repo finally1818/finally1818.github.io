@@ -163,6 +163,7 @@ var InMemoryDataService = (function () {
                 "title": "经历",
                 "expList": [
                     {
+                        "number": 1,
                         "title": "杭州**信息技术有限公司",
                         "time": "2017年1月~至今",
                         "post": "前端开发工程师兼职网络管理员",
@@ -176,8 +177,9 @@ var InMemoryDataService = (function () {
                         ]
                     },
                     {
+                        "number": 2,
                         "title": "金华**科技有限公司",
-                        "time": "2015年1月~2016年12月",
+                        "time": "2015年3月~2016年12月",
                         "post": "网络管理员兼前端开发工程师",
                         "imgUrl": "app/img/e_html.svg",
                         "tech": "html5、css3、javascript、jquery、bootstrap等",

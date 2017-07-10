@@ -174,7 +174,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     },
                     {
                         "title": "金华**科技有限公司",
-                        "time": "2015年1月~2016年12月",
+                        "time": "2015年3月~2016年12月",
                         "post": "网络管理员兼前端开发工程师",
                         "imgUrl": "app/img/e_html.svg",
                         "tech": "html5、css3、javascript、jquery、bootstrap等",
