@@ -14,6 +14,7 @@ var dog_default_service_1 = require("./dog-default.service");
 var DogDefaultComponent = (function () {
     function DogDefaultComponent(dogDefaultService) {
         this.dogDefaultService = dogDefaultService;
+        this.gossipAction = false;
     }
     DogDefaultComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -22,6 +23,9 @@ var DogDefaultComponent = (function () {
             _this.defaultDesList = data.desList;
             _this.defaultQuote = data.quote;
         });
+    };
+    DogDefaultComponent.prototype.onGossipAction = function () {
+        this.gossipAction = !this.gossipAction;
     };
     return DogDefaultComponent;
 }());

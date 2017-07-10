@@ -12,6 +12,7 @@ export class DogDefaultComponent {
     private default: object;
     private defaultDesList: object;
     private defaultQuote: string;
+    private gossipAction: boolean = false;
 
     constructor(
         private dogDefaultService: DogDefaultService
@@ -25,5 +26,8 @@ export class DogDefaultComponent {
             });
     }
 
+    onGossipAction() {
+        this.gossipAction = !this.gossipAction;
+    }
     
 }

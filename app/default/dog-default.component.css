@@ -88,8 +88,20 @@
 	border-radius: 50%;
 	background: linear-gradient(black 50%, white 0);
 	margin: 0 auto;
-	/*animation: r 2s linear infinite;
-	-webkit-animation: r 2s linear infinite;*/
+	cursor: pointer;
+	/*指定要绑定到选择器的关键帧的名称*/
+	animation-name: gossip;
+	/*动画指定需要多少秒或毫秒完成*/
+	animation-duration: 2s;
+	/*设置动画将如何完成一个周期*/
+	animation-timing-function: linear;
+	/*设置动画在启动前的延迟间隔。*/
+	animation-delay: 0;
+	/*定义动画的播放次数。*/
+	animation-iteration-count: infinite;
+	/*指定动画是否正在运行或已暂停。*/
+	animation-play-state: paused;
+
 }
 
 .gossip:before, .gossip:after {
@@ -99,23 +111,50 @@
 	background: black;
 	content: '';
 	border: solid 2rem white;
-	transform-origin: 0 50%;
-	transform: scale(1);
-	/*animation: s 1s ease-in-out infinite alternate;
-	-webkit-animation: s 1s ease-in-out infinite alternate;*/
+	/*animation: before 1s ease-in-out infinite alternate paused;*/
 }
+
 .gossip:after {
 	background: white;
 	border-color: black;
+	/*animation: after 1s ease-in-out infinite alternate paused;*/
+}
+
+.gossip-action, .gossip-action:before, .gossip-action:after {
+	animation-play-state: running;
+}
+
+@keyframes gossip { 
+	to { transform: rotate(1turn) } 
+}
+
+/*有BUG暂时屏蔽*/
+/*.gossip-action:before {
+	transform-origin: 0 50%;
+	transform: scale(.5)
+}
+
+.gossip-action:after {
 	transform-origin: 100% 50%;
+	transform: scale(1.5);
+}
+
+
+.gossip-action:before, .gossip-action:after {
+	transform: scale(.5);
+	animation: s 1s ease-in-out infinite alternate;
+	-webkit-animation: s 1s ease-in-out infinite alternate;
+}
+
+.gossip-action:after {
 	animation-delay: -1s;
 	-webkit-animation-delay: -1s
 }
 
-@keyframes s { 
+@keyframes before { 
 	to { transform: scale(1.5) } 
 }
 
-@keyframes r { 
-	to { transform: rotate(1turn) } 
-}
+@keyframes after {
+	to { transform: scale(.5) }
+}*/
