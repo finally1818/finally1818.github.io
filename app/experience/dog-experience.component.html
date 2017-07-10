@@ -1,29 +1,29 @@
-<div class="-experience">
-    <div class="-title">{{expTitle}}</div>
-    <div class="-content">
-        <div class="-banner" touch-three-d>
-            <div class="-experience-content" *ngFor="let expList of expList">
-                <div class="-left">
-                    <img class="-img" [src]="expList.imgUrl" />
+<div class="experience">
+    <div class="title">{{expTitle}}</div>
+    <div class="content">
+        <div class="banner" touch-three-d>
+            <div class="experiencecontent" *ngFor="let expList of expList">
+                <div class="left">
+                    <img class="img" [src]="expList.imgUrl" />
                 </div>
-                <div class="-right">
+                <div class="right">
                     <h4>{{expList.title}}</h4>
-                    <p class="-time">{{expList.time}}</p>
-                    <p class="-post">
+                    <p class="time">{{expList.time}}</p>
+                    <p class="post">
                         <{{expList.post}}>
                     </p>
-                    <p class="-tech">"{{expList.tech}}"</p>
-                    <ul class="-list">
-                        <li class="-item" ng-class="{'-item-en':$ctrl.isEng}" *ngFor="let content of expList.contentList">{{content}}</li>
+                    <p class="tech">"{{expList.tech}}"</p>
+                    <ul class="list">
+                        <li class="item" *ngFor="let content of expList.contentList">{{content}}</li>
                     </ul>
                 </div>
             </div>
         </div>
         <!--<div class="-shout-cut">
             <ul class="-cut-list" switch-exp>
-                <li class="-item" ng-class="{'-selected':$index == $ctrl.curIndex}" data-index="{{$index}}" ng-repeat="item in $ctrl.cutList track by $index"></li>
+                <li class="item" data-index="{{$index}}"></li>
             </ul>
         </div>-->
-        <div class="-exp-des">{{expDes}}</div>
+        <div class="exp-des">{{expDes}}</div>
     </div>
 </div>

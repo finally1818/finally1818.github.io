@@ -1,11 +1,11 @@
-.-default{
+.default {
 	background: rgb(135, 176, 165) url("./app/img/bg.png");
 	height: 100%;
 }
-	.-content{
+	.content {
 		padding-top: 150px;
 	}
-	.-photo{
+	.photo {
 		width: 150px;
 		height: 150px;
 		border-radius: 50%;
@@ -14,54 +14,54 @@
 		margin: 0 auto;
 		transition: box-shadow .5s linear;
     	}
-		.-photo:hover{
-			box-shadow: 0 0 15px #1FAEFF;
-		}
-	.-des{
+	.photo:hover{
+		box-shadow: 0 0 15px #1FAEFF;
+	}
+	.des{
 		text-align: center;
 		max-width: 90%;
 		margin: 0 auto;
 		color: #FFF;
     	}
-		.-quote{
+		.quote{
 			font-size: 22px;
 			position: relative;
 			padding: 20px 0;
         }
-			.-quote:after{
-				content: "";
-				position: absolute;
-				left: 10%;
-				right: 10%;
-				bottom: 0;
-				height: 1px;
-				background-color: rgba(255,255,255,0.6);
-			}
-		.-des-list{
+		.quote:after{
+			content: "";
+			position: absolute;
+			left: 10%;
+			right: 10%;
+			bottom: 0;
+			height: 1px;
+			background-color: rgba(255,255,255,0.6);
+		}
+		.des-list{
 			padding-top: 20px;
 			line-height: 20px;
 			font-size: 18px;
         }
-			.-des-list p{
+			.des-list p{
 				margin: 24px 0;
 			}
 
 
 /*@media screen and (max-width: 1366px){
-	.-default {
-		.-content {
+	.default {
+		.content {
 			top: 120px;
 		}
 	}
 }
 
 @media screen and (max-width: 600px){
-	.-default {
-		.-content {
+	.default {
+		.content {
 			top: 80px;
 		}
-		.-des{
-			.-quote{
+		.des{
+			.quote{
 				font-size: 16px;
 			}
 			.-des-list{
@@ -74,7 +74,7 @@
 			}
 		}
 	}
-	.-title{
+	.title{
 		display: none;
 	}
 }*/

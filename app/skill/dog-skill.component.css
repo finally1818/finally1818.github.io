@@ -1,17 +1,17 @@
-.-skill{
+.skill{
 	background: rgb(77, 94, 143) url("./app/img/bg.png");
 	height: 100%;
 }
-.-content {
+.content {
 	margin-top: 50px;
 }
-	.-title {
+	.title {
 		padding-top: 150px;
 		text-align: center;
 		font-size: 24px;
 		color: #FFF;
 	}	
-	.-contain{
+	.contain{
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -20,14 +20,14 @@
 		margin: 0 auto;
 		min-width: 750px;
     }
-		.-skill-circle{
+		.skill-circle{
 			padding: 5px;
 			position: relative;
 			font-size: 12px;
 			width: 300px;
 			color: #FFF;
         }
-			.-outCircle{
+			.outCircle{
 				width: 242px;
 				height: 242px;
 				border: 4px dashed #999;
@@ -35,7 +35,7 @@
 				position: relative;
 				margin: 0 auto;
             }
-				.-out{
+				.out{
 					width: 50px;
 					height: 50px;
 					border-radius: 50%;
@@ -43,31 +43,31 @@
 					text-align: center;
 					line-height: 50px;
 				}
-				.-out:nth-child(1){
+				.out:nth-child(1){
 					animation: outX 8s cubic-bezier(0.36,0,0.64,1) -4s infinite alternate, outY 8s cubic-bezier(0.36,0,0.64,1) 0s infinite alternate;
 				}
-				.-out:nth-child(2){
+				.out:nth-child(2){
 					animation: outX 8s cubic-bezier(0.36,0,0.64,1) -6s infinite alternate, outY 8s cubic-bezier(0.36,0,0.64,1) -2s infinite alternate;
 				}
-				.-out:nth-child(3){
+				.out:nth-child(3){
 					animation: outX 8s cubic-bezier(0.36,0,0.64,1) -8s infinite alternate, outY 8s cubic-bezier(0.36,0,0.64,1) -4s infinite alternate;
 				}
-				.-out:nth-child(4){
+				.out:nth-child(4){
 					animation: outX 8s cubic-bezier(0.36,0,0.64,1) -10s infinite alternate, outY 8s cubic-bezier(0.36,0,0.64,1) -6s infinite alternate;
 				}
-				.-out:nth-child(5){
+				.out:nth-child(5){
 					animation: outX 8s cubic-bezier(0.36,0,0.64,1) -12s infinite alternate, outY 8s cubic-bezier(0.36,0,0.64,1) -8s infinite alternate;
 				}
-				.-out:nth-child(6){
+				.out:nth-child(6){
 					animation: outX 8s cubic-bezier(0.36,0,0.64,1) -14s infinite alternate, outY 8s cubic-bezier(0.36,0,0.64,1) -10s infinite alternate;
 				}
-				.-out:nth-child(7){
+				.out:nth-child(7){
 					animation: outX 8s cubic-bezier(0.36,0,0.64,1) -16s infinite alternate, outY 8s cubic-bezier(0.36,0,0.64,1) -12s infinite alternate;
 				}
-				.-out:nth-child(8){
+				.out:nth-child(8){
 					animation: outX 8s cubic-bezier(0.36,0,0.64,1) -18s infinite alternate, outY 8s cubic-bezier(0.36,0,0.64,1) -14s infinite alternate;
 				}
-			.-innerCircle{
+			.innerCircle{
 				width: 142px;
 				height: 142px;
 				border: 4px dashed #999;
@@ -79,7 +79,7 @@
 				left: 50%;
 				transform: translateX(-50%) translateY(-50%);
             }
-				.-inner{
+				.inner{
 					width: 40px;
 					height: 40px;
 					border-radius: 50%;
@@ -87,25 +87,25 @@
 					text-align: center;
 					line-height: 40px;
 				}
-				.-inner:nth-child(1){
+				.inner:nth-child(1){
 					animation: innerX 8s cubic-bezier(0.36,0,0.64,1) -4s infinite alternate, innerY 8s cubic-bezier(0.36,0,0.64,1) 0s infinite alternate;
 				}
-				.-inner:nth-child(2){
+				.inner:nth-child(2){
 					animation: innerX 8s cubic-bezier(0.36,0,0.64,1) -8s infinite alternate, innerY 8s cubic-bezier(0.36,0,0.64,1) -4s infinite alternate;
 				}
-				.-inner:nth-child(3){
+				.inner:nth-child(3){
 					animation: innerX 8s cubic-bezier(0.36,0,0.64,1) -12s infinite alternate, innerY 8s cubic-bezier(0.36,0,0.64,1) -8s infinite alternate;
 				}
-				.-inner:nth-child(4){
+				.inner:nth-child(4){
 					animation: innerX 8s cubic-bezier(0.36,0,0.64,1) -16s infinite alternate, innerY 8s cubic-bezier(0.36,0,0.64,1) -12s infinite alternate;
 				}
-		.-des{
+		.des{
 			text-align: center;
 			color: #FFF;
 			line-height: 24px;
 			font-size: 18px;
 		}
-	.-contain-en{
+	.contain-en{
 		max-width: 1200px;
 	}
 
@@ -128,7 +128,7 @@
 
 /*@media screen and (max-width: 1366px) {
 	.-skill {
-		.-content {
+		.content {
 			top: 200px;
 		}
 	}
@@ -137,7 +137,7 @@
 
 /*@media screen and (max-width: 600px){
 	.-skill{
-		.-content{
+		.content{
 			top: 80px;
 			.-contain{
 				min-width: 0;
@@ -160,7 +160,7 @@
 }
 @media screen and (max-height: 550px){
 	.-skill{
-		.-content {
+		.content {
 			top: 65px;
 			.-contain{
 				.-des-en{

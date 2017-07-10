@@ -1,17 +1,17 @@
-.-info{
+.info{
 	background: rgb(16, 144, 133) url("./app/img/bg.png");
 	height: 100%;
 }
-	.-content {
+	.content {
 		margin-top: 50px;
 	}
-	.-title {
+	.title {
 		text-align: center;
 		font-size: 24px;
 		color: #FFF;
 		padding-top: 150px;
 	}
-		.-info-list {
+		.info-list {
 			max-width: 800px;
 			margin: 0 auto;
 			display: flex;
@@ -19,11 +19,11 @@
 			flex-wrap: wrap;
 			font-size: 18px;
 		}
-			.-info-item{
+			.infoitem{
 				width: 100px;
 				margin: 0 20px;
 			}
-				.-cont .-img {
+				.cont .img {
 					width: 90px;
 					height: 90px;
 					cursor: pointer;
@@ -33,14 +33,14 @@
 					position: relative;
 					margin: 0 auto;
 				}
-					.-cont .-img img{
+					.cont .img img{
 						width: 50%;
 						position: absolute;
 						top: 50%;
 						right: 50%;
 						transform: translateY(-50%) translateX(50%);
 					}
-					.-cont .-img:after{
+					.cont .img:after{
 						content: '';
 						position: absolute;
 						box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
@@ -50,25 +50,25 @@
 						height: 100%;
 						border-radius: 50%;
 					}
-					.-img:hover{
+					.img:hover{
 						background: rgba(255,255,255,0.05);
 						transform: scale(0.93);
 						color: #fff;
 					}
-					.-img:hover:after{
+					.img:hover:after{
 						animation: effect 1.3s ease-out infinite 50ms;
 					}
-				.-intro{
+				.intro{
 					text-align: center;
 					margin-top: 20px;
 					color: #FFF;
 				}
-				.-intro-en{
+				.intro-en{
 					width: 150px;
 					position: relative;
 					left: -25px;
 				}
-	.-info-des{
+	.info-des{
 		text-align: center;
 		line-height: 24px;
 		padding-top: 50px;
@@ -93,7 +93,7 @@
 
 /*@media screen and (max-width: 1366px) {
 	.-info {
-		.-content {
+		.content {
 			top: 160px;
 		}
 	}
@@ -101,10 +101,10 @@
 
 @media screen and (max-width: 600px){
 	.-info {
-		.-content{
+		.content{
 			top: 80px;
 			.-info-list{
-				.-info-item{
+				.-infoitem{
 					.-cont{
 						.-img{
 							width: 50px;
@@ -129,13 +129,13 @@
 			}
 		}
 	}
-	.-title{
+	.title{
 		display: none;
 	}
 }
 @media screen and (max-height: 550px){
 	.-info{
-		.-content {
+		.content {
 			.-info-des-en{
 				padding-top: 0;
 				font-size: 12px;

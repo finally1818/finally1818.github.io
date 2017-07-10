@@ -1,18 +1,18 @@
-.-work{
+.work{
   	background: rgb(75, 133, 160) url("./app/img/bg.png");
 	height: 100%;
 }
-	.-title {
+	.title {
 		padding-top: 150px;
 		text-align: center;
 		font-size: 24px;
 		color: #FFF;
 	}
-	.-content{
+	.content{
 		color: #FFF;
 		margin-top: 50px;
 	}			
-		.-work-list{
+		.work-list{
 			overflow: hidden;
 			display: flex;
 			justify-content: space-between;
@@ -23,7 +23,7 @@
 			flex-wrap: wrap;
 			text-align: justify;
 		}
-			.-work-item{
+			.workitem{
 				box-shadow: 0 3px 10px rgba(0,0,0,.2);
 				border-radius: 6px;
 				padding: 20px;
@@ -33,22 +33,22 @@
 				margin: 0 50px 50px;
 				transition: box-shadow .3s ease;
 			}
-			.-work-item:hover{
+			.workitem:hover{
 				box-shadow: 0 8px 15px rgba(0,0,0,.2);
 			}
-			.-work-title{
+			.work-title{
 				color: #4985A0;
 				margin: 5px 0;
 				font-size: 18px;
 			}
-			.-work-des{
+			.work-des{
 				font-size: 16px;
 				line-height: 22px;
 			}
-			.-work-des-en{
+			.work-des-en{
 				font-size:14px;
 			}
-			.-work-link{
+			.work-link{
 				width: 200px;
 				height: 30px;
 				border: 1px solid #E6E6E6;
@@ -60,22 +60,22 @@
 				justify-content: center;
 				align-items: center;
 			}
-		.-work-link img {
+		.work-link img {
 			height: 60%;
 		}
-		.-work-link:hover{
+		.work-link:hover{
 			opacity: 1;
 			background: #E6E6E6;
 		}
-			.-work-more{
+			.work-more{
 				text-align: center;
 				font-size: 18px;
 			}
-				.-work-more a{
+				.work-more a{
 					text-decoration:none;
 					color: #FFF;
 				}
-			.-work-switch{
+			.work-switch{
 				position: absolute;
 				left: 5%;
 				right: 5%;
@@ -85,7 +85,8 @@
 				display: none;
 				justify-content: space-between;
 			}
-	.-left,.-right{
+	.left,
+	.right {
 		border-radius: 50%;
 		border: 1px solid #FFF;
 		height: 30px;
@@ -95,6 +96,6 @@
 		background-size: 70%;
 		transform: rotate(90deg);
 	}
-	.-left{
+	.left{
 		transform: rotate(-90deg);
 	}

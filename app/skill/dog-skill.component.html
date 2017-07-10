@@ -1,16 +1,16 @@
-<div class="-skill">
-    <div class="-title">{{skillTitle}}</div>
-    <div class="-content">
-        <div class="-contain" ng-class="{'-contain-en':$ctrl.isEng}">
-            <div class="-skill-circle">
-                <ul class="-outCircle">
-                    <li class="-out" *ngFor="let outCricleList of skillOutCircleList" [style.background-color]="outCricleList.color">{{outCricleList.name}}</li>
+<div class="skill">
+    <div class="title">{{skillTitle}}</div>
+    <div class="content">
+        <div class="contain">
+            <div class="skill-circle">
+                <ul class="outCircle">
+                    <li class="out" *ngFor="let outCricleList of skillOutCircleList" [style.background-color]="outCricleList.color">{{outCricleList.name}}</li>
                 </ul>
-                <ul class="-innerCircle">
-                    <li class="-inner" *ngFor="let innerCircleList of skillInnerCircleList" [style.background-color]="innerCircleList.color">{{innerCircleList.name}}</li>
+                <ul class="innerCircle">
+                    <li class="inner" *ngFor="let innerCircleList of skillInnerCircleList" [style.background-color]="innerCircleList.color">{{innerCircleList.name}}</li>
                 </ul>
             </div>
-            <div class="-des" ng-class="{'-des-en':$ctrl.isEng}">
+            <div class="des">
                 <p *ngFor="let desList of skillDesList">{{desList}}</p>
             </div>
         </div>
