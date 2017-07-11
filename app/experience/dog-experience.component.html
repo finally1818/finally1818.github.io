@@ -1,7 +1,7 @@
 <div class="experience">
     <div class="title">{{expTitle}}</div>
     <div class="content">
-        <div class="banner">
+        <div class="banner" (mouseover)="mouseoverBanner($event, this)" (mouseout)="mouseoutBanner()" [ngStyle]="{'transform': rotateXY}" >
             <div class="experien-cecontent" *ngFor="let expList of expList">
                 <div class="left">
                     <img class="img" [src]="expList.imgUrl" />

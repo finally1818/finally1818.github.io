@@ -14,6 +14,8 @@ var dog_experience_service_1 = require("./dog-experience.service");
 var DogExperienceComponent = (function () {
     function DogExperienceComponent(dogExperienceService) {
         this.dogExperienceService = dogExperienceService;
+        this.bannerLeft = false;
+        this.bannerRight = false;
     }
     DogExperienceComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -23,6 +25,34 @@ var DogExperienceComponent = (function () {
             _this.expList = experience.expList;
             _this.expDes = experience.des;
         });
+    };
+    DogExperienceComponent.prototype.mouseoverBanner = function (event, ele) {
+        console.log(ele);
+        var offsetX = event.offsetX, offsetY = event.offsetY, X = 0, Y = 0;
+        X = (125 - offsetX) / 40;
+        Y = (offsetY - 375) / 40;
+        this.rotateX = "rotateX(" + X + "deg)";
+        this.rotateY = "rotateY(" + Y + "deg)";
+        this.rotateXY = this.rotateX + " " + this.rotateY;
+        console.log(this.rotateXY);
+        // if (offsetY < 375) {
+        //     this.bannerLeft = !this.bannerLeft;
+        //     this.rotateX = "rotateX(" + X + ")";
+        //     this.rotateY = "rotateY(" + Y + ")";
+        //     // this.rotate3d = "rotate3d(" + (375 - Y) / 25 + ")";
+        //     // this.rotateX = "rotateX(" + (125 - X) / 25 + "deg)";
+        //     console.log(this.rotate3d)
+        // } else if (offsetY > 375) {
+        //     this.bannerRight = !this.bannerRight;
+        //     // this.rotateY = "rotateY(" + -(Y - 375) / 25 + "deg)";
+        //     // this.rotateX = "rotateX(" + -(X - 125) / 25 + "deg)";
+        //     console.log(x, y)
+        // }
+    };
+    DogExperienceComponent.prototype.mouseoutBanner = function (event) {
+        this.rotateX = "rotateX(" + 0 + ")";
+        this.rotateY = "rotateY(" + 0 + ")";
+        this.rotateXY = this.rotateX + " " + this.rotateY;
     };
     return DogExperienceComponent;
 }());
