@@ -64,9 +64,9 @@ export class InMemoryDataService implements InMemoryDbService {
                 ],
                 "desList": [
                     "一年的前端开发经验",
-                    "熟悉MV*开发,深谙自动化,模块化开发之道",
-                    "高效的自学能力,具备独立分析解决问题能力",
-                    "强烈的自我驱动力,代码强迫症患者"
+                    "熟悉MV*开发，深谙自动化，模块化开发之道",
+                    "高效的自学能力，具备分析解决问题的能力",
+                    "强烈的自我驱动力，代码强迫症患者"
                 ]
             },
             "skill": {
@@ -74,57 +74,57 @@ export class InMemoryDataService implements InMemoryDbService {
                 "outCircleList": [
                     {
                         "color": "rgba(121,100,102,0.8)",
-                        "name": "gulp"
+                        "name": "Gulp"
                     },
                     {
                         "color": "rgba(49,65,82,0.8)",
-                        "name": "angular"
+                        "name": "Angular"
                     },
                     {
                         "color": "rgba(76,157,160,0.8)",
-                        "name": "webpack"
+                        "name": "Webpack"
                     },
                     {
                         "color": "rgba(66,66,66,0.8)",
-                        "name": "less"
+                        "name": "Less"
                     },
                     {
                         "color": "rgba(193,131,106,0.8)",
-                        "name": "git"
+                        "name": "Angular2"
                     },
                     {
                         "color": "rgba(117,148,179,0.8)",
-                        "name": "nodejs"
+                        "name": "Nodejs"
                     },
                     {
                         "color": "rgba(71,83,94,0.8)",
-                        "name": "cordova"
+                        "name": "Vue"
                     },
                     {
                         "color": "rgba(147,147,189,0.8)",
-                        "name": "react"
+                        "name": "React"
                     }
                 ],
                 "innerCircleList": [
                     {
                         "color": "rgba(179,164,140,0.8)",
-                        "name": "es6"
+                        "name": "HTML"
                     },
                     {
                         "color": "rgba(171,209,220,0.8)",
-                        "name": "vue"
+                        "name": "CSS"
                     },
                     {
                         "color": "rgba(238,215,163,0.8)",
-                        "name": "ng2"
+                        "name": "Git"
                     },
                     {
                         "color": "rgba(207,184,178,0.8)",
-                        "name": "fp"
+                        "name": "JQuery"
                     }
                 ],
                 "desList": [
-                    "熟练使用angular2",
+                    "熟练使用Angular2和JQuery",
                     "常驻PC平台前端研发",
                     "擅长组件/插件开发，能脱离库书写JS代码",
                     "编码常思其健壮性，扩展性，维护性"
@@ -164,12 +164,12 @@ export class InMemoryDataService implements InMemoryDbService {
                         "time": "2017年1月~至今",
                         "post": "前端开发工程师兼职网络管理员",
                         "imgUrl": "app/img/e_js.svg",
-                        "tech": "less、webpack、angular2、jquery、dwz和原生js及若干类库",
+                        "tech": "html5、css3、javascript、angular2、jquery、dwz、webpack及若干类库",
                         "contentList": [
                             "负责快速构建高质量PC端页面",
                             "根据业务需求设计合适的工程项目",
-                            "高度组件化、模块化思维，拥有各平台调试能力",
-                            "同期学习ES6及angular2，体会函数式编程思想"
+                            "组件化、模块化思维，拥有各平台调试能力",
+                            "同期学习ES6，体会函数式编程思想"
                         ]
                     },
                     {
@@ -177,10 +177,10 @@ export class InMemoryDataService implements InMemoryDbService {
                         "time": "2015年3月~2016年12月",
                         "post": "网络管理员兼前端开发工程师",
                         "imgUrl": "app/img/e_html.svg",
-                        "tech": "html5、css3、javascript、jquery、bootstrap等",
+                        "tech": "html、css、javascript、jquery、bootstrap等",
                         "contentList": [
                             "负责企业站静态页开发",
-                            "负责网站后台维护",
+                            "负责网站后期维护",
                             "同期工作之余提升自己原生JS的编码能力"
                         ]
                     }
