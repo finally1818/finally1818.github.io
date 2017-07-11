@@ -33,36 +33,21 @@ export class DogExperienceComponent implements OnInit {
             })
     }
 
-    mouseoverBanner(event: any, ele: any) {
-        console.log(ele)
-        let offsetX = event.offsetX,
-            offsetY = event.offsetY,
-            X = 0,
-            Y = 0;
-        X = (125 - offsetX) / 40;
-        Y = (offsetY - 375) / 40;
-        this.rotateX = "rotateX(" + X + "deg)";
-        this.rotateY = "rotateY(" + Y + "deg)";
+    mouseoverBanner(event: any, banner: any) {
+        let offsetW = banner.offsetWidth,
+            offsetH = banner.offsetHeight,
+            offsetL = banner.offsetLeft,
+            offsetT = banner.offsetTop,
+            pageX = event.pageX,
+            pageY = event.pageY,
+            Y = pageX - offsetL - offsetW / 2,
+            X = offsetH / 2 - pageY + offsetT;
+        this.rotateX = "rotateX(" + X/50 + "deg)";
+        this.rotateY = "rotateY(" + Y/50 + "deg)";
         this.rotateXY = this.rotateX + " " + this.rotateY;
-        console.log(this.rotateXY)
-        // if (offsetY < 375) {
-        //     this.bannerLeft = !this.bannerLeft;
-        //     this.rotateX = "rotateX(" + X + ")";
-        //     this.rotateY = "rotateY(" + Y + ")";
-        //     // this.rotate3d = "rotate3d(" + (375 - Y) / 25 + ")";
-        //     // this.rotateX = "rotateX(" + (125 - X) / 25 + "deg)";
-        //     console.log(this.rotate3d)
-        // } else if (offsetY > 375) {
-        //     this.bannerRight = !this.bannerRight;
-        //     // this.rotateY = "rotateY(" + -(Y - 375) / 25 + "deg)";
-        //     // this.rotateX = "rotateX(" + -(X - 125) / 25 + "deg)";
-        //     console.log(x, y)
-        // }
     }
 
     mouseoutBanner(event: any) {
-        this.rotateX = "rotateX(" + 0 + ")";
-        this.rotateY = "rotateY(" + 0 + ")";
-        this.rotateXY = this.rotateX + " " + this.rotateY;
+        this.rotateXY = "rotateX(0) rotateY(0)";
     }
 }
