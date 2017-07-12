@@ -1,8 +1,9 @@
 <div class="experience">
     <div class="title">{{expTitle}}</div>
     <div class="content">
-        <div class="banner" (mouseover)="mouseoverBanner($event, banner)" (mouseout)="mouseoutBanner()" [ngStyle]="{'transform': rotateXY}" #banner>
-            <div class="experien-cecontent" *ngFor="let expList of expList">
+        <div class="banner" (mouseover)="mouseoverBanner($event, banner)" (mouseout)="mouseoutBanner()" [ngStyle]="{'transform': rotateXY}"
+            #banner>
+            <div class="exp-content" *ngFor="let expList of expList; let i = index" [class.exp-content-show]="itemIndex === i">
                 <div class="left">
                     <img class="img" [src]="expList.imgUrl" />
                 </div>
@@ -21,8 +22,7 @@
         </div>
         <div class="shout-cut">
             <ul class="cut-list">
-                <li class="item"></li>
-                <li class="item"></li>
+                <li class="item" *ngFor="let item of expList; let i = index" [class.selected]="itemIndex === i" (click)="onItem(i)"></li>
             </ul>
         </div>
         <div class="exp-des">{{expDes}}</div>

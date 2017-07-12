@@ -24,11 +24,19 @@
 			overflow: hidden;
 			box-shadow: 0 0 25px rgba(0,0,0,0.5);
 			transform-style: preserve-3d;
+			
         }
-			.experien-cecontent{
-				transition: opacity 0.3s;
-				height: 100%;
+		
+			.exp-content{
+				transition: 0.3s;
+				height: 0;
+				opacity: 0;
             }
+			.exp-content-show {
+				opacity: 1;
+				overflow: hidden;
+				height: 100%;
+			}
 				.left{
 					float: left;
 					height: 100%;
@@ -124,7 +132,7 @@
 					.cut-list .item:hover {
 						background-color: #AF7164;
 					}
-				.selected {
+				.cut-list .selected {
 					background-color: #AF7164;
 				}
 		.exp-des{

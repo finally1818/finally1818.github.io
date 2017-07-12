@@ -14,8 +14,8 @@ var dog_experience_service_1 = require("./dog-experience.service");
 var DogExperienceComponent = (function () {
     function DogExperienceComponent(dogExperienceService) {
         this.dogExperienceService = dogExperienceService;
-        this.bannerLeft = false;
-        this.bannerRight = false;
+        this.isExpItem = true;
+        this.itemIndex = 0;
     }
     DogExperienceComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -27,13 +27,14 @@ var DogExperienceComponent = (function () {
         });
     };
     DogExperienceComponent.prototype.mouseoverBanner = function (event, banner) {
-        var offsetW = banner.offsetWidth, offsetH = banner.offsetHeight, offsetL = banner.offsetLeft, offsetT = banner.offsetTop, pageX = event.pageX, pageY = event.pageY, Y = pageX - offsetL - offsetW / 2, X = offsetH / 2 - pageY + offsetT;
-        this.rotateX = "rotateX(" + X / 50 + "deg)";
-        this.rotateY = "rotateY(" + Y / 50 + "deg)";
-        this.rotateXY = this.rotateX + " " + this.rotateY;
+        var offsetW = banner.offsetWidth, offsetH = banner.offsetHeight, offsetL = banner.offsetLeft, offsetT = banner.offsetTop, pageX = event.pageX, pageY = event.pageY, Y = pageX - offsetL - offsetW / 2, X = offsetH / 2 - pageY + offsetT, rotateX = "rotateX(" + X / 25 + "deg) ", rotateY = "rotateY(" + Y / 25 + "deg)";
+        this.rotateXY = rotateX + rotateY;
     };
     DogExperienceComponent.prototype.mouseoutBanner = function (event) {
         this.rotateXY = "rotateX(0) rotateY(0)";
+    };
+    DogExperienceComponent.prototype.onItem = function (i) {
+        this.itemIndex = i;
     };
     return DogExperienceComponent;
 }());
