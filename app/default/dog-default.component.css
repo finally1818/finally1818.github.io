@@ -87,6 +87,7 @@
 	height: 12rem;
 	border-radius: 50%;
 	background: linear-gradient(black 50%, white 0);
+	/*opacity: 0.7;*/
 	margin: 0 auto;
 	cursor: pointer;
 	/*指定要绑定到选择器的关键帧的名称*/
