@@ -30,6 +30,7 @@ export class Dog {
     des: string;
     url: string;
     viewMore: string;
+    viewMoreUrl: string;
     // experience
     expList: object;
     time: string;

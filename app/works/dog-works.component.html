@@ -1,12 +1,6 @@
 <div class="work">
     <div class="title">{{worksTitle}}</div>
     <div class="content">
-        <!--<ul class="work-list">
-            <li class="workitem" *ngFor="let worksList of worksList">
-                <a class="work-title" [href]="worksList.url" target="_blank">{{worksList.title}}</a>
-                <p class="work-des">{{worksList.des}}</p>
-            </li>
-        </ul>-->
         <div class="wrap-box">
             <div class="box-content">
                 <div class="l-front"><img src="./app/img/css01.png" alt="1"></div>
@@ -23,8 +17,14 @@
                 <div class="s-right"><img src="./app/img/css12.png" alt="1"></div>
             </div>
         </div>
-        <div class="work-more">
-            <a href="https://github.com/finally1818/learngit" target="_blank">{{worksViewMore}}</a>
-        </div>
+        <ul class="work-list">
+            <li class="workitem" *ngFor="let worksList of worksList">
+                <a class="work-title" [href]="worksList.url" target="_blank">{{worksList.title}}</a>
+                <p class="work-des">{{worksList.des}}</p>
+            </li>
+        </ul>
+    </div>
+    <div class="work-more">
+        <a [href]="worksUrl" target="_blank">{{worksViewMore}}</a>
     </div>
 </div>

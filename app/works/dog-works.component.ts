@@ -16,6 +16,7 @@ export class DogWorksComponent implements OnInit {
     private worksTitle: string;
     private worksList: object;
     private worksViewMore: string;
+    private worksUrl: string;
 
     ngOnInit() {
         this.dogWorksService.getDogWorks()
@@ -23,6 +24,7 @@ export class DogWorksComponent implements OnInit {
                 this.worksTitle = works.title;
                 this.worksList = works.worksList;
                 this.worksViewMore = works.viewMore;
+                this.worksUrl = works.viewMoreUrl;
             })
     }
 }

@@ -22,6 +22,7 @@ var DogWorksComponent = (function () {
             _this.worksTitle = works.title;
             _this.worksList = works.worksList;
             _this.worksViewMore = works.viewMore;
+            _this.worksUrl = works.viewMoreUrl;
         });
     };
     return DogWorksComponent;

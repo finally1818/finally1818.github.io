@@ -139,22 +139,13 @@ export class InMemoryDataService implements InMemoryDbService {
                         "url": "http://119.10.57.69:880/jnshu039/demo/bootstrap/home.html"
                     },
                     {
-                        "title": "杀人游戏(js)",
-                        "des": "源生JS编写，进行DOM操作。AJAX表单：根据接口文档使用jQury的AJAX异步请求实现前后端数据交流，配置Nginx实现跨域，使用正则表达式进行表单验证，并添加了富文本编辑器。",
+                        "title": "杀人游戏(js) & 杀人游戏(Angularjs)",
+                        "des": "JS版：源生JS进行DOM操作，使用localStorage进行本地数据保存，使用JSON进行存储数据转化。angular版本：使用Angularjs进行重构，实现双向数据绑定，通过路由进行单页面切换内容。",
                         "url": "http://119.10.57.69:880/jnshu039/js/js-task02-04/js-task02-1.html"
-                    },
-                    {
-                        "title": "杀人游戏(Angular1)",
-                        "des": "使用angularjs进行mvvm开发，实现双向数据绑定，通过路由进行单页面切换内容。使用localStorage进行本地数据保存，使用JSON进行存储数据转化。",
-                        "url": "http://119.10.57.69:880/jnshu039/demo/angularjs/home.html"
-                    },
-                    {
-                        "title": "新特性demo",
-                        "des": "使用源生JS或jQury进行编写，运用html5和css3新特性实现3D和动画。",
-                        "url": "http://119.10.57.69:880/jnshu039/js/3d/3d.html"
                     }
                 ],
-                "viewMore": "点击狗头查看更多"
+                "viewMore": "查看更多",
+                "viewMoreUrl": "http://119.10.57.69:880/jnshu039/Htask/task.html"
             },
             "experience": {
                 "title": "经历",
