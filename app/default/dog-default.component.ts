@@ -12,7 +12,7 @@ export class DogDefaultComponent {
     private default: object;
     private defaultDesList: object;
     private defaultQuote: string;
-    private gossipAction: boolean = false;
+    private gossipAction: boolean = true;
 
     constructor(
         private dogDefaultService: DogDefaultService

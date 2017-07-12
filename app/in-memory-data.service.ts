@@ -42,22 +42,22 @@ export class InMemoryDataService implements InMemoryDbService {
                 "title": "关于我",
                 "infoList": [
                     {
-                        "icon": "./app/img/i_age.svg",
+                        "icon": "app/img/i_age.svg",
                         "key": "年龄",
                         "value": "29岁"
                     },
                     {
-                        "icon": "./app/img/i_edu.svg",
+                        "icon": "app/img/i_edu.svg",
                         "key": "学历",
                         "value": "专科"
                     },
                     {
-                        "icon": "./app/img/i_site.svg",
+                        "icon": "app/img/i_site.svg",
                         "key": "坐标",
                         "value": "杭州"
                     },
                     {
-                        "icon": "./app/img/i_status.svg",
+                        "icon": "app/img/i_status.svg",
                         "key": "状态",
                         "value": "在职"
                     }
@@ -232,23 +232,23 @@ export class InMemoryDataService implements InMemoryDbService {
                 "typeList": [
                     {
                         "icon": "app/img/s_github.svg",
-                        "url": "/"
+                        "url": ""
                     },
                     {
                         "icon": "app/img/s_sf.svg",
-                        "url": "/"
+                        "url": ""
                     },
                     {
                         "icon": "app/img/s_blog.svg",
-                        "url": "/"
+                        "url": ""
                     },
                     {
                         "icon": "app/img/s_zh.svg",
-                        "url": "/"
+                        "url": ""
                     },
                     {
                         "icon": "app/img/s_wb.svg",
-                        "url": "/"
+                        "url": ""
                     }
                 ]
             },
