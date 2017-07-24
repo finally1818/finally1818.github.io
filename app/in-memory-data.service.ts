@@ -33,7 +33,7 @@ export class InMemoryDataService implements InMemoryDbService {
             "default": {
                 "quote": "生活是一种绵延不绝的渴望，渴望不断上升，变得更伟大而高贵。",
                 "desList": [
-                    "我叫**",
+                    "我叫林晨",
                     "一名前端开发工程师",
                     "finally174483345@vip.qq.com"
                 ]
@@ -64,7 +64,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 ],
                 "desList": [
                     "一年的前端开发经验",
-                    "熟悉MV*开发，深谙自动化，模块化开发之道",
+                    "熟悉MV*开发，熟悉自动化、模块化开发",
                     "高效的自学能力，具备分析解决问题的能力",
                     "强烈的自我驱动力，代码强迫症患者"
                 ]
@@ -98,7 +98,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     },
                     {
                         "color": "rgba(71,83,94,0.8)",
-                        "name": "Vue"
+                        "name": "JQuery"
                     },
                     {
                         "color": "rgba(147,147,189,0.8)",
@@ -120,7 +120,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     },
                     {
                         "color": "rgba(207,184,178,0.8)",
-                        "name": "JQuery"
+                        "name": "JS"
                     }
                 ],
                 "desList": [
@@ -151,9 +151,9 @@ export class InMemoryDataService implements InMemoryDbService {
                 "title": "经历",
                 "expList": [
                     {
-                        "title": "杭州**信息技术有限公司",
+                        "title": "杭州逸曜信息技术有限公司",
                         "time": "2017年1月~至今",
-                        "post": "前端开发工程师兼职网络管理员",
+                        "post": "前端开发工程师",
                         "imgUrl": "app/img/e_js.svg",
                         "tech": "html5、css3、javascript、angular2、jquery、dwz、webpack及若干类库",
                         "contentList": [
@@ -164,9 +164,9 @@ export class InMemoryDataService implements InMemoryDbService {
                         ]
                     },
                     {
-                        "title": "金华**互联网咨询服务",
+                        "title": "金华旗达互联网咨询服务",
                         "time": "2015年3月~2016年12月",
-                        "post": "网络管理员兼前端开发工程师",
+                        "post": "兼前端开发工程师",
                         "imgUrl": "app/img/e_html.svg",
                         "tech": "html、css、javascript、jquery、bootstrap等",
                         "contentList": [
@@ -179,7 +179,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     {
                         "title": "杭州宁大卫生检测技术有限公司",
                         "time": "2012年2月~2014年12月",
-                        "post": "评价师兼网管",
+                        "post": "评价师兼网络管理员",
                         "imgUrl": "app/img/e_html.svg",
                         "tech": "非前端相关行业",
                         "contentList": [
@@ -252,7 +252,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     }
                 ]
             },
-            "footer": "© 2017 ** | 生活不止眼前的苟且，还有诗和远方的田野"
+            "footer": "© 2017 林晨 | 生活不止眼前的苟且，还有诗和远方的田野"
         }
         return { data };
     }
