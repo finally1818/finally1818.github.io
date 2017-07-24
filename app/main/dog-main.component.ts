@@ -16,9 +16,7 @@ export class DogMainComponent {
 
     }
     // 滚轮事件
-
-
-    mouseWheel(event) {
+    mouseWheel(event: any) {
         if (this.time === 0) {
             this.time = 1;
             if (event.wheelDelta < 0) {

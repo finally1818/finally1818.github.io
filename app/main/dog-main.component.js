@@ -49,24 +49,24 @@ var DogMainComponent = (function () {
             }, 500);
         }
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Number)
+    ], DogMainComponent.prototype, "inNavIndex", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], DogMainComponent.prototype, "outNavIndex", void 0);
+    DogMainComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'dog-main',
+            templateUrl: 'dog-main.component.html',
+            styleUrls: ['dog-main.component.css']
+        }),
+        __metadata("design:paramtypes", [])
+    ], DogMainComponent);
     return DogMainComponent;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Number)
-], DogMainComponent.prototype, "inNavIndex", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], DogMainComponent.prototype, "outNavIndex", void 0);
-DogMainComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'dog-main',
-        templateUrl: 'dog-main.component.html',
-        styleUrls: ['dog-main.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], DogMainComponent);
 exports.DogMainComponent = DogMainComponent;
 //# sourceMappingURL=dog-main.component.js.map

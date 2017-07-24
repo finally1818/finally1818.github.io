@@ -27,16 +27,16 @@ var DogContactComponent = (function () {
             _this.conTypeList = contact.typeList;
         });
     };
+    DogContactComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'dog-contact',
+            templateUrl: 'dog-contact.component.html',
+            styleUrls: ['dog-contact.component.css']
+        }),
+        __metadata("design:paramtypes", [dog_contact_service_1.DogContactService])
+    ], DogContactComponent);
     return DogContactComponent;
 }());
-DogContactComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'dog-contact',
-        templateUrl: 'dog-contact.component.html',
-        styleUrls: ['dog-contact.component.css']
-    }),
-    __metadata("design:paramtypes", [dog_contact_service_1.DogContactService])
-], DogContactComponent);
 exports.DogContactComponent = DogContactComponent;
 //# sourceMappingURL=dog-contact.component.js.map

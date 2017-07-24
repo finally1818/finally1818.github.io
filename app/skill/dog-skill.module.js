@@ -13,15 +13,15 @@ var dog_skill_service_1 = require("./dog-skill.service");
 var DogSkillModule = (function () {
     function DogSkillModule() {
     }
+    DogSkillModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            exports: [dog_skill_component_1.DogSkillComponent],
+            declarations: [dog_skill_component_1.DogSkillComponent],
+            providers: [dog_skill_service_1.DogSkillService],
+        })
+    ], DogSkillModule);
     return DogSkillModule;
 }());
-DogSkillModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        exports: [dog_skill_component_1.DogSkillComponent],
-        declarations: [dog_skill_component_1.DogSkillComponent],
-        providers: [dog_skill_service_1.DogSkillService],
-    })
-], DogSkillModule);
 exports.DogSkillModule = DogSkillModule;
 //# sourceMappingURL=dog-skill.module.js.map
