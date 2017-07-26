@@ -102,7 +102,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     },
                     {
                         "color": "rgba(147,147,189,0.8)",
-                        "name": "React"
+                        "name": "Python"
                     }
                 ],
                 "innerCircleList": [
