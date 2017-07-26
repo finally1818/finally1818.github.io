@@ -63,8 +63,8 @@ export class InMemoryDataService implements InMemoryDbService {
                     }
                 ],
                 "desList": [
-                    "一年的前端开发经验",
-                    "熟悉MV*开发，熟悉自动化、模块化开发",
+                    "近两年的前端开发经验",
+                    "熟悉MV*开发，熟悉组件化、模块化开发",
                     "高效的自学能力，具备分析解决问题的能力",
                     "强烈的自我驱动力，代码强迫症患者"
                 ]
@@ -125,9 +125,9 @@ export class InMemoryDataService implements InMemoryDbService {
                 ],
                 "desList": [
                     "熟练使用Angular2和JQuery",
-                    "常驻PC平台前端研发",
-                    "擅长组件/插件开发，能脱离库书写JS代码",
-                    "编码常思其健壮性，扩展性，维护性"
+                    "常驻PC平台前端开发",
+                    "擅长组件/插件开发，能脱离库编写JS代码",
+                    "健壮性，扩展性，维护性"
                 ]
             },
             "works": {
@@ -139,7 +139,7 @@ export class InMemoryDataService implements InMemoryDbService {
                         "url": "http://119.10.57.69:880/jnshu039/demo/bootstrap/home.html"
                     },
                     {
-                        "title": "杀人游戏(js) & 杀人游戏(Angularjs)",
+                        "title": "杀人游戏(js) & 杀人游戏(Angularjs1.3)",
                         "des": "JS版：源生JS进行DOM操作，使用localStorage进行本地数据保存，使用JSON进行存储数据转化。angular版本：使用Angularjs进行重构，实现双向数据绑定，通过路由进行单页面切换内容。",
                         "url": "http://119.10.57.69:880/jnshu039/js/js-task02-04/js-task02-1.html"
                     }
@@ -153,24 +153,25 @@ export class InMemoryDataService implements InMemoryDbService {
                     {
                         "title": "杭州逸曜信息技术有限公司",
                         "time": "2017年1月~至今",
-                        "post": "前端开发工程师",
+                        "post": "前端开发工程师兼网络管理员",
                         "imgUrl": "app/img/e_js.svg",
                         "tech": "html5、css3、javascript、angular2、jquery、dwz、webpack及若干类库",
                         "contentList": [
                             "负责快速构建高质量PC端页面",
                             "根据业务需求设计合适的工程项目",
                             "组件化、模块化思维，拥有各平台调试能力",
-                            "同期学习ES6，体会函数式编程思想"
+                            "负责软硬件设备的采购、安装、调试及企业OA系统的维护",
+                            "同期学习Python"
                         ]
                     },
                     {
-                        "title": "金华旗达互联网咨询服务",
-                        "time": "2015年3月~2016年12月",
-                        "post": "兼前端开发工程师",
+                        "title": "金华旗达网络咨询服务",
+                        "time": "2016年1月~2016年12月",
+                        "post": "前端开发工程师兼网络管理员",
                         "imgUrl": "app/img/e_html.svg",
                         "tech": "html、css、javascript、jquery、bootstrap等",
                         "contentList": [
-                            "负责企业站静态页开发",
+                            "负责企业网站开发",
                             "负责网站后期维护",
                             "兼职公司网络管理工作",
                             "同期工作之余提升原生JS的编码能力"
@@ -201,7 +202,7 @@ export class InMemoryDataService implements InMemoryDbService {
                         ]
                     }
                 ],
-                "des": "2016年初，放弃原有职位，开始前端自学生涯。"
+                "des": "2015年底，放弃原有行业，开始前端自学生涯。"
             },
             "contact": {
                 "title": "联系我",

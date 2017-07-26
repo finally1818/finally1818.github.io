@@ -36,16 +36,16 @@ var DogExperienceComponent = (function () {
     DogExperienceComponent.prototype.onItem = function (i) {
         this.itemIndex = i;
     };
-    DogExperienceComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'dog-experience',
-            templateUrl: 'dog-experience.component.html',
-            styleUrls: ['dog-experience.component.css']
-        }),
-        __metadata("design:paramtypes", [dog_experience_service_1.DogExperienceService])
-    ], DogExperienceComponent);
     return DogExperienceComponent;
 }());
+DogExperienceComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'dog-experience',
+        templateUrl: 'dog-experience.component.html',
+        styleUrls: ['dog-experience.component.css']
+    }),
+    __metadata("design:paramtypes", [dog_experience_service_1.DogExperienceService])
+], DogExperienceComponent);
 exports.DogExperienceComponent = DogExperienceComponent;
 //# sourceMappingURL=dog-experience.component.js.map

@@ -27,11 +27,11 @@ var DogSkillService = (function () {
         console.log('An error occurred', error);
         return Promise.reject(error.message || error);
     };
-    DogSkillService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.Http])
-    ], DogSkillService);
     return DogSkillService;
 }());
+DogSkillService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], DogSkillService);
 exports.DogSkillService = DogSkillService;
 //# sourceMappingURL=dog-skill.service.js.map

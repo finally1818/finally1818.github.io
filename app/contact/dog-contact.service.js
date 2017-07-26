@@ -27,11 +27,11 @@ var DogContactService = (function () {
         console.error('An error occurred', error);
         return Promise.reject(error.message || error);
     };
-    DogContactService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.Http])
-    ], DogContactService);
     return DogContactService;
 }());
+DogContactService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], DogContactService);
 exports.DogContactService = DogContactService;
 //# sourceMappingURL=dog-contact.service.js.map

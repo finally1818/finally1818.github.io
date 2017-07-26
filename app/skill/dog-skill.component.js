@@ -25,16 +25,16 @@ var DogSkillComponent = (function () {
             _this.skillDesList = skill.desList;
         });
     };
-    DogSkillComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'dog-skill',
-            templateUrl: 'dog-skill.component.html',
-            styleUrls: ['dog-skill.component.css']
-        }),
-        __metadata("design:paramtypes", [dog_skill_service_1.DogSkillService])
-    ], DogSkillComponent);
     return DogSkillComponent;
 }());
+DogSkillComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'dog-skill',
+        templateUrl: 'dog-skill.component.html',
+        styleUrls: ['dog-skill.component.css']
+    }),
+    __metadata("design:paramtypes", [dog_skill_service_1.DogSkillService])
+], DogSkillComponent);
 exports.DogSkillComponent = DogSkillComponent;
 //# sourceMappingURL=dog-skill.component.js.map

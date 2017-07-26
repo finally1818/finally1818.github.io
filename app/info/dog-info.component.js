@@ -24,16 +24,16 @@ var DogInfoComponent = (function () {
             _this.infoDesList = info.desList;
         });
     };
-    DogInfoComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'dog-info',
-            templateUrl: 'dog-info.component.html',
-            styleUrls: ['dog-info.component.css']
-        }),
-        __metadata("design:paramtypes", [dog_info_service_1.DogInfoService])
-    ], DogInfoComponent);
     return DogInfoComponent;
 }());
+DogInfoComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'dog-info',
+        templateUrl: 'dog-info.component.html',
+        styleUrls: ['dog-info.component.css']
+    }),
+    __metadata("design:paramtypes", [dog_info_service_1.DogInfoService])
+], DogInfoComponent);
 exports.DogInfoComponent = DogInfoComponent;
 //# sourceMappingURL=dog-info.component.js.map

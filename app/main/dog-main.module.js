@@ -18,23 +18,23 @@ var dog_contact_module_1 = require("../contact/dog-contact.module");
 var DogMainModule = (function () {
     function DogMainModule() {
     }
-    DogMainModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-                dog_experience_module_1.DogExperienceModule,
-                dog_default_module_1.DogDefaultModule,
-                dog_info_module_1.DogInfoModule,
-                dog_skill_module_1.DogSkillModule,
-                dog_works_module_1.DogWorksModule,
-                dog_contact_module_1.DogContactModule
-            ],
-            exports: [dog_main_component_1.DogMainComponent],
-            declarations: [dog_main_component_1.DogMainComponent],
-            providers: [],
-        })
-    ], DogMainModule);
     return DogMainModule;
 }());
+DogMainModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            platform_browser_1.BrowserModule,
+            dog_experience_module_1.DogExperienceModule,
+            dog_default_module_1.DogDefaultModule,
+            dog_info_module_1.DogInfoModule,
+            dog_skill_module_1.DogSkillModule,
+            dog_works_module_1.DogWorksModule,
+            dog_contact_module_1.DogContactModule
+        ],
+        exports: [dog_main_component_1.DogMainComponent],
+        declarations: [dog_main_component_1.DogMainComponent],
+        providers: [],
+    })
+], DogMainModule);
 exports.DogMainModule = DogMainModule;
 //# sourceMappingURL=dog-main.module.js.map
