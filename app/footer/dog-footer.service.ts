@@ -5,14 +5,13 @@ import { Dog } from '../dog';
 
 @Injectable()
 export class DogFooterService {
-    private dataUrl = 'api/data';  // URL to web api
+    private dataUrl = 'api/data'; // URL to web api
 
-    constructor(
-        private http: Http
-    ) { }
+    constructor(private http: Http) {}
 
     getDogFooter(): Promise<Dog> {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(response => response.json().data.footer as Dog)
             .catch(this.handleError);

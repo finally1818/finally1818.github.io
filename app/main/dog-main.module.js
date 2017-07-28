@@ -31,7 +31,7 @@ var DogMainModule = (function () {
             ],
             exports: [dog_main_component_1.DogMainComponent],
             declarations: [dog_main_component_1.DogMainComponent],
-            providers: [],
+            providers: []
         })
     ], DogMainModule);
     return DogMainModule;

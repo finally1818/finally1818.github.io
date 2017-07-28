@@ -18,7 +18,7 @@ var DogExperienceModule = (function () {
             imports: [platform_browser_1.BrowserModule],
             exports: [dog_experience_component_1.DogExperienceComponent],
             declarations: [dog_experience_component_1.DogExperienceComponent],
-            providers: [dog_experience_service_1.DogExperienceService],
+            providers: [dog_experience_service_1.DogExperienceService]
         })
     ], DogExperienceModule);
     return DogExperienceModule;

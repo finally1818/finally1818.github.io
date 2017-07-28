@@ -31,9 +31,7 @@ var AppModule = (function () {
                 // DogHeaderModule,
                 dog_main_module_1.DogMainModule
             ],
-            declarations: [
-                app_component_1.AppComponent
-            ],
+            declarations: [app_component_1.AppComponent],
             providers: [dog_header_service_1.DogHeaderService, dog_footer_service_1.DogFooterService],
             bootstrap: [app_component_1.AppComponent]
         })

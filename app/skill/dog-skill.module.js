@@ -18,7 +18,7 @@ var DogSkillModule = (function () {
             imports: [platform_browser_1.BrowserModule],
             exports: [dog_skill_component_1.DogSkillComponent],
             declarations: [dog_skill_component_1.DogSkillComponent],
-            providers: [dog_skill_service_1.DogSkillService],
+            providers: [dog_skill_service_1.DogSkillService]
         })
     ], DogSkillModule);
     return DogSkillModule;

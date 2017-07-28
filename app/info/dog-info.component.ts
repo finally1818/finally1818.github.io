@@ -8,22 +8,22 @@ import { DogInfoService } from './dog-info.service';
     templateUrl: 'dog-info.component.html',
     styleUrls: ['dog-info.component.css']
 })
-
 export class DogInfoComponent implements OnInit {
-    constructor(
-        private dogInfoService: DogInfoService
-    ) { }
+    constructor(private dogInfoService: DogInfoService) {}
 
     private infoList: object;
     private infoTitle: string;
     private infoDesList: object;
 
     ngOnInit() {
-        this.dogInfoService.getDogInfo()
-            .then(info => {
-                this.infoList = info.infoList;
-                this.infoTitle = info.title;
-                this.infoDesList = info.desList;
-            })
+        this.getDogInfo();
+    }
+
+    getDogInfo() {
+        this.dogInfoService.getDogInfo().then(info => {
+            this.infoList = info.infoList;
+            this.infoTitle = info.title;
+            this.infoDesList = info.desList;
+        });
     }
 }

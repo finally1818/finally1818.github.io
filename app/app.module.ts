@@ -12,8 +12,6 @@ import { DogMainModule } from './main/dog-main.module';
 import { DogHeaderService } from './header/dog-header.service';
 import { DogFooterService } from './footer/dog-footer.service';
 
-
-
 @NgModule({
     imports: [
         BrowserModule,
@@ -23,11 +21,8 @@ import { DogFooterService } from './footer/dog-footer.service';
         // DogHeaderModule,
         DogMainModule
     ],
-    declarations: [
-        AppComponent
-    ],
+    declarations: [AppComponent],
     providers: [DogHeaderService, DogFooterService],
     bootstrap: [AppComponent]
 })
-
-export class AppModule { }
+export class AppModule {}

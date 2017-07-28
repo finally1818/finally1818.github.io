@@ -18,7 +18,7 @@ var DogDefaultModule = (function () {
             imports: [platform_browser_1.BrowserModule],
             exports: [dog_default_component_1.DogDefaultComponent],
             declarations: [dog_default_component_1.DogDefaultComponent],
-            providers: [dog_default_service_1.DogDefaultService],
+            providers: [dog_default_service_1.DogDefaultService]
         })
     ], DogDefaultModule);
     return DogDefaultModule;

@@ -18,7 +18,7 @@ var DogContactModule = (function () {
             imports: [platform_browser_1.BrowserModule],
             exports: [dog_contact_component_1.DogContactComponent],
             declarations: [dog_contact_component_1.DogContactComponent],
-            providers: [dog_contact_service_1.DogContactService],
+            providers: [dog_contact_service_1.DogContactService]
         })
     ], DogContactModule);
     return DogContactModule;

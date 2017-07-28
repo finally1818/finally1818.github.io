@@ -18,7 +18,8 @@ var DogInfoService = (function () {
         this.dataUrl = 'api/data';
     }
     DogInfoService.prototype.getDogInfo = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.info; })
             .catch(this.handleError);

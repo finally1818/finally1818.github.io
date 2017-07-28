@@ -15,8 +15,6 @@ var DogMainComponent = (function () {
         this.outNavIndex = new core_1.EventEmitter();
         this.time = 0;
     }
-    DogMainComponent.prototype.ngOnInit = function () {
-    };
     // 滚轮事件
     DogMainComponent.prototype.mouseWheel = function (event) {
         var _this = this;

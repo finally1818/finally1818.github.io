@@ -7,27 +7,26 @@ import { DogDefaultService } from './dog-default.service';
     templateUrl: 'dog-default.component.html',
     styleUrls: ['dog-default.component.css']
 })
-
 export class DogDefaultComponent {
     private default: object;
     private defaultDesList: object;
     private defaultQuote: string;
     private gossipAction: boolean = true;
 
-    constructor(
-        private dogDefaultService: DogDefaultService
-    ) { }
+    constructor(private dogDefaultService: DogDefaultService) {}
 
     ngOnInit(): void {
-        this.dogDefaultService.getDogDefault()
-            .then(data => {
-                this.defaultDesList = data.desList;
-                this.defaultQuote = data.quote;
-            });
+        this.getDogDefault();
+    }
+
+    getDogDefault() {
+        this.dogDefaultService.getDogDefault().then(data => {
+            this.defaultDesList = data.desList;
+            this.defaultQuote = data.quote;
+        });
     }
 
     onGossipAction() {
         this.gossipAction = !this.gossipAction;
     }
-    
 }

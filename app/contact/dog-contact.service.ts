@@ -5,16 +5,14 @@ import 'rxjs/add/operator/toPromise';
 import { Dog } from '../dog';
 
 @Injectable()
-
 export class DogContactService {
-    constructor(
-        private http: Http
-    ) { }
+    constructor(private http: Http) {}
 
     private dataUrl = 'api/data';
 
     getDogContact(): Promise<Dog> {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(response => response.json().data.contact)
             .catch(this.handleError);

@@ -18,7 +18,8 @@ var DogWorksService = (function () {
         this.dataUrl = 'api/data';
     }
     DogWorksService.prototype.getDogWorks = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.works; })
             .catch(this.handleError);

@@ -8,6 +8,6 @@ import { DogContactService } from './dog-contact.service';
     imports: [BrowserModule],
     exports: [DogContactComponent],
     declarations: [DogContactComponent],
-    providers: [DogContactService],
+    providers: [DogContactService]
 })
-export class DogContactModule { }
+export class DogContactModule {}

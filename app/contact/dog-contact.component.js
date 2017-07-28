@@ -16,6 +16,9 @@ var DogContactComponent = (function () {
         this.dogContactService = dogContactService;
     }
     DogContactComponent.prototype.ngOnInit = function () {
+        this.getDogContact();
+    };
+    DogContactComponent.prototype.getDogContact = function () {
         var _this = this;
         this.dogContactService.getDogContact().then(function (contact) {
             _this.conTitle = contact.title;

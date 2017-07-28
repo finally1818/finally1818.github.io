@@ -16,9 +16,11 @@ var DogSkillComponent = (function () {
         this.dogSkillService = dogSkillService;
     }
     DogSkillComponent.prototype.ngOnInit = function () {
+        this.getDogSkill();
+    };
+    DogSkillComponent.prototype.getDogSkill = function () {
         var _this = this;
-        this.dogSkillService.getDogSkill()
-            .then(function (skill) {
+        this.dogSkillService.getDogSkill().then(function (skill) {
             _this.skillTitle = skill.title;
             _this.skillOutCircleList = skill.outCircleList;
             _this.skillInnerCircleList = skill.innerCircleList;

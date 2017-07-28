@@ -10,7 +10,7 @@
         <div class="header-nav-dot">
             <ul>
                 <li class="item" *ngFor="let nav of navList; let i = index" [class.cur-index]="i === navShow || i === navIndex">
-                    <a class="dot" (mouseover)="onNavShow(i)" (mouseout)="onNavHid()" (click)="onIndex(i)" >
+                    <a class="dot" (mouseover)="onNavShow(i)" (mouseout)="onNavHid()" (click)="onIndex(i)">
                         <img alt="" [src]="nav.svg">
                     </a>
                     <span class="dot-title">{{nav.nav}}</span>

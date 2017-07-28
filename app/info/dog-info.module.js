@@ -18,7 +18,7 @@ var DogInfoModule = (function () {
             imports: [platform_browser_1.BrowserModule],
             exports: [dog_info_component_1.DogInfoComponent],
             declarations: [dog_info_component_1.DogInfoComponent],
-            providers: [dog_info_service_1.DogInfoService],
+            providers: [dog_info_service_1.DogInfoService]
         })
     ], DogInfoModule);
     return DogInfoModule;

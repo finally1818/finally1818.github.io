@@ -16,9 +16,11 @@ var DogInfoComponent = (function () {
         this.dogInfoService = dogInfoService;
     }
     DogInfoComponent.prototype.ngOnInit = function () {
+        this.getDogInfo();
+    };
+    DogInfoComponent.prototype.getDogInfo = function () {
         var _this = this;
-        this.dogInfoService.getDogInfo()
-            .then(function (info) {
+        this.dogInfoService.getDogInfo().then(function (info) {
             _this.infoList = info.infoList;
             _this.infoTitle = info.title;
             _this.infoDesList = info.desList;

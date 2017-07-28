@@ -18,7 +18,8 @@ var DogExperienceService = (function () {
         this.dataUrl = 'api/data';
     }
     DogExperienceService.prototype.getDogExperience = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.experience; })
             .catch(this.handleError);

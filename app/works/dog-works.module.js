@@ -18,7 +18,7 @@ var DogWorksModule = (function () {
             imports: [platform_browser_1.BrowserModule],
             exports: [dog_works_component_1.DogWorksComponent],
             declarations: [dog_works_component_1.DogWorksComponent],
-            providers: [dog_works_service_1.DogWorksService],
+            providers: [dog_works_service_1.DogWorksService]
         })
     ], DogWorksModule);
     return DogWorksModule;

@@ -8,6 +8,6 @@ import { DogWorksService } from './dog-works.service';
     imports: [BrowserModule],
     exports: [DogWorksComponent],
     declarations: [DogWorksComponent],
-    providers: [DogWorksService],
+    providers: [DogWorksService]
 })
-export class DogWorksModule { }
+export class DogWorksModule {}

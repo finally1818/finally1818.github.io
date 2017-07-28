@@ -17,9 +17,11 @@ var DogDefaultComponent = (function () {
         this.gossipAction = true;
     }
     DogDefaultComponent.prototype.ngOnInit = function () {
+        this.getDogDefault();
+    };
+    DogDefaultComponent.prototype.getDogDefault = function () {
         var _this = this;
-        this.dogDefaultService.getDogDefault()
-            .then(function (data) {
+        this.dogDefaultService.getDogDefault().then(function (data) {
             _this.defaultDesList = data.desList;
             _this.defaultQuote = data.quote;
         });

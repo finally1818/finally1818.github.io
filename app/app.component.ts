@@ -25,7 +25,7 @@ export class AppComponent {
     ) {}
 
     ngOnInit(): void {
-        this.getDogData()
+        this.getDogData();
     }
 
     getDogData() {

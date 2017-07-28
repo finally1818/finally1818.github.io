@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser'
+import { BrowserModule } from '@angular/platform-browser';
 
 import { DogDefaultComponent } from './dog-default.component';
 import { DogDefaultService } from './dog-default.service';
@@ -8,6 +8,6 @@ import { DogDefaultService } from './dog-default.service';
     imports: [BrowserModule],
     exports: [DogDefaultComponent],
     declarations: [DogDefaultComponent],
-    providers: [DogDefaultService],
+    providers: [DogDefaultService]
 })
-export class DogDefaultModule { }
+export class DogDefaultModule {}

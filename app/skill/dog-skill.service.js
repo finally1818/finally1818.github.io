@@ -18,7 +18,8 @@ var DogSkillService = (function () {
         this.dataUrl = 'api/data';
     }
     DogSkillService.prototype.getDogSkill = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.skill; })
             .catch(this.handleError);

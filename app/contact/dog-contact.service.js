@@ -18,7 +18,8 @@ var DogContactService = (function () {
         this.dataUrl = 'api/data';
     }
     DogContactService.prototype.getDogContact = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.contact; })
             .catch(this.handleError);

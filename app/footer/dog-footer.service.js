@@ -18,7 +18,8 @@ var DogFooterService = (function () {
         this.dataUrl = 'api/data'; // URL to web api
     }
     DogFooterService.prototype.getDogFooter = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.footer; })
             .catch(this.handleError);

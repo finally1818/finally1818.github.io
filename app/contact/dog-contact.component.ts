@@ -18,6 +18,10 @@ export class DogContactComponent implements OnInit {
     constructor(private dogContactService: DogContactService) {}
 
     ngOnInit() {
+        this.getDogContact()
+    }
+
+    getDogContact() {
         this.dogContactService.getDogContact().then(contact => {
             this.conTitle = contact.title;
             this.conDesList1 = contact.desList1;
