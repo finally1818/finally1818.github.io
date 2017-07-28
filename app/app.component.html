@@ -9,8 +9,8 @@
         </div>
         <div class="header-nav-dot">
             <ul>
-                <li class="item" *ngFor="let nav of navList; let i = index" [class.cur-index]="i === navShow || i === inNavIndex || i === outNavIndex">
-                    <a class="dot" (mouseover)="mouseoverNavShow(i)" (mouseout)="mouseoutNavHid()" (click)="isIndex(i)" >
+                <li class="item" *ngFor="let nav of navList; let i = index" [class.cur-index]="i === navShow || i === navIndex">
+                    <a class="dot" (mouseover)="onNavShow(i)" (mouseout)="onNavHid()" (click)="onIndex(i)" >
                         <img alt="" [src]="nav.svg">
                     </a>
                     <span class="dot-title">{{nav.nav}}</span>
@@ -18,6 +18,6 @@
             </ul>
         </div>
     </div>
-    <dog-main class="dock-fill" [inNavIndex]="inNavIndex" (outNavIndex)="outNavIndex($event)"></dog-main>
+    <dog-main class="dock-fill" [navIndex]="navIndex" (outNavIndex)="onIndex($event)"></dog-main>
     <footer class="footer">{{footer}}</footer>
 </div>

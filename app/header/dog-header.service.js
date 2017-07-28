@@ -19,7 +19,8 @@ var DogHeaderService = (function () {
     }
     // 获取header数据
     DogHeaderService.prototype.getDogHeader = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.header; })
             .catch(this.handleError);
@@ -28,11 +29,11 @@ var DogHeaderService = (function () {
         console.error('An error occurred', error); // for demo purposes only
         return Promise.reject(error.message || error);
     };
+    DogHeaderService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], DogHeaderService);
     return DogHeaderService;
 }());
-DogHeaderService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], DogHeaderService);
 exports.DogHeaderService = DogHeaderService;
 //# sourceMappingURL=dog-header.service.js.map

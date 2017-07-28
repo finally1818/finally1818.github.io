@@ -31,11 +31,11 @@ var DogDefaultService = (function () {
         console.error('An error occurred', error); // for demo purposes only
         return Promise.reject(error.message || error);
     };
+    DogDefaultService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], DogDefaultService);
     return DogDefaultService;
 }());
-DogDefaultService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], DogDefaultService);
 exports.DogDefaultService = DogDefaultService;
 //# sourceMappingURL=dog-default.service.js.map

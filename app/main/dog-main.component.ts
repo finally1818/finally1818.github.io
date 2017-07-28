@@ -9,7 +9,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 export class DogMainComponent {
     constructor() { }
-    @Input() inNavIndex: number;
+    @Input() navIndex: number;
     @Output() outNavIndex: EventEmitter<number> = new EventEmitter<number>();
     private time: number = 0;
     ngOnInit() {
@@ -20,18 +20,18 @@ export class DogMainComponent {
         if (this.time === 0) {
             this.time = 1;
             if (event.wheelDelta < 0) {
-                if (this.inNavIndex >= 5) {
+                if (this.navIndex >= 5) {
                     this.outNavIndex.emit(5)
                 } else {
-                    this.inNavIndex++
-                    this.outNavIndex.emit(this.inNavIndex);
+                    this.navIndex++
+                    this.outNavIndex.emit(this.navIndex);
                 }
             } else if (event.wheelDelta > 0) {
-                if (this.inNavIndex <= 0) {
+                if (this.navIndex <= 0) {
                     this.outNavIndex.emit(0);
                 } else {
-                    this.inNavIndex--
-                    this.outNavIndex.emit(this.inNavIndex);
+                    this.navIndex--
+                    this.outNavIndex.emit(this.navIndex);
                 }
             }
             // 定时器

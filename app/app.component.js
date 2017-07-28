@@ -16,46 +16,47 @@ var AppComponent = (function () {
     function AppComponent(dogHeaderService, dogFooterService) {
         this.dogHeaderService = dogHeaderService;
         this.dogFooterService = dogFooterService;
-        this.title = 'Tour of Heroes';
-        this.inNavIndex = 0;
+        this.navIndex = 0;
     }
     AppComponent.prototype.ngOnInit = function () {
+        this.getDogData();
+    };
+    AppComponent.prototype.getDogData = function () {
         var _this = this;
-        this.dogHeaderService.getDogHeader()
-            .then(function (header) {
+        this.dogHeaderService.getDogHeader().then(function (header) {
             _this.navList = header.navList;
         });
-        this.dogFooterService.getDogFooter()
-            .then(function (footer) {
+        this.dogFooterService.getDogFooter().then(function (footer) {
             _this.footer = footer;
         });
     };
-    // 鼠标移入显示
-    AppComponent.prototype.mouseoverNavShow = function (index) {
+    // 鼠标移入
+    AppComponent.prototype.onNavShow = function (index) {
         this.navShow = index;
     };
-    ;
-    // 鼠标移出隐藏
-    AppComponent.prototype.mouseoutNavHid = function () {
-        this.navShow = '';
+    // 鼠标移出
+    AppComponent.prototype.onNavHid = function () {
+        this.navShow = 999;
     };
-    AppComponent.prototype.isIndex = function (index) {
-        this.inNavIndex = index;
+    // 导航切换
+    AppComponent.prototype.onIndex = function (index) {
+        this.navIndex = index;
     };
-    AppComponent.prototype.outNavIndex = function (index) {
-        this.inNavIndex = index;
-    };
+    AppComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'my-app',
+            templateUrl: './app.component.html',
+            styleUrls: [
+                './app.component.css',
+                './header/dog-header.component.css',
+                './footer/dog-footer.component.css'
+            ]
+        }),
+        __metadata("design:paramtypes", [dog_header_service_1.DogHeaderService,
+            dog_footer_service_1.DogFooterService])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'my-app',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css', './header/dog-header.component.css', './footer/dog-footer.component.css']
-    }),
-    __metadata("design:paramtypes", [dog_header_service_1.DogHeaderService,
-        dog_footer_service_1.DogFooterService])
-], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

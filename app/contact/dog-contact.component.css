@@ -1,108 +1,115 @@
 .contact {
-	color:#FFF;
-	background: rgb(162, 153, 113) url("./app/img/bg.png");
-	height: 100%;
+    color: #fff;
+    background: rgb(162, 153, 113) url("./app/img/bg.png");
+    height: 100%;
 }
-	.title {
-		padding-top: 150px;
-		text-align: center;
-		font-size: 24px;
-		color: #FFF;
-	}
-	.content {
-		text-align: center;
-		margin: 50px auto 0;
-		max-width: 300px;
-		
-	}
-		.contact-des1 {
-			font-size: 22px;
-			display: flex;
-			justify-content: space-between;
-		}
-		.contact-des1 span:nth-child(1){
-			color:#F00;
-		}
-		.contact-des1 span:nth-child(2){
-			color:#3cf;
-		}
-		.contact-des1 span:nth-child(3){
-			color:#6c0;
-		}
-		.contact-des1 span:nth-child(4){
-			color:#f63;
-		}
-		.contact-des2{
-			font-size: 18px;
-		}
-		.contact-download{
-			margin-top: 50px;
-			color: #59543A;
-		}
-		.download-title{
-			font-size: 17px;
-		}
-		.download-list{
-			display: flex;
-			justify-content: space-between;
-			max-width: 180px;
-			margin: 0 auto;
-			padding-top: 20px;
-		}
-			.download-list a {
-				display: inline-block;
-				color:#59543A;
-				border: 1px solid #888059;
-				border-radius: 5px;
-				padding: 5px;
-				width: 60px;
-				font-size: 12px;
-				position: relative;
-				-webkit-tap-highlight-color: transparent;
-				transform: translateZ(0);
-				box-shadow: 0 0 1px transparent;
-			}
-			.download-list:before,
-			.download-list:after {
-				content: '';
-				position: absolute;
-				left: 0;
-				width: 100%;
-				height: 5px;
-				opacity: 0;
-				transition: opacity 0.3s;
-			}
-			.download-list:before {
-				bottom: 100%;
-				background: radial-gradient(ellipse at 50% 150%, rgba(105, 100, 68, 0.6) 0%, rgba(105, 100, 68, 0) 80%);
-			}
-			.download-list:after {
-				top: 100%;
-				background: radial-gradient(ellipse at 50% -50%, rgba(105, 100, 68, 0.6) 0%, rgba(105, 100, 68, 0) 80%);
-			}
-			.download-list:hover:before,
-			.download-list:hover:after {
-				opacity: 1;
-			}
-		.contact-type {
-			display: flex;
-			justify-content: space-around;
-			margin: 100px auto 0;
-		}
-		.item {
-			border-radius: 50%;
-			border: 1px solid #FFF;
-			width: 40px;
-			height: 40px;
-			position: relative;
-		}
-	.item img {
-		width: 65%;
-		position: absolute;
-		top: 50%;
-		right: 50%;
-		transform: translateX(50%) translateY(-50%);
-	}
+.title {
+    padding-top: 150px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.content {
+    text-align: center;
+    margin: 50px auto 0;
+    max-width: 300px;
+}
+.contact-des1 {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-des1 span:nth-child(1) {
+    color: #f00;
+}
+.contact-des1 span:nth-child(2) {
+    color: #3cf;
+}
+.contact-des1 span:nth-child(3) {
+    color: #6c0;
+}
+.contact-des1 span:nth-child(4) {
+    color: #f63;
+}
+.contact-des2 {
+    font-size: 18px;
+}
+.contact-download {
+    margin-top: 50px;
+    color: #59543a;
+}
+.download-title {
+    font-size: 17px;
+}
+.download-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 180px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.download-list a {
+    display: inline-block;
+    color: #59543a;
+    border: 1px solid #888059;
+    border-radius: 5px;
+    padding: 5px;
+    width: 60px;
+    font-size: 12px;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+.download-list:before,
+.download-list:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.download-list:before {
+    bottom: 100%;
+    background: radial-gradient(
+        ellipse at 50% 150%,
+        rgba(105, 100, 68, 0.6) 0%,
+        rgba(105, 100, 68, 0) 80%
+    );
+}
+.download-list:after {
+    top: 100%;
+    background: radial-gradient(
+        ellipse at 50% -50%,
+        rgba(105, 100, 68, 0.6) 0%,
+        rgba(105, 100, 68, 0) 80%
+    );
+}
+.download-list:hover:before,
+.download-list:hover:after {
+    opacity: 1;
+}
+.contact-type {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto 0;
+}
+.item {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.item img {
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+}
 /*@media screen and (max-width: 1366px) {
 	.contact {
 		.content {
