@@ -8,6 +8,6 @@ import { DogSkillService } from './dog-skill.service';
     imports: [BrowserModule],
     exports: [DogSkillComponent],
     declarations: [DogSkillComponent],
-    providers: [DogSkillService],
+    providers: [DogSkillService]
 })
-export class DogSkillModule { }
+export class DogSkillModule {}

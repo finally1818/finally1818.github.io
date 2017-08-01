@@ -8,11 +8,8 @@ import { DogExperienceService } from './dog-experience.service';
     templateUrl: 'dog-experience.component.html',
     styleUrls: ['dog-experience.component.css']
 })
-
 export class DogExperienceComponent implements OnInit {
-    constructor(
-        private dogExperienceService: DogExperienceService
-    ) { }
+    constructor(private dogExperienceService: DogExperienceService) {}
 
     private expTitle: string;
     private expList: object;
@@ -22,12 +19,15 @@ export class DogExperienceComponent implements OnInit {
     private itemIndex: number = 0;
 
     ngOnInit() {
-        this.dogExperienceService.getDogExperience()
-            .then(experience => {
-                this.expTitle = experience.title;
-                this.expList = experience.expList;
-                this.expDes = experience.des;
-            })
+        this.getDogExperience();
+    }
+
+    getDogExperience() {
+        this.dogExperienceService.getDogExperience().then(experience => {
+            this.expTitle = experience.title;
+            this.expList = experience.expList;
+            this.expDes = experience.des;
+        });
     }
 
     mouseoverBanner(event: any, banner: any) {
@@ -39,13 +39,13 @@ export class DogExperienceComponent implements OnInit {
             pageY = event.pageY,
             Y = pageX - offsetL - offsetW / 2,
             X = offsetH / 2 - pageY + offsetT,
-            rotateX = "rotateX(" + X/25 + "deg) ",
-            rotateY = "rotateY(" + Y/25 + "deg)";
+            rotateX = 'rotateX(' + X / 25 + 'deg) ',
+            rotateY = 'rotateY(' + Y / 25 + 'deg)';
         this.rotateXY = rotateX + rotateY;
     }
 
     mouseoutBanner(event: any) {
-        this.rotateXY = "rotateX(0) rotateY(0)";
+        this.rotateXY = 'rotateX(0) rotateY(0)';
     }
 
     onItem(i: number) {

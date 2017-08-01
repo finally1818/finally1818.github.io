@@ -6,42 +6,37 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     templateUrl: 'dog-main.component.html',
     styleUrls: ['dog-main.component.css']
 })
-
 export class DogMainComponent {
-    constructor() { }
-    @Input() inNavIndex: number;
+    constructor() {}
+    @Input() navIndex: number;
     @Output() outNavIndex: EventEmitter<number> = new EventEmitter<number>();
     private time: number = 0;
-    ngOnInit() {
-
-    }
     // 滚轮事件
     mouseWheel(event: any) {
         if (this.time === 0) {
             this.time = 1;
             if (event.wheelDelta < 0) {
-                if (this.inNavIndex >= 5) {
-                    this.outNavIndex.emit(5)
+                if (this.navIndex >= 5) {
+                    this.outNavIndex.emit(5);
                 } else {
-                    this.inNavIndex++
-                    this.outNavIndex.emit(this.inNavIndex);
+                    this.navIndex++;
+                    this.outNavIndex.emit(this.navIndex);
                 }
             } else if (event.wheelDelta > 0) {
-                if (this.inNavIndex <= 0) {
+                if (this.navIndex <= 0) {
                     this.outNavIndex.emit(0);
                 } else {
-                    this.inNavIndex--
-                    this.outNavIndex.emit(this.inNavIndex);
+                    this.navIndex--;
+                    this.outNavIndex.emit(this.navIndex);
                 }
             }
             // 定时器
             let isTime = setInterval(() => {
-                this.time--
+                this.time--;
                 if (this.time == 0) {
                     clearInterval(isTime);
                 }
-            }, 500)
+            }, 500);
         }
     }
-
 }

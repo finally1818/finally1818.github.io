@@ -16,25 +16,27 @@ var DogWorksComponent = (function () {
         this.dogWorksService = dogWorksService;
     }
     DogWorksComponent.prototype.ngOnInit = function () {
+        this.getDogWorks();
+    };
+    DogWorksComponent.prototype.getDogWorks = function () {
         var _this = this;
-        this.dogWorksService.getDogWorks()
-            .then(function (works) {
+        this.dogWorksService.getDogWorks().then(function (works) {
             _this.worksTitle = works.title;
             _this.worksList = works.worksList;
             _this.worksViewMore = works.viewMore;
             _this.worksUrl = works.viewMoreUrl;
         });
     };
+    DogWorksComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'dog-works',
+            templateUrl: 'dog-works.component.html',
+            styleUrls: ['dog-works.component.css']
+        }),
+        __metadata("design:paramtypes", [dog_works_service_1.DogWorksService])
+    ], DogWorksComponent);
     return DogWorksComponent;
 }());
-DogWorksComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'dog-works',
-        templateUrl: 'dog-works.component.html',
-        styleUrls: ['dog-works.component.css']
-    }),
-    __metadata("design:paramtypes", [dog_works_service_1.DogWorksService])
-], DogWorksComponent);
 exports.DogWorksComponent = DogWorksComponent;
 //# sourceMappingURL=dog-works.component.js.map

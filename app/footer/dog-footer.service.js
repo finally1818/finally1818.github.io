@@ -18,7 +18,8 @@ var DogFooterService = (function () {
         this.dataUrl = 'api/data'; // URL to web api
     }
     DogFooterService.prototype.getDogFooter = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.footer; })
             .catch(this.handleError);
@@ -27,11 +28,11 @@ var DogFooterService = (function () {
         console.error('An error occurred', error); // for demo purposes only
         return Promise.reject(error.message || error);
     };
+    DogFooterService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], DogFooterService);
     return DogFooterService;
 }());
-DogFooterService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], DogFooterService);
 exports.DogFooterService = DogFooterService;
 //# sourceMappingURL=dog-footer.service.js.map

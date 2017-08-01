@@ -17,9 +17,11 @@ var DogDefaultComponent = (function () {
         this.gossipAction = true;
     }
     DogDefaultComponent.prototype.ngOnInit = function () {
+        this.getDogDefault();
+    };
+    DogDefaultComponent.prototype.getDogDefault = function () {
         var _this = this;
-        this.dogDefaultService.getDogDefault()
-            .then(function (data) {
+        this.dogDefaultService.getDogDefault().then(function (data) {
             _this.defaultDesList = data.desList;
             _this.defaultQuote = data.quote;
         });
@@ -27,16 +29,16 @@ var DogDefaultComponent = (function () {
     DogDefaultComponent.prototype.onGossipAction = function () {
         this.gossipAction = !this.gossipAction;
     };
+    DogDefaultComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'dog-default',
+            templateUrl: 'dog-default.component.html',
+            styleUrls: ['dog-default.component.css']
+        }),
+        __metadata("design:paramtypes", [dog_default_service_1.DogDefaultService])
+    ], DogDefaultComponent);
     return DogDefaultComponent;
 }());
-DogDefaultComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'dog-default',
-        templateUrl: 'dog-default.component.html',
-        styleUrls: ['dog-default.component.css']
-    }),
-    __metadata("design:paramtypes", [dog_default_service_1.DogDefaultService])
-], DogDefaultComponent);
 exports.DogDefaultComponent = DogDefaultComponent;
 //# sourceMappingURL=dog-default.component.js.map

@@ -1,51 +1,50 @@
 .default {
-	background: rgb(135, 176, 165) url("./app/img/bg.png");
-	height: 100%;
+    background: rgb(135, 176, 165) url("./app/img/bg.png");
+    height: 100%;
 }
-	.content {
-		padding-top: 150px;
-	}
-	.photo {
-		width: 150px;
-		height: 150px;
-		border-radius: 50%;
-		background: url("./app/img/logo.jpg") no-repeat center center;
-		background-size: contain;
-		margin: 0 auto;
-		transition: box-shadow .5s linear;
-    	}
-	.photo:hover{
-		box-shadow: 0 0 15px #1FAEFF;
-	}
-	.des{
-		text-align: center;
-		max-width: 90%;
-		margin: 0 auto;
-		color: #FFF;
-    	}
-		.quote{
-			font-size: 22px;
-			position: relative;
-			padding: 20px 0;
-        }
-		.quote:after{
-			content: "";
-			position: absolute;
-			left: 10%;
-			right: 10%;
-			bottom: 0;
-			height: 1px;
-			background-color: rgba(255,255,255,0.6);
-		}
-		.des-list{
-			padding-top: 20px;
-			line-height: 20px;
-			font-size: 18px;
-        }
-			.des-list p{
-				margin: 24px 0;
-			}
-
+.content {
+    padding-top: 150px;
+}
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url("./app/img/logo.jpg") no-repeat center center;
+    background-size: contain;
+    margin: 0 auto;
+    transition: box-shadow .5s linear;
+}
+.photo:hover {
+    box-shadow: 0 0 15px #1faeff;
+}
+.des {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+.quote {
+    font-size: 22px;
+    position: relative;
+    padding: 20px 0;
+}
+.quote:after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.des-list {
+    padding-top: 20px;
+    line-height: 20px;
+    font-size: 18px;
+}
+.des-list p {
+    margin: 24px 0;
+}
 
 /*@media screen and (max-width: 1366px){
 	.default {
@@ -81,52 +80,56 @@
 
 /*八卦loading*/
 .gossip {
-	display: flex;
-	align-items: center;
-	width: 12rem;
-	height: 12rem;
-	border-radius: 50%;
-	background: linear-gradient(black 50%, white 0);
-	/*opacity: 0.7;*/
-	margin: 0 auto;
-	cursor: pointer;
-	/*指定要绑定到选择器的关键帧的名称*/
-	animation-name: gossip;
-	/*动画指定需要多少秒或毫秒完成*/
-	animation-duration: 2s;
-	/*设置动画将如何完成一个周期*/
-	animation-timing-function: linear;
-	/*设置动画在启动前的延迟间隔。*/
-	animation-delay: 0;
-	/*定义动画的播放次数。*/
-	animation-iteration-count: infinite;
-	/*指定动画是否正在运行或已暂停。*/
-	animation-play-state: paused;
-
+    display: flex;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: linear-gradient(black 50%, white 0);
+    /*opacity: 0.7;*/
+    margin: 0 auto;
+    cursor: pointer;
+    /*指定要绑定到选择器的关键帧的名称*/
+    animation-name: gossip;
+    /*动画指定需要多少秒或毫秒完成*/
+    animation-duration: 2s;
+    /*设置动画将如何完成一个周期*/
+    animation-timing-function: linear;
+    /*设置动画在启动前的延迟间隔。*/
+    animation-delay: 0;
+    /*定义动画的播放次数。*/
+    animation-iteration-count: infinite;
+    /*指定动画是否正在运行或已暂停。*/
+    animation-play-state: paused;
 }
 
-.gossip:before, .gossip:after {
-	flex: 1;
-	height: 2rem;
-	border-radius: 50%;
-	background: black;
-	content: '';
-	border: solid 2rem white;
-	/*animation: before 1s ease-in-out infinite alternate paused;*/
+.gossip:before,
+.gossip:after {
+    flex: 1;
+    height: 2rem;
+    border-radius: 50%;
+    background: black;
+    content: '';
+    border: solid 2rem white;
+    /*animation: before 1s ease-in-out infinite alternate paused;*/
 }
 
 .gossip:after {
-	background: white;
-	border-color: black;
-	/*animation: after 1s ease-in-out infinite alternate paused;*/
+    background: white;
+    border-color: black;
+    /*animation: after 1s ease-in-out infinite alternate paused;*/
 }
 
-.gossip-action, .gossip-action:before, .gossip-action:after {
-	animation-play-state: running;
+.gossip-action,
+.gossip-action:before,
+.gossip-action:after {
+    animation-play-state: running;
 }
 
-@keyframes gossip { 
-	to { transform: rotate(1turn) } 
+@keyframes gossip {
+    to {
+        transform: rotate(1turn);
+    }
 }
 
 /*有BUG暂时屏蔽*/

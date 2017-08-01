@@ -18,7 +18,8 @@ var DogSkillService = (function () {
         this.dataUrl = 'api/data';
     }
     DogSkillService.prototype.getDogSkill = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.skill; })
             .catch(this.handleError);
@@ -27,11 +28,11 @@ var DogSkillService = (function () {
         console.log('An error occurred', error);
         return Promise.reject(error.message || error);
     };
+    DogSkillService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], DogSkillService);
     return DogSkillService;
 }());
-DogSkillService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], DogSkillService);
 exports.DogSkillService = DogSkillService;
 //# sourceMappingURL=dog-skill.service.js.map

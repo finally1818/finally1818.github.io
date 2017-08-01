@@ -13,15 +13,15 @@ var dog_works_service_1 = require("./dog-works.service");
 var DogWorksModule = (function () {
     function DogWorksModule() {
     }
+    DogWorksModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            exports: [dog_works_component_1.DogWorksComponent],
+            declarations: [dog_works_component_1.DogWorksComponent],
+            providers: [dog_works_service_1.DogWorksService]
+        })
+    ], DogWorksModule);
     return DogWorksModule;
 }());
-DogWorksModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        exports: [dog_works_component_1.DogWorksComponent],
-        declarations: [dog_works_component_1.DogWorksComponent],
-        providers: [dog_works_service_1.DogWorksService],
-    })
-], DogWorksModule);
 exports.DogWorksModule = DogWorksModule;
 //# sourceMappingURL=dog-works.module.js.map

@@ -16,24 +16,26 @@ var DogInfoComponent = (function () {
         this.dogInfoService = dogInfoService;
     }
     DogInfoComponent.prototype.ngOnInit = function () {
+        this.getDogInfo();
+    };
+    DogInfoComponent.prototype.getDogInfo = function () {
         var _this = this;
-        this.dogInfoService.getDogInfo()
-            .then(function (info) {
+        this.dogInfoService.getDogInfo().then(function (info) {
             _this.infoList = info.infoList;
             _this.infoTitle = info.title;
             _this.infoDesList = info.desList;
         });
     };
+    DogInfoComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'dog-info',
+            templateUrl: 'dog-info.component.html',
+            styleUrls: ['dog-info.component.css']
+        }),
+        __metadata("design:paramtypes", [dog_info_service_1.DogInfoService])
+    ], DogInfoComponent);
     return DogInfoComponent;
 }());
-DogInfoComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'dog-info',
-        templateUrl: 'dog-info.component.html',
-        styleUrls: ['dog-info.component.css']
-    }),
-    __metadata("design:paramtypes", [dog_info_service_1.DogInfoService])
-], DogInfoComponent);
 exports.DogInfoComponent = DogInfoComponent;
 //# sourceMappingURL=dog-info.component.js.map

@@ -16,9 +16,11 @@ var DogContactComponent = (function () {
         this.dogContactService = dogContactService;
     }
     DogContactComponent.prototype.ngOnInit = function () {
+        this.getDogContact();
+    };
+    DogContactComponent.prototype.getDogContact = function () {
         var _this = this;
-        this.dogContactService.getDogContact()
-            .then(function (contact) {
+        this.dogContactService.getDogContact().then(function (contact) {
             _this.conTitle = contact.title;
             _this.conDesList1 = contact.desList1;
             _this.conDesList2 = contact.desList2;
@@ -27,16 +29,16 @@ var DogContactComponent = (function () {
             _this.conTypeList = contact.typeList;
         });
     };
+    DogContactComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'dog-contact',
+            templateUrl: 'dog-contact.component.html',
+            styleUrls: ['dog-contact.component.css']
+        }),
+        __metadata("design:paramtypes", [dog_contact_service_1.DogContactService])
+    ], DogContactComponent);
     return DogContactComponent;
 }());
-DogContactComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'dog-contact',
-        templateUrl: 'dog-contact.component.html',
-        styleUrls: ['dog-contact.component.css']
-    }),
-    __metadata("design:paramtypes", [dog_contact_service_1.DogContactService])
-], DogContactComponent);
 exports.DogContactComponent = DogContactComponent;
 //# sourceMappingURL=dog-contact.component.js.map

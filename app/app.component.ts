@@ -7,48 +7,45 @@ import { DogFooterService } from './footer/dog-footer.service';
     moduleId: module.id,
     selector: 'my-app',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css', './header/dog-header.component.css', './footer/dog-footer.component.css']
+    styleUrls: [
+        './app.component.css',
+        './header/dog-header.component.css',
+        './footer/dog-footer.component.css'
+    ]
 })
-
 export class AppComponent {
-    private title = 'Tour of Heroes';
     private navList: object;
     private footer: object;
-    private navShow: string;
-    private inNavIndex: number = 0;
+    private navShow: number;
+    private navIndex: number = 0;
 
     constructor(
         private dogHeaderService: DogHeaderService,
         private dogFooterService: DogFooterService
-    ) { }
+    ) {}
 
     ngOnInit(): void {
-        this.dogHeaderService.getDogHeader()
-            .then(header => {
-                this.navList = header.navList;
-            });
-        this.dogFooterService.getDogFooter()
-            .then(footer => {
-                this.footer = footer;
-            })
+        this.getDogData();
     }
 
-    // 鼠标移入显示
-    mouseoverNavShow(index) {
+    getDogData() {
+        this.dogHeaderService.getDogHeader().then(header => {
+            this.navList = header.navList;
+        });
+        this.dogFooterService.getDogFooter().then(footer => {
+            this.footer = footer;
+        });
+    }
+    // 鼠标移入
+    onNavShow(index: number) {
         this.navShow = index;
-    };
-    // 鼠标移出隐藏
-    mouseoutNavHid() {
-        this.navShow = '';
     }
-
-    isIndex(index) {
-        this.inNavIndex = index;
+    // 鼠标移出
+    onNavHid() {
+        this.navShow = 999;
     }
-
-    outNavIndex(index) {
-        this.inNavIndex = index;
+    // 导航切换
+    onIndex(index: number) {
+        this.navIndex = index;
     }
-
-
 }

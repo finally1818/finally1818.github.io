@@ -18,7 +18,8 @@ var DogWorksService = (function () {
         this.dataUrl = 'api/data';
     }
     DogWorksService.prototype.getDogWorks = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.works; })
             .catch(this.handleError);
@@ -27,11 +28,11 @@ var DogWorksService = (function () {
         console.log('An error occurred', error);
         return Promise.reject(error.message || error);
     };
+    DogWorksService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], DogWorksService);
     return DogWorksService;
 }());
-DogWorksService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], DogWorksService);
 exports.DogWorksService = DogWorksService;
 //# sourceMappingURL=dog-works.service.js.map

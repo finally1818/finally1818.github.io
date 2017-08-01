@@ -5,14 +5,13 @@ import { Dog } from '../dog';
 
 @Injectable()
 export class DogExperienceService {
-    constructor(
-        private http: Http
-    ) { }
+    constructor(private http: Http) {}
 
-    private dataUrl = 'api/data'
+    private dataUrl = 'api/data';
 
     getDogExperience(): Promise<Dog> {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(response => response.json().data.experience)
             .catch(this.handleError);

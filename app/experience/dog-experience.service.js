@@ -18,7 +18,8 @@ var DogExperienceService = (function () {
         this.dataUrl = 'api/data';
     }
     DogExperienceService.prototype.getDogExperience = function () {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(function (response) { return response.json().data.experience; })
             .catch(this.handleError);
@@ -27,11 +28,11 @@ var DogExperienceService = (function () {
         console.error('An error occurred', error);
         return Promise.reject(error.message || error);
     };
+    DogExperienceService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], DogExperienceService);
     return DogExperienceService;
 }());
-DogExperienceService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], DogExperienceService);
 exports.DogExperienceService = DogExperienceService;
 //# sourceMappingURL=dog-experience.service.js.map

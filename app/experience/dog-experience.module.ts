@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { DogExperienceComponent } from './dog-experience.component';
-import { DogExperienceService } from './dog-experience.service'
+import { DogExperienceService } from './dog-experience.service';
 
 @NgModule({
     imports: [BrowserModule],
     exports: [DogExperienceComponent],
     declarations: [DogExperienceComponent],
-    providers: [DogExperienceService],
+    providers: [DogExperienceService]
 })
-export class DogExperienceModule { }
+export class DogExperienceModule {}

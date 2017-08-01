@@ -16,25 +16,27 @@ var DogSkillComponent = (function () {
         this.dogSkillService = dogSkillService;
     }
     DogSkillComponent.prototype.ngOnInit = function () {
+        this.getDogSkill();
+    };
+    DogSkillComponent.prototype.getDogSkill = function () {
         var _this = this;
-        this.dogSkillService.getDogSkill()
-            .then(function (skill) {
+        this.dogSkillService.getDogSkill().then(function (skill) {
             _this.skillTitle = skill.title;
             _this.skillOutCircleList = skill.outCircleList;
             _this.skillInnerCircleList = skill.innerCircleList;
             _this.skillDesList = skill.desList;
         });
     };
+    DogSkillComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'dog-skill',
+            templateUrl: 'dog-skill.component.html',
+            styleUrls: ['dog-skill.component.css']
+        }),
+        __metadata("design:paramtypes", [dog_skill_service_1.DogSkillService])
+    ], DogSkillComponent);
     return DogSkillComponent;
 }());
-DogSkillComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'dog-skill',
-        templateUrl: 'dog-skill.component.html',
-        styleUrls: ['dog-skill.component.css']
-    }),
-    __metadata("design:paramtypes", [dog_skill_service_1.DogSkillService])
-], DogSkillComponent);
 exports.DogSkillComponent = DogSkillComponent;
 //# sourceMappingURL=dog-skill.component.js.map

@@ -4,15 +4,13 @@ import 'rxjs/add/operator/toPromise';
 import { Dog } from '../dog';
 
 @Injectable()
-
 export class DogSkillService {
-    constructor(
-        private http: Http
-    ) { }
+    constructor(private http: Http) {}
     private dataUrl = 'api/data';
 
     getDogSkill(): Promise<Dog> {
-        return this.http.get(this.dataUrl)
+        return this.http
+            .get(this.dataUrl)
             .toPromise()
             .then(response => response.json().data.skill as Dog)
             .catch(this.handleError);

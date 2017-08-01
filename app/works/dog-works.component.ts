@@ -7,11 +7,8 @@ import { DogWorksService } from './dog-works.service';
     templateUrl: 'dog-works.component.html',
     styleUrls: ['dog-works.component.css']
 })
-
 export class DogWorksComponent implements OnInit {
-    constructor(
-        private dogWorksService: DogWorksService
-    ) { }
+    constructor(private dogWorksService: DogWorksService) {}
 
     private worksTitle: string;
     private worksList: object;
@@ -19,12 +16,15 @@ export class DogWorksComponent implements OnInit {
     private worksUrl: string;
 
     ngOnInit() {
-        this.dogWorksService.getDogWorks()
-            .then(works => {
-                this.worksTitle = works.title;
-                this.worksList = works.worksList;
-                this.worksViewMore = works.viewMore;
-                this.worksUrl = works.viewMoreUrl;
-            })
+        this.getDogWorks();
+    }
+
+    getDogWorks() {
+        this.dogWorksService.getDogWorks().then(works => {
+            this.worksTitle = works.title;
+            this.worksList = works.worksList;
+            this.worksViewMore = works.viewMore;
+            this.worksUrl = works.viewMoreUrl;
+        });
     }
 }

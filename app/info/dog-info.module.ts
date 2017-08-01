@@ -8,6 +8,6 @@ import { DogInfoService } from './dog-info.service';
     imports: [BrowserModule],
     exports: [DogInfoComponent],
     declarations: [DogInfoComponent],
-    providers: [DogInfoService],
+    providers: [DogInfoService]
 })
-export class DogInfoModule { }
+export class DogInfoModule {}
