@@ -21,7 +21,6 @@
             </div>
         </div>
         <div class="shout-cut">
-            
             <ul class="cut-list">
                 <li class="item" *ngFor="let item of expList; let i = index" [class.selected]="itemIndex === i" (click)="onItem(i)"></li>
             </ul>
