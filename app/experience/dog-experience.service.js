@@ -28,11 +28,11 @@ var DogExperienceService = (function () {
         console.error('An error occurred', error);
         return Promise.reject(error.message || error);
     };
-    DogExperienceService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.Http])
-    ], DogExperienceService);
     return DogExperienceService;
 }());
+DogExperienceService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], DogExperienceService);
 exports.DogExperienceService = DogExperienceService;
 //# sourceMappingURL=dog-experience.service.js.map

@@ -13,15 +13,15 @@ var dog_default_service_1 = require("./dog-default.service");
 var DogDefaultModule = (function () {
     function DogDefaultModule() {
     }
-    DogDefaultModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            exports: [dog_default_component_1.DogDefaultComponent],
-            declarations: [dog_default_component_1.DogDefaultComponent],
-            providers: [dog_default_service_1.DogDefaultService]
-        })
-    ], DogDefaultModule);
     return DogDefaultModule;
 }());
+DogDefaultModule = __decorate([
+    core_1.NgModule({
+        imports: [platform_browser_1.BrowserModule],
+        exports: [dog_default_component_1.DogDefaultComponent],
+        declarations: [dog_default_component_1.DogDefaultComponent],
+        providers: [dog_default_service_1.DogDefaultService]
+    })
+], DogDefaultModule);
 exports.DogDefaultModule = DogDefaultModule;
 //# sourceMappingURL=dog-default.module.js.map

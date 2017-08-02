@@ -27,16 +27,16 @@ var DogWorksComponent = (function () {
             _this.worksUrl = works.viewMoreUrl;
         });
     };
-    DogWorksComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'dog-works',
-            templateUrl: 'dog-works.component.html',
-            styleUrls: ['dog-works.component.css']
-        }),
-        __metadata("design:paramtypes", [dog_works_service_1.DogWorksService])
-    ], DogWorksComponent);
     return DogWorksComponent;
 }());
+DogWorksComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'dog-works',
+        templateUrl: 'dog-works.component.html',
+        styleUrls: ['dog-works.component.css']
+    }),
+    __metadata("design:paramtypes", [dog_works_service_1.DogWorksService])
+], DogWorksComponent);
 exports.DogWorksComponent = DogWorksComponent;
 //# sourceMappingURL=dog-works.component.js.map

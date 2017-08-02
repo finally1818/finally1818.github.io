@@ -202,7 +202,7 @@ export class InMemoryDataService implements InMemoryDbService {
                         ]
                     }
                 ],
-                "des": "2015年底，放弃原有行业，开始前端自学生涯。"
+                "des": "2015年，放弃原有行业，开始前端自学生涯。"
             },
             "contact": {
                 "title": "联系我",

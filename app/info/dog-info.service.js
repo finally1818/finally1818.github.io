@@ -28,11 +28,11 @@ var DogInfoService = (function () {
         console.error('An error occurred', error); // for demo purposes only
         return Promise.reject(error.message || error);
     };
-    DogInfoService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.Http])
-    ], DogInfoService);
     return DogInfoService;
 }());
+DogInfoService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], DogInfoService);
 exports.DogInfoService = DogInfoService;
 //# sourceMappingURL=dog-info.service.js.map
