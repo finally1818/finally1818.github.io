@@ -21,22 +21,22 @@ var dog_footer_service_1 = require("./footer/dog-footer.service");
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule,
+                http_1.HttpModule,
+                angular2_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService),
+                // DogHeaderModule,
+                dog_main_module_1.DogMainModule
+            ],
+            declarations: [app_component_1.AppComponent],
+            providers: [dog_header_service_1.DogHeaderService, dog_footer_service_1.DogFooterService],
+            bootstrap: [app_component_1.AppComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            forms_1.FormsModule,
-            http_1.HttpModule,
-            angular2_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService),
-            // DogHeaderModule,
-            dog_main_module_1.DogMainModule
-        ],
-        declarations: [app_component_1.AppComponent],
-        providers: [dog_header_service_1.DogHeaderService, dog_footer_service_1.DogFooterService],
-        bootstrap: [app_component_1.AppComponent]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

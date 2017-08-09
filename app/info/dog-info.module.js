@@ -13,15 +13,15 @@ var dog_info_service_1 = require("./dog-info.service");
 var DogInfoModule = (function () {
     function DogInfoModule() {
     }
+    DogInfoModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            exports: [dog_info_component_1.DogInfoComponent],
+            declarations: [dog_info_component_1.DogInfoComponent],
+            providers: [dog_info_service_1.DogInfoService]
+        })
+    ], DogInfoModule);
     return DogInfoModule;
 }());
-DogInfoModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        exports: [dog_info_component_1.DogInfoComponent],
-        declarations: [dog_info_component_1.DogInfoComponent],
-        providers: [dog_info_service_1.DogInfoService]
-    })
-], DogInfoModule);
 exports.DogInfoModule = DogInfoModule;
 //# sourceMappingURL=dog-info.module.js.map

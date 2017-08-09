@@ -28,11 +28,11 @@ var DogWorksService = (function () {
         console.log('An error occurred', error);
         return Promise.reject(error.message || error);
     };
+    DogWorksService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], DogWorksService);
     return DogWorksService;
 }());
-DogWorksService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], DogWorksService);
 exports.DogWorksService = DogWorksService;
 //# sourceMappingURL=dog-works.service.js.map

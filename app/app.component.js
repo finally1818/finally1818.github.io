@@ -42,21 +42,21 @@ var AppComponent = (function () {
     AppComponent.prototype.onIndex = function (index) {
         this.navIndex = index;
     };
+    AppComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'my-app',
+            templateUrl: './app.component.html',
+            styleUrls: [
+                './app.component.css',
+                './header/dog-header.component.css',
+                './footer/dog-footer.component.css'
+            ]
+        }),
+        __metadata("design:paramtypes", [dog_header_service_1.DogHeaderService,
+            dog_footer_service_1.DogFooterService])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'my-app',
-        templateUrl: './app.component.html',
-        styleUrls: [
-            './app.component.css',
-            './header/dog-header.component.css',
-            './footer/dog-footer.component.css'
-        ]
-    }),
-    __metadata("design:paramtypes", [dog_header_service_1.DogHeaderService,
-        dog_footer_service_1.DogFooterService])
-], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
