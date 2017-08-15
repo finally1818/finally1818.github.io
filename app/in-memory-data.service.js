@@ -105,7 +105,7 @@ var InMemoryDataService = (function () {
                     },
                     {
                         "color": "rgba(147,147,189,0.8)",
-                        "name": "Python"
+                        "name": "Vue"
                     }
                 ],
                 "innerCircleList": [
@@ -164,11 +164,11 @@ var InMemoryDataService = (function () {
                             "根据业务需求设计合适的工程项目",
                             "组件化、模块化思维，拥有各平台调试能力",
                             "负责软硬件设备的采购、安装、调试及企业OA系统的维护",
-                            "同期学习Python"
+                            "同期学习vue"
                         ]
                     },
                     {
-                        "title": "金华旗达网络咨询服务",
+                        "title": "兰溪破冰网络科技有限公司",
                         "time": "2016年1月~2016年12月",
                         "post": "前端开发工程师兼网络管理员",
                         "imgUrl": "app/img/e_html.svg",
