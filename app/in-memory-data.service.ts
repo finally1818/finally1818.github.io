@@ -134,6 +134,11 @@ export class InMemoryDataService implements InMemoryDbService {
                 "title": "作品集",
                 "worksList": [
                     {
+                        "title": "高善文：山西证券30周年演讲",
+                        "des": "2018年山西证券三十周年会上的演讲档案页：录音播放与全文整理稿，围绕中美关系与去杠杆。",
+                        "url": "/gaoshanwen/"
+                    },
+                    {
                         "title": "学校官网",
                         "des": "基于HTML5使用bootstrap进行网页开发，实现页面间的跳转和页面内的锚点跳转，采用响应式布局实现多分辨率支持，添加轮播图、导航组件等，制作CSS Sprite并使用。",
                         "url": "http://119.10.57.69:880/jnshu039/demo/bootstrap/home.html"
